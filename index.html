@@ -1761,7 +1761,7 @@
                 <img src="images/title_bg.png" style="width:100%; height:100%; object-fit:cover; display:block;" alt="타이틀 배경">
                 <div class="title-art-overlay">
                     <h1 class="title-main-text">The Crisis<br>of Word Spirits</h1>
-                    <div id="titleSubText" class="title-sub-text">The Trial of EXAM · 덕정고1 ver</div>
+                    <div id="titleSubText" class="title-sub-text">The Trial of EXAM · 덕정고1 X 현수영</div>
                 </div>
             </div>
 
@@ -4564,7 +4564,7 @@ const recTime = document.getElementById("recFastestTime");
             const minutes = String(lastMod.getMinutes()).padStart(2, '0');
             
             // 💡 게임 버전, 빌드 버전, 최신 버전
-            buildEl.innerText = `v1.3.2 · Update: ${year}.${month}.${day} ${hours}:${minutes}`;
+            buildEl.innerText = `v1.3.2 · Update: ${year}.${month}.${day} ${hours}:${minutes} · All rights reserved · 현수영`
         }
 
         // 7. 최종 화면 전환
@@ -7277,7 +7277,7 @@ function handleMidBossVictory() {
         // 🏫 words.js의 학교 설정으로 웹 브라우저 탭과 타이틀 부제 자동 변경
         document.title = `단어 정령의 위기: EXAM의 시련 - ${SCHOOL_TAG} 편`;
         const titleSub = document.getElementById("titleSubText");
-        if (titleSub) titleSub.innerText = `The Trial of EXAM · ${SCHOOL_TAG} ver`;
+        if (titleSub) titleSub.innerText = `The Trial of EXAM · ${SCHOOL_TAG} X 현수영`;
         const introSub = document.getElementById("introCinematicSubTag");
         if (introSub) introSub.innerText = `· ${SCHOOL_TAG} ver ·`;
 
