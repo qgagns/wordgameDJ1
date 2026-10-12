@@ -41,6 +41,47 @@ const GAME_CONFIG = {
 
 const WORLD_MAPS_TEXT = `
 
+[202621_dj1_c0: 학교 쌤 단어]
+socialize, mix, mingle	사교하다, 어울려 놀다
+cue, signal, hint, clue	신호, 단서
+extraordinary, unusual, special, exceptional	특별한, 비범한, 놀라운
+usual, ordinary, common	평범한, 흔한
+flaw, fault, mistake, weakness	결점, 흠, 오류
+manifest, display, show	보여주다, 명백히 하다.
+challenging, demanding	힘든, 어려운
+variation, difference	변이, 변화, 차이
+uniformity	획일성
+wipe out, destory,eradicate	없애다, 전멸시키다
+preserve, maintain, protect	보존하다,지키다
+catastrophic, disastrous	파멸적인, 재앙의
+access, use	이용하다
+toxic, poisonous	독성의
+miserable	비참한, 끔찍한
+inviting, attractive	매력적인 유혹적인
+succession, series	연속, 일련
+damage, harm	해; 해를 끼치다
+improve	개선하다, 향상시키다
+reaction, response	반응
+trigger, activate, spark, cause to function	활성화하다, 촉발하다
+perceive, feel, sense, notice	인식하다, 알아차리다
+note, notice	주목하다, 알아차리다
+surmise, guess, assume, imagine	추측하다, 가정하다
+administer, perform, process, do	처리하다
+criterion, standard, rule	기준, 표준, 규칙
+objective, goal, aim, purpose	목적
+frighten, scare off	겁을 주다, 쫓아내다
+analogy, comparison	비교, 비유
+distinct, different, separate	다른, 구별되는
+slogan, motto	구호, 표어, 좌우명
+degree, amount	정도, 양
+inadequacy, shortage	불충분함, 부족함
+evident, clear, obvious, apparent	명백한, 분명한
+harness, use, utilize	이용하다, 활용하다
+contain, include, have	가지고 있다, 포함하다
+cultivate, farm, grow	기르다, 경작하다, 재배하다
+vegetation, plant	식물
+perfect, complete	완성하다
+
 [202621_dj1_c1: 인식·정보·소통]
 # 
 absurd: [형] 터무니없는, 부조리한
@@ -237,5 +278,173 @@ sensational: [형] 선풍적인, 자극적인
 structural: [형] 구조적인
 surplus: [명] 잉여, 과잉; [형] 잉여의
 unresponsive: [형] 무반응의, 반응이 없는
+
+[202621_dj1_c5: 실모3,4 (1)]
+abstract	[형] 추상적인
+anticipate	[동] 예상하다, 기대하다
+bias	[명] 편향, 편견
+blind spot	[명] 맹점, 약점
+consider	[동] 고려하다, 여기다
+deduction	[명] 추론, 연역; 공제
+determine	[동] 결정하다, 밝히다
+distinguish	[동] 구별하다, 분간하다
+envision	[동] 마음속에 그리다, 상상하다
+formulate	[동] 형성하다, 명확히 말하다
+interpretation	[명] 해석, 설명
+projection	[명] 예상, 추정치; 투사
+theoretical	[형] 이론적인
+adherence	[명] 고수, 집착
+cling	[동] 매달리다, 집착하다
+conviction	[명] 신념, 확신; 유죄 판결
+deliberately	[부] 의도적으로, 일부러
+discomfort	[명] 불편, 불안; [동] 불편하게 하다
+dissatisfaction	[명] 불만족
+emotional	[형] 감정적인, 정서적인
+flatly	[부] 딱 잘라, 단호히
+insist	[동] 주장하다, 고집하다
+intend	[동] 의도하다, 작정하다
+optimistic	[형] 낙관적인
+pessimistic	[형] 비관적인
+unconditionally	[부] 무조건적으로
+unintended	[형] 의도치 않은
+adolescent	[명] 청소년; [형] 청소년기의
+bodily	[형] 신체의, 육체의
+endurance	[명] 지구력, 인내
+energetic	[형] 활기찬, 에너지의
+ergonomic	[형] 인체공학적인
+hardwired	[형] 타고나는, 굳어진
+instinct	[명] 본능, 직감
+mobility	[명] 이동성, 기동력
+neural	[형] 신경계의
+physiological	[형] 생리적인, 생리학의
+posture	[명] 자세, 태도
+trait	[명] 특성, 특색
+vitality	[명] 활력, 생명력
+agricultural	[형] 농업의, 농사의
+contagious	[형] 전염성의, 번지는
+ecological	[형] 생태학의, 생태계의
+fungal	[형] 균류의, 곰팡이의
+harvest	[명] 수확, 추수; [동] 수확하다
+invasive	[형] 침략적인, 급속히 번지는
+microbial	[형] 미생물의
+organism	[명] 유기체, 생물
+predator	[명] 포식자
+accelerate	[동] 가속화하다, 촉진하다
+adaptability	[명] 적응성, 순응성
+continuation	[명] 지속, 계속
+continuity	[명] 지속성, 연속성
+evolution	[명] 진화, 발전
+flexibility	[명] 유연성, 융통성
+immediate	[형] 즉각적인, 당면한
+materialize	[동] 구체화되다, 실현되다
+permanently	[부] 영구적으로
+prearranged	[형] 미리 정해진, 사전 계획된
+progression	[명] 진행, 전개
+transform	[동] 변형시키다, 전환하다
+attribute	[명] 자질, 속성; [동] ~의 탓으로 돌리다
+concrete	[형] 구체적인; 콘크리트로 된
+entity	[명] 실체, 독립체
+essential	[형] 필수적인, 본질적인
+fundamental	[형] 근본적인, 핵심적인
+intrinsic	[형] 고유한, 본질적인
+intrinsically	[부] 본질적으로
+necessity	[명] 필요성, 필수품
+purely	[부] 순전히, 완전히
+rigid	[형] 경직된, 완고한
+standardize	[형] 표준화하다
+systematically	[부] 체계적으로
+underlying	[형] 근본적인, 기저의
+uniformity	[명] 획일성, 균일성
+
+
+[202621_dj1_c6: 실모3,4 (2)]
+attendee	[명] 참석자
+auditing	[명] 회계 감사, 심사
+commercial	[형] 상업적인; [명] 상업 광고
+corporate	[형] 기업의, 회사의
+dependence	[명] 의존, 종속
+discipline	[명] 규율; 학문 분야; [동] 훈련하다
+dominance	[명] 우세, 지배
+execute	[동] 실행하다, 처형하다
+intervention	[명] 개입, 중재
+legislation	[명] 법률, 제정법
+military	[형] 군사의, 무력의; [명] 군대
+repay	[동] 갚다, 보답하다
+sovereign	[형] 자주적인, 독립된; [명] 군주
+urban	[형] 도시의
+appeal	[명] 매력; 호소; [동] 호소하다
+conform	[동] 순응하다, 따르다
+consensus	[명] 합의, 일치된 의견
+consult	[동] 참고하다, 상담하다
+credible	[형] 믿을 수 있는, 신뢰할 만한
+document	[동] 기록하다, 입증하다; [명] 문서
+illuminate	[동] 밝히다, 설명하다
+linguistic	[형] 언어의, 언어학의
+proposal	[명] 제안, 계획
+reputable	[형] 평판이 좋은, 신뢰할 만한
+reputation	[명] 평판, 명성
+socialization	[명] 사회화
+validation	[명] 인정, 확인
+barrier	[명] 장벽, 장애물
+complication	[명] 합병증, 문제, 곤란
+decline	[동] 감소하다; 거절하다
+demise	[명] 종말, 사망
+diminish	[동] 줄이다, 감소하다
+discard	[동] 버리다, 폐기하다
+discontinue	[동] 중단하다, 그만두다
+eradication	[명] 근절, 박멸
+excessive	[형] 지나친, 과도한
+friction	[명] 마찰, 알력
+hinder	[동] 방해하다, 저해하다
+hostile	[형] 적대적인
+illness	[명] 질병, 아픔
+inactive	[형] 활동하지 않는, 소극적인
+invalid	[형] 효력 없는, 타당하지 않은
+limitation	[명] 한계, 제약
+peril	[명] 위험
+redundant	[형] 불필요한, 중복되는
+resist	[동] 저항하다, 견디다
+restrain	[동] 억제하다, 제지하다
+sever	[동] 끊다, 단절하다
+unreliable	[형] 신뢰할 수 없는
+unresolved	[형] 해결되지 않은
+benefit	[명] 이익, 혜택; [동] 이득을 보다
+conclude	[동] 끝나다, 결론짓다
+defend	[동] 방어하다, 옹호하다
+guarantee	[동] 보장하다; [명] 보증
+overcome	[동] 극복하다
+reinforce	[동] 강화하다
+remedy	[명] 치료제, 해결책; [동] 치료하다
+repurpose	[동] 용도를 바꾸다, 재활용하다
+restore	[동] 복구하다, 회복시키다
+stabilize	[동] 안정화시키다
+technique	[명] 기법, 기술
+therapeutic	[형] 치료의, 치료법의
+utilize	[동] 활용하다, 이용하다
+aesthetic	[형] 미적인, 심미적인
+antique	[형] 골동품의, 고대의; [명] 골동품
+archaeological	[형] 고고학의
+archaic	[형] 고대의, 구식의
+contemporary	[형] 현대의, 동시대의
+fragment	[명] 파편, 조각; [동] 산산이 부수다
+narrative	[명] 서사, 이야기; [형] 이야기의
+ornament	[명] 장식품, 장식
+relic	[명] 유물, 유적
+stylistic	[형] 문체의, 양식의
+anonymous	[형] 익명의
+aspect	[명] 측면, 양상
+astronomical	[형] 천문학의; 어마어마한
+conceal	[동] 숨기다, 감추다
+external	[형] 외부의, 대외적인
+inevitable	[형] 불가피한, 필연적인
+isolated	[형] 고립된, 외딴
+localized	[형] 국지적인, 현지의
+meticulous	[형] 꼼꼼한, 세심한
+obscure	[동] 모호하게 하다, 가리다; [형] 모호한
+radical	[형] 급진적인; 근본적인
+realistic	[형] 현실적인, 실감 나는
+sophisticated	[형] 정교한, 세련된
+
+
 
 `;
