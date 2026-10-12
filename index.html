@@ -1013,7 +1013,12 @@
             margin-bottom: 3px; 
         }
 
-        .tag { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 8px; }
+        .tag { 
+            font-size: 10px; 
+            font-weight: 700; 
+            padding: 2px 7px; 
+            border-radius: 8px; 
+        }
         .review-tag {
             color: #991b1b; background: #fee2e2; border: 1px solid #f87171;
             animation: pulse 1.5s infinite;
@@ -1049,7 +1054,7 @@
             color: #2c1a0e;
             padding: 8px 14px;
             border-radius: 12px; 
-            font-size: 16.5px; /* 글씨도 큼직하게 */
+            font-size: 17px; /* 글씨도 큼직하게 */
             font-weight: 900;
             cursor: pointer; 
             transition: all 0.12s ease; 
@@ -1196,7 +1201,70 @@
             transition: all 0.12s ease;
             letter-spacing: -0.3px;
         }
-        .morph-btn-submit:active { transform: scale(0.98); }
+        .morph-btn-submit:active { transform: scale(0.98);}
+
+        /* ========================================================
+           🎭 [NEW] 다의어 모든 뜻 쓸어담기(POLY_SWEEP) 전용 스타일
+           ======================================================== */
+        .poly-sweep-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            overflow-y: auto;
+            padding-right: 2px;
+        }
+
+        /* 도톰하고 큼직하게 영역을 가득 채우는 뜻 타일 버튼 */
+        .poly-tile-btn {
+            flex: 1; /* 🌟 기존 4지선다 영역을 균등하게 가득 채움! */
+            min-height: 46px;
+            background: #fdfaf2;
+            border: 2px solid #c9b48c;
+            border-radius: 12px;
+            padding: 10px 14px;
+            font-size: 17px;
+            font-weight: 900;
+            color: #2c1a0e;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.15s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+            box-sizing: border-box;
+            word-break: keep-all;
+        }
+        .poly-tile-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 올바른 뜻을 맞혔을 때: 초록빛으로 점등 */
+        .poly-tile-btn.selected {
+            background: #dcfce7 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+            box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+            pointer-events: none; /* 중복 탭 방지 */
+        }
+
+        /* 엉뚱한 함정 뜻을 골랐을 때: 빨간색으로 부르르 흔들림 */
+        .poly-tile-btn.wrong-shake {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #b91c1c !important;
+            animation: tileShakeAnim 0.35s ease-out;
+        }
+        @keyframes tileShakeAnim {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-5px); }
+            40% { transform: translateX(5px); }
+            60% { transform: translateX(-3px); }
+            80% { transform: translateX(3px); }
+        }
 
 
         /* ========================================================
@@ -2012,6 +2080,11 @@
 
             <div class="title-map-list" id="titleMapListContainer"></div>
 
+            <!-- 🎛️ [교사용 비밀 버튼] 선생님 로그인 시에만 노출! -->
+            <button id="adminTowerBtn" class="btn-wood" style="display:none; background:linear-gradient(180deg, #7e22ce 0%, #581c87 100%); border-color:#c084fc; color:#ffffff; font-weight:900; padding:11px; font-size:14px; margin-bottom:6px;" onclick="openAdminTower()">
+                🎛️ 교사용 비밀 관제탑 (학생 현황 & 엑셀) ➔
+            </button>
+
             <!-- 하단 버튼들-->
             <div class="title-bottom-links">
                 <div style="display:flex; gap:8px; width:100%; margin-top:2px; flex-shrink:0;">
@@ -2678,6 +2751,98 @@
         </div>
     </div>
 
+    <!-- 🎛️ [NEW] 교사용 비밀 관제탑 모달 대시보드 -->
+    <div id="adminTowerModal" class="modal" style="background:#fbf6ea; border:3px solid #7e22ce;">
+        <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start; width:100%; text-align:left;">
+            
+            <!-- 상단 헤더 -->
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px dashed #c084fc; padding-bottom:6px; margin-bottom:8px;">
+                <div>
+                    <span style="font-size:10px; font-weight:900; color:#7e22ce; letter-spacing:2px;">✦ TEACHER COMMAND TOWER ✦</span>
+                    <h3 style="font-size:17px; font-weight:900; color:#4a044e; margin:2px 0 0 0;">🎛️ 교사용 실시간 관제탑</h3>
+                </div>
+                <span id="adminStudentTotalCount" style="font-size:12px; font-weight:900; color:#7e22ce; background:#f3e8ff; padding:3px 8px; border-radius:8px;">총 0명 등록</span>
+            </div>
+
+            <!-- 원클릭 성적표 엑셀 다운로드 버튼 -->
+            <button class="btn-wood" style="background:linear-gradient(180deg, #15803d 0%, #166534 100%); border-color:#4ade80; color:#ffffff; font-weight:900; padding:10px; font-size:13.5px; margin-bottom:8px;" onclick="downloadAdminCSV()">
+                📥 전교생 성적 엑셀(CSV) 다운로드 ➔
+            </button>
+
+            <!-- 실시간 검색창 -->
+            <div style="margin-bottom:8px;">
+                <input id="adminStudentSearchInput" type="text" placeholder="🔍 학번 또는 이름으로 실시간 검색..." oninput="filterAdminStudents()" 
+                       style="width:100%; padding:8px 12px; border-radius:8px; border:1.5px solid #c9b48c; font-size:13px; font-weight:800; box-sizing:border-box;">
+            </div>
+
+            <!-- 실시간 학생 카드 목록 컨테이너 -->
+            <div id="adminStudentListContainer" style="flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:5px; padding-right:2px; max-height:50vh;">
+                <div style="text-align:center; padding:20px; font-size:13px; color:#785a3e;">
+                    ☁️ 학생 데이터를 불러오는 중...
+                </div>
+            </div>
+        </div>
+
+        <!-- 하단 액션 버튼 (새로고침 & 닫기) -->
+        <div style="width:100%; display:flex; gap:6px; margin-top:8px;">
+            <button class="btn-sub-wood" style="flex:1; margin-bottom:0;" onclick="loadAdminTowerData()">
+                🔄 진도 새로고침
+            </button>
+            <button class="btn-wood" style="flex:1; padding:11px; font-size:13.5px;" onclick="closeAdminTower()">
+                관제탑 닫기
+            </button>
+        </div>
+    </div>
+
+    <!-- 📊 [NEW] 학생 상세 진도 & 구역별 그래픽 리포트 모달 -->
+    <div id="adminStudentDetailModal" class="modal" style="background:#fbf6ea; border:3px solid #7e22ce;">
+        <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start; width:100%; text-align:left;">
+            
+            <!-- 상단 학생 프로필 헤더 -->
+            <div style="border-bottom:2px dashed #c084fc; padding-bottom:6px; margin-bottom:8px;">
+                <span style="font-size:10px; font-weight:900; color:#7e22ce; letter-spacing:2px;">✦ INDIVIDUAL PROGRESS REPORT ✦</span>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <h3 id="adminDetailStudentName" style="font-size:18px; font-weight:900; color:#4a044e; margin:2px 0 0 0;">안재훈 (10415)</h3>
+                    <span id="adminDetailPwBadge" style="font-size:12px; background:#fef3c7; border:1.5px solid #f59e0b; color:#92400e; padding:2px 8px; border-radius:6px; font-weight:900;">🔑 비번: 1234</span>
+                </div>
+                <div id="adminDetailMetaText" style="font-size:13px; font-weight:800; color:#6b21a8; margin-top:3px;">
+                    계급: 입문 술사 🌱
+                </div>
+                <div id="adminDetailLastLogin" style="font-size:11px; color:#785a3e; margin-top:2px;">
+                    최근 접속: 기록없음
+                </div>
+            </div>
+
+            <!-- 1. 전체 계약 달성률 대형 게이지 바 -->
+            <div class="stamp-box-wrapper" style="margin-bottom:8px; padding:8px 12px; background:#ffffff; border:1.5px solid #e9d5ff;">
+                <div class="stamp-title-row" style="font-size:13.5px; margin-bottom:4px;">
+                    <span style="font-weight:900; color:#2e1065;">👑 전 대륙 계약 달성률</span>
+                    <span id="adminDetailOverallPercent" style="font-size:15px; font-weight:900; color:#15803d;">0%</span>
+                </div>
+                <div class="overall-gauge-container" style="height:9px; margin-bottom:4px; border-radius:5px;">
+                    <div id="adminDetailOverallBar" class="overall-gauge-bar" style="background:linear-gradient(90deg, #10b981, #059669); width:0%;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:12.5px; font-weight:800;">
+                    <span id="adminDetailWordSummary" style="color:#785a3e;">0 / 0마리</span>
+                    <span id="adminDetailBossRecord" style="color:#b91c1c;">마왕 토벌: 미토벌</span>
+                </div>
+            </div>
+
+            <!-- 2. 🗺️ 영지별 & 구역별 상세 진척도 스크롤 영역 -->
+            <div style="font-size:13px; font-weight:900; color:#4a044e; margin-bottom:4px;">
+                📍 영지별 & 하위 구역별 진척도
+            </div>
+            <div id="adminDetailMapsContainer" style="flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:6px; padding-right:2px; max-height:45vh;"></div>
+        </div>
+
+        <!-- 하단 닫기 버튼 -->
+        <div style="width:100%; margin-top:8px;">
+            <button class="btn-wood" style="padding:11px; font-size:14px; background:#5c3a21;" onclick="closeStudentDetailModal()">
+                ↩️ 학생 목록으로 돌아가기
+            </button>
+        </div>
+    </div>
+
     <!-- 🌟 컴팩트 플로팅 피드백 팝업 (정답 일러스트 & 콤보 일체형) -->
     <div id="feedbackModal" style="display:none; position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(18, 9, 5, 0.72); z-index:100; justify-content:center; align-items:center; padding:14px; backdrop-filter:blur(3px);">
         <div id="fbCardBody" style="background:#fbf6ea; border:3.5px solid #8f603a; border-radius:20px; padding:16px 18px; width:100%; max-width:380px; box-shadow:0 14px 40px rgba(0,0,0,0.9); display:flex; flex-direction:column; align-items:center; text-align:center; position:relative; animation: popInCard 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards; box-sizing:border-box;">
@@ -3305,6 +3470,32 @@
         msg.style.color = "#0284c7";
         msg.innerText = "☁️ 클라우드 서버와 교신 중...";
 
+        // 🎛️ [교사 관리자 로그인 즉시 판별]
+        const masterId = (typeof GAME_CONFIG !== 'undefined' && GAME_CONFIG.adminId) ? GAME_CONFIG.adminId : "admin";
+        const masterPw = (typeof GAME_CONFIG !== 'undefined' && GAME_CONFIG.adminPw) ? GAME_CONFIG.adminPw : "0000";
+        const isAdmin = (id === masterId && pw === masterPw);
+
+        if (isAdmin) {
+            safeStorageSet('spirit_is_admin', true);
+            safeStorageSet('spirit_current_uid', id);
+            safeStorageSet('spirit_hero_name', '선생님');
+            currentUserDocId = id;
+            
+            msg.style.color = "#7e22ce";
+            msg.innerText = "🎛️ [교사 관리자] 인증 성공! 관제탑 권한이 활성화됩니다.";
+
+            setTimeout(() => {
+                document.getElementById("authModal").style.display = "none";
+                document.getElementById("titleScreen").style.display = "flex";
+                renderTitleScreen();
+                const adminBtn = document.getElementById("adminTowerBtn");
+                if (adminBtn) adminBtn.style.display = "block";
+            }, 500);
+            return; // 👈 학생용 초기화/DB 등록을 거치지 않고 즉시 관리자 승인 완료!
+        } else {
+            safeStorageSet('spirit_is_admin', false);
+        }
+
         try {
             const userRef = db.collection(USER_COLLECTION).doc(id);
             const doc = await userRef.get();
@@ -3412,6 +3603,7 @@
         const savedTodayCount = safeStorageGet(`spirit_defense_today_count_${todayStr}`, 0);
         const savedEmergencyDate = safeStorageGet('spirit_emergency_cleared_date', "");
         const savedFavorites = safeStorageGet('spirit_favorites', {}); // 👈 🌟 찜한 목록 사전 보존!
+        const savedIsAdmin = safeStorageGet('spirit_is_admin', false); // 🌟 관리자 권한 사전 보존!
         const savedAutoSkip = safeStorageGet('spirit_auto_skip_enabled', {});
         const savedTts = safeStorageGet('spirit_tts_enabled', true);
         const savedMuted = safeStorageGet('spirit_muted', false);
@@ -3433,6 +3625,7 @@
             const finalFavs = (cloudData && cloudData.favorites) ? cloudData.favorites : savedFavorites;
             wordFavorites = finalFavs || {};
             safeStorageSet('spirit_favorites', wordFavorites);
+            if (savedIsAdmin) safeStorageSet('spirit_is_admin', true); // 🌟 새로고침 후에도 관리자 권한 100% 복원!
         }
         safeStorageSet('spirit_auto_skip_enabled', savedAutoSkip);
         safeStorageSet('spirit_tts_enabled', savedTts);
@@ -3934,22 +4127,31 @@
                 if (eng && kor) {
                     // 🌟 영지 ID에 'irreg'가 들어간 전용 맵에서만 형상변환 정령으로 정식 파싱!
                     const isIrregMap = currentMap.id && currentMap.id.toLowerCase().includes('irreg');
-                    // 🌟 콜론 왼쪽 영단어(eng)의 "맨 마지막 괄호"를 변신 형태로 추출! (한글 뜻 괄호와 절대 충돌 안 함)
                     const parenMatch = eng.match(/(.*?)\s*\(([^)]+)\)\s*$/);
 
+                    // 🌟 [다의어 감지] 뜻에 세미콜론(;)이 있으면 다의어로 분리 보관!
+                    const isPoly = kor.includes(';');
+                    const meanings = isPoly ? kor.split(';').map(s => s.trim()).filter(Boolean) : [];
+
                     if (isIrregMap && parenMatch) {
-                        const baseWord = parenMatch[1].trim(); // 예: "far (거리)"
-                        const mutations = parenMatch[2].split(',').map(s => s.trim()).filter(Boolean); // ["farther", "farthest"]
+                        const baseWord = parenMatch[1].trim();
+                        const mutations = parenMatch[2].split(',').map(s => s.trim()).filter(Boolean);
                         currentMap.words.push({
                             eng: baseWord,
                             displayEng: eng, 
                             kor: kor,
                             isMorph: true,
-                            mutations: mutations
+                            mutations: mutations,
+                            isPoly: isPoly,
+                            meanings: meanings
                         });
                     } else {
-                        // 일반 영지는 괄호가 있든 없든 100% 일반 단어로 안전 등록!
-                        currentMap.words.push({ eng, kor });
+                        currentMap.words.push({ 
+                            eng: eng, 
+                            kor: kor,
+                            isPoly: isPoly,
+                            meanings: meanings
+                        });
                     }
                 }
             }
@@ -4384,6 +4586,13 @@
         if (nameEl) {
             const heroName = safeStorageGet('spirit_hero_name', safeStorageGet('spirit_user_name', '2521 술사'));
             nameEl.innerHTML = `<span style="color:#b45309; font-size:11px;">✦</span> ${heroName} <span style="color:#b45309; font-size:11px;">✦</span>`;
+        }
+        const adminBtn = document.getElementById("adminTowerBtn");
+        if (adminBtn) {
+            const masterId = (typeof GAME_CONFIG !== 'undefined' && GAME_CONFIG.adminId) ? GAME_CONFIG.adminId : "admin";
+            const isMaster = (currentUserDocId === masterId) || (safeStorageGet('spirit_current_uid', '') === masterId) || safeStorageGet('spirit_is_admin', false);
+            if (isMaster) safeStorageSet('spirit_is_admin', true);
+            adminBtn.style.display = isMaster ? "block" : "none";
         }
     }
 
@@ -5564,7 +5773,7 @@ const recTime = document.getElementById("recFastestTime");
 
             if (currentStr === targetWord) {
                 // 🌟 정답!
-                Sound.hit(true);
+                Sound.click();
 
                 if (q.morphPhase >= q.mutations.length) {
                     q.isMorphComplete = true;
@@ -5673,21 +5882,57 @@ const recTime = document.getElementById("recFastestTime");
         recentRoundWords = pickedWords.map(w => w.eng);
 
         for (const w of pickedWords) {
-            const type = w.isMorph ? "E2K" : (Math.random() < 0.5 ? "E2K" : "K2E");
+            // 🌟 1단계(교감도 0)는 영➔한, 2~3단계(교감도 1 이상)는 한➔영으로 고정 출제!
+            const currentMastery = wordMastery[w.eng] || 0;
+            let type = (w.isMorph || currentMastery === 0) ? "E2K" : "K2E";
+            let promptText = "";
+            let correctText = "";
+            let targetKorMeaning = w.kor;
+
+            // 🌟 [다의어 단계별 3단 출제 매핑]
+            if (w.isPoly && w.meanings && w.meanings.length >= 2) {
+                if (currentMastery === 0) {
+                    // 1단계 (0점): 영단어 제시 ➔ 전체 뜻 묶음 고르기 (E2K)
+                    type = "E2K";
+                    promptText = w.eng;
+                    correctText = w.kor;
+                    targetKorMeaning = w.kor;
+                } else if (currentMastery === 1) {
+                    // 2단계 (1점): 전체 뜻 묶음 제시 ➔ 영단어 고르기 (K2E)
+                    type = "K2E";
+                    promptText = w.kor; // 전체 뜻 묶음 제시!
+                    correctText = w.eng;
+                    targetKorMeaning = w.kor;
+                } else {
+                    // 3단계 (2점): 영단어 제시 ➔ 모든 뜻을 낱개로 다 쓸어담기! (POLY_SWEEP)
+                    type = "POLY_SWEEP";
+                    promptText = w.eng;
+                    correctText = w.kor;
+                    targetKorMeaning = w.kor;
+                }
+            } else {
+                promptText = (type === "E2K") ? w.eng : w.kor;
+                correctText = (type === "E2K") ? w.kor : w.eng;
+            }
+
             const qId = `${currentMapId}_${type}_${w.eng}_r${currentRound}`;
             roundQuestions.push({
                 id: qId,
                 wordKey: w.eng,
                 engWord: w.eng,
-                korMeaning: w.kor,
+                korMeaning: targetKorMeaning,
+                fullKor: w.kor,
                 type: type,
-                prompt: type === "E2K" ? w.eng : w.kor,
-                correct: type === "E2K" ? w.kor : w.eng,
-                pool: type === "E2K" ? rawWords.map(item => item.kor) : rawWords.map(item => item.eng),
+                prompt: promptText,
+                correct: correctText,
+                pool: (type === "E2K") ? rawWords.map(item => item.kor) : rawWords.map(item => item.eng),
                 isReview: !!w.isReview,
                 isMorph: !!w.isMorph,
                 mutations: w.mutations || [],
-                morphPhase: 0 // 0: 뜻 ➔ 1: 1차변형 ➔ 2: 2차변형
+                morphPhase: 0,
+                // 🌟 다의어 속성 전달
+                isPoly: !!w.isPoly,
+                meanings: w.meanings || []
             });
         }
 
@@ -5695,6 +5940,97 @@ const recTime = document.getElementById("recFastestTime");
         loadQuestion();
     }
 
+    // 🎭 [NEW] 다의어 모든 뜻 쓸어담기(3단계 계약 관문) 렌더러 & 채점기
+    function renderPolySweepQuestion(q) {
+        questionStartTime = Date.now();
+        document.getElementById("wordDisplay").innerText = q.engWord;
+
+        // 원어민 발음 재생
+        speakWord(q.engWord);
+
+        // 상단 안내 태그 갱신
+        const mTag = document.getElementById("masteryTag");
+        if (mTag) {
+            mTag.innerText = `⚡ [다의어 계약] 모든 뜻을 전부 선택하라! (${q.meanings.length}개)`;
+            mTag.style.background = "#7e22ce";
+            mTag.style.color = "#ffffff";
+        }
+
+        // 콤보 뱃지 제어
+        const streakBadge = document.getElementById("comboStreakBadge");
+        if (streakBadge) {
+            streakBadge.style.display = streakCount >= 2 ? "block" : "none";
+            streakBadge.innerText = `🔥${streakCount} COMBO!🔥`;
+        }
+
+        // 1. 오답 함정 뜻 3개 수집 (다른 단어들에서 긁어오기)
+        let distractorPool = [];
+        worldMaps.forEach(m => {
+            m.words.forEach(w => {
+                if (w.eng !== q.engWord && w.kor) {
+                    if (w.meanings && w.meanings.length > 0) {
+                        w.meanings.forEach(dm => distractorPool.push(dm));
+                    } else {
+                        distractorPool.push(w.kor);
+                    }
+                }
+            });
+        });
+        distractorPool = [...new Set(distractorPool)]
+            .filter(dm => !q.meanings.includes(dm))
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3);
+
+        // 2. 정답 뜻들 + 함정 뜻들 무작위 셔플
+        const allTiles = [...q.meanings, ...distractorPool].sort(() => Math.random() - 0.5);
+        let remainingCorrect = [...q.meanings];
+
+        const choicesGrid = document.getElementById("choicesGrid");
+        choicesGrid.innerHTML = `<div class="poly-sweep-container" id="polySweepContainer"></div>`;
+        const container = document.getElementById("polySweepContainer");
+
+        // 3. 타일 버튼 렌더링
+        allTiles.forEach(tileText => {
+            const btn = document.createElement("button");
+            btn.className = "poly-tile-btn";
+            btn.innerHTML = `<span>${tileText}</span>`;
+
+            btn.onclick = () => {
+                // ⭕ 정답 뜻을 골랐을 때
+                if (remainingCorrect.includes(tileText)) {
+                    Sound.click();
+                    btn.classList.add("selected");
+                    btn.innerHTML = `<span>${tileText}</span> <span style="font-weight:900; color:#065f46;">✓</span>`;
+                    
+                    // 남은 목록에서 제거
+                    remainingCorrect = remainingCorrect.filter(t => t !== tileText);
+
+                    if (mTag) {
+                        mTag.innerText = remainingCorrect.length > 0 
+                            ? `⚡ [다의어 계약] 남은 뜻: ${remainingCorrect.length}개!` 
+                            : `✨ 모든 뜻 수집 완료!`;
+                    }
+
+                    // 🌟 모든 뜻을 다 찾아 쓸어 담았을 때 ➔ 최종 대성공 & 계약 체결!
+                    if (remainingCorrect.length === 0) {
+                        Sound.resonance();
+                        setTimeout(() => {
+                            selectAnswer(q.correct, q);
+                        }, 250);
+                    }
+                } else {
+                    // ❌ 엉뚱한 함정 뜻을 골랐을 때 ➔ 오답 처리!
+                    Sound.wrong();
+                    btn.classList.add("wrong-shake");
+                    setTimeout(() => {
+                        selectAnswer("WRONG_POLY_CHOICE", q);
+                    }, 400);
+                }
+            };
+            container.appendChild(btn);
+        });
+    }
+    
     function loadQuestion() {
         if (currentQuestionIdx >= roundQuestions.length) {
             showRoundResult();
@@ -5770,7 +6106,64 @@ const recTime = document.getElementById("recFastestTime");
             if (feverOverlay) feverOverlay.remove(); // 콤보 끊기면 오라 즉시 소멸!
         }
 
-        const wrongChoices = q.pool.filter(item => item !== q.correct).sort(() => Math.random() - 0.5).slice(0, 3);
+        if (q && q.type === "POLY_SWEEP") {
+            renderPolySweepQuestion(q);
+            return;
+        }
+        
+        // 🌟 [NEW] 현재 영지 우선 ➔ 부족 시 외부 수혈 스마트 품사 매칭
+        let wrongChoices = [];
+        const korTarget = q.korMeaning || (q.type === "E2K" ? q.correct : q.prompt);
+        const posMatch = korTarget ? korTarget.match(/\[.*?\]/) : null; 
+        const targetPos = posMatch ? posMatch[0] : null;
+
+        if (targetPos) {
+            const curMap = worldMaps.find(m => m.id === (q.mapId || currentMapId)) || worldMaps[0];
+            
+            // 1단계: 현재 내가 공부 중인 영지 안에서 같은 품사 우선 수집!
+            let curMapWrongPool = [];
+            if (curMap && curMap.words) {
+                curMap.words.forEach(w => {
+                    if (w.kor && w.kor.includes(targetPos)) {
+                        const candidate = q.type === "E2K" ? w.kor : w.eng;
+                        if (candidate !== q.correct) curMapWrongPool.push(candidate);
+                    }
+                });
+            }
+            curMapWrongPool = [...new Set(curMapWrongPool)].sort(() => Math.random() - 0.5);
+            wrongChoices = curMapWrongPool.slice(0, 3);
+
+            // 2단계: 현재 영지에 같은 품사가 모자란 경우(3개 미만)에만 다른 일반 영지에서 보충!
+            if (wrongChoices.length < 3) {
+                const otherMapsPool = [];
+                worldMaps.forEach(m => {
+                    if (m.id !== curMap.id) {
+                        const mapIdLower = (m.id || "").toLowerCase();
+                        if (!mapIdLower.includes("irreg") && !mapIdLower.includes("net")) {
+                            m.words.forEach(w => {
+                                if (w.kor && w.kor.includes(targetPos)) {
+                                    const candidate = q.type === "E2K" ? w.kor : w.eng;
+                                    if (candidate !== q.correct && !wrongChoices.includes(candidate)) {
+                                        otherMapsPool.push(candidate);
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+                otherMapsPool.sort(() => Math.random() - 0.5);
+                wrongChoices = wrongChoices.concat(otherMapsPool.slice(0, 3 - wrongChoices.length));
+            }
+        }
+
+
+        // 3단계: 품사 태그가 없거나 전 대륙을 뒤져도 3개가 안 모이면, 기존처럼 안전하게 무작위 추출
+        if (wrongChoices.length < 3) {
+            wrongChoices = q.pool.filter(item => item !== q.correct && !wrongChoices.includes(item))
+                                 .sort(() => Math.random() - 0.5)
+                                 .slice(0, 3 - wrongChoices.length);
+        }
+
         const choices = [...wrongChoices, q.correct].sort(() => Math.random() - 0.5);
 
         const choicesGrid = document.getElementById("choicesGrid");
@@ -5840,8 +6233,9 @@ const recTime = document.getElementById("recFastestTime");
         } else {
             fbWord.innerText = q.engWord;
         }
-        fbMeaning.innerText = q.korMeaning;
-        updateFavoriteHeartUI(q.engWord); // 🌟 [핵심] 이번 단어의 찜 상태(🤍/💖) 즉시 동기화!
+        // 🌟 다의어는 모든 뜻을 번호 매겨(1. 뜻 / 2. 뜻) 정갈하게 출력!
+        fbMeaning.innerText = q.fullKor || q.korMeaning;
+        updateFavoriteHeartUI(q.engWord);
 
         const beforeTierIdx = getGlobalTier().tierIndex;
         const currentCountBefore = wordMastery[key] || 0;
@@ -5871,10 +6265,11 @@ const recTime = document.getElementById("recFastestTime");
             if (!isCounselingMode) {
                 if (q && q.isMorph && q.isMorphComplete) {
                     newCount = 3;
-                } else if (isInstantResonance) {
+                // 🌟 다의어는 숨은 뜻을 모두 경험해야 하므로 한방 계약(3점 점프) 스킵 방지!
+                } else if (isInstantResonance && !q.isPoly) {
                     newCount = 3;
                     hist.hadInstant = true;
-                } else if (isQuickTuning) {
+                } else if (isQuickTuning && !q.isPoly) {
                     newCount = Math.min(3, currentCountBefore + 2);
                     hist.hadQuick = true;
                 } else {
@@ -7086,7 +7481,36 @@ const recTime = document.getElementById("recFastestTime");
             speakWord(currentBossQuestion.engWord);
         }
 
-        const wrongChoices = currentBossQuestion.pool.filter(item => item !== currentBossQuestion.correct).sort(() => Math.random() - 0.5).slice(0, 3);
+        // 🌟 보스전 스마트 품사 매칭 엔진
+        let wrongChoices = [];
+        const korTarget = (currentBossQuestion.type === "E2K") ? currentBossQuestion.correct : currentBossQuestion.prompt;
+        const posMatch = korTarget ? korTarget.match(/\[.*?\]/) : null; 
+        const targetPos = posMatch ? posMatch[0] : null;
+
+        if (targetPos) {
+            const allValidWrongPool = [];
+            worldMaps.forEach(m => {
+                const mapIdLower = (m.id || "").toLowerCase();
+                if (!mapIdLower.includes("irreg") && !mapIdLower.includes("net")) {
+                    m.words.forEach(w => {
+                        if (w.kor && w.kor.includes(targetPos)) {
+                            const candidate = currentBossQuestion.type === "E2K" ? w.kor : w.eng;
+                            if (candidate !== currentBossQuestion.correct) {
+                                allValidWrongPool.push(candidate);
+                            }
+                        }
+                    });
+                }
+            });
+            if (allValidWrongPool.length >= 3) {
+                wrongChoices = allValidWrongPool.sort(() => Math.random() - 0.5).slice(0, 3);
+            }
+        }
+        if (wrongChoices.length < 3) {
+            wrongChoices = currentBossQuestion.pool.filter(item => item !== currentBossQuestion.correct && !wrongChoices.includes(item))
+                                 .sort(() => Math.random() - 0.5)
+                                 .slice(0, 3 - wrongChoices.length);
+        }
         const choices = [...wrongChoices, currentBossQuestion.correct].sort(() => Math.random() - 0.5);
 
         const choicesGrid = document.getElementById("bossChoicesGrid");
@@ -7222,7 +7646,36 @@ const recTime = document.getElementById("recFastestTime");
             speakWord(currentBossQuestion.engWord);
         }
 
-        const wrongChoices = currentBossQuestion.pool.filter(item => item !== currentBossQuestion.correct).sort(() => Math.random() - 0.5).slice(0, 3);
+        // 🌟 부활 카운터 스마트 품사 매칭 엔진
+        let wrongChoices = [];
+        const korTarget = (currentBossQuestion.type === "E2K") ? currentBossQuestion.correct : currentBossQuestion.prompt;
+        const posMatch = korTarget ? korTarget.match(/\[.*?\]/) : null; 
+        const targetPos = posMatch ? posMatch[0] : null;
+
+        if (targetPos) {
+            const allValidWrongPool = [];
+            worldMaps.forEach(m => {
+                const mapIdLower = (m.id || "").toLowerCase();
+                if (!mapIdLower.includes("irreg") && !mapIdLower.includes("net")) {
+                    m.words.forEach(w => {
+                        if (w.kor && w.kor.includes(targetPos)) {
+                            const candidate = currentBossQuestion.type === "E2K" ? w.kor : w.eng;
+                            if (candidate !== currentBossQuestion.correct) {
+                                allValidWrongPool.push(candidate);
+                            }
+                        }
+                    });
+                }
+            });
+            if (allValidWrongPool.length >= 3) {
+                wrongChoices = allValidWrongPool.sort(() => Math.random() - 0.5).slice(0, 3);
+            }
+        }
+        if (wrongChoices.length < 3) {
+            wrongChoices = currentBossQuestion.pool.filter(item => item !== currentBossQuestion.correct && !wrongChoices.includes(item))
+                                 .sort(() => Math.random() - 0.5)
+                                 .slice(0, 3 - wrongChoices.length);
+        }
         const choices = [...wrongChoices, currentBossQuestion.correct].sort(() => Math.random() - 0.5);
 
         const choicesGrid = document.getElementById("bossChoicesGrid");
@@ -8266,6 +8719,8 @@ function handleMidBossVictory() {
 
     // 🌉 [구버전 진도 자동 승계 브릿지] ID를 새로 부여해도 이전 진도를 100% 안전 보존
     function migrateOldMapDataIfNeeded() {
+
+
         worldMaps.forEach(map => {
             if (map.oldHashId && map.oldHashId !== map.id) {
                 // 1. 단어 암기 진도 승계
@@ -8348,6 +8803,312 @@ function handleMidBossVictory() {
     let cachedLeaderboardData = null; // 메모리에 저장해둘 랭킹 데이터
     let lastLeaderboardFetchTime = 0; // 마지막으로 서버에서 가져온 시각
     const LEADERBOARD_CACHE_MS = 60 * 1000; // ⏱️ 60초 캐싱 (1분간 재호출 차단)
+
+    // ========================================================
+    // 🎛️ [NEW] 교사용 비밀 관제탑 종합 엔진
+    // ========================================================
+    let adminCachedStudents = [];
+
+    // 1. 관제탑 창 열기 및 닫기
+    function openAdminTower() {
+        Sound.click();
+        const modal = document.getElementById("adminTowerModal");
+        if (modal) modal.style.display = "flex";
+        loadAdminTowerData(); // 전교생 최신 진도 즉시 호출
+    }
+
+    function closeAdminTower() {
+        Sound.click();
+        const modal = document.getElementById("adminTowerModal");
+        if (modal) modal.style.display = "none";
+    }
+
+    // 2. 파이어베이스에서 전교생 실시간 데이터 불러오기
+    async function loadAdminTowerData() {
+        const container = document.getElementById("adminStudentListContainer");
+        const totalEl = document.getElementById("adminStudentTotalCount");
+        if (container) container.innerHTML = `<div style="text-align:center; padding:20px; font-size:13px; color:#785a3e;">☁️ 전교생 최신 진도 불러오는 중...</div>`;
+
+        try {
+            const snapshot = await db.collection(USER_COLLECTION).get();
+            adminCachedStudents = [];
+            const masterId = (typeof GAME_CONFIG !== 'undefined' && GAME_CONFIG.adminId) ? GAME_CONFIG.adminId : "admin";
+
+            snapshot.forEach(doc => {
+                const data = doc.data();
+                // 관리자 계정 본인은 학생 명단에서 제외!
+                if (doc.id !== masterId) {
+                    adminCachedStudents.push({ id: doc.id, ...data });
+                }
+            });
+
+            // 학번(ID) 오름차순으로 정렬 (10101, 10102 순)
+            adminCachedStudents.sort((a, b) => (a.id || "").localeCompare(b.id || ""));
+
+            if (totalEl) totalEl.innerText = `총 ${adminCachedStudents.length}명 등록`;
+            renderAdminStudentCards(adminCachedStudents);
+        } catch (e) {
+            console.error("관제탑 로드 실패:", e);
+            if (container) container.innerHTML = `<div style="text-align:center; padding:20px; font-size:13px; color:#dc2626;">⚠️ 데이터를 불러오지 못했습니다. (네트워크 확인)</div>`;
+        }
+    }
+
+    // 3. 학생 카드 목록 화면에 렌더링
+    function renderAdminStudentCards(list) {
+        const container = document.getElementById("adminStudentListContainer");
+        if (!container) return;
+        container.innerHTML = "";
+
+        if (list.length === 0) {
+            container.innerHTML = `<div style="text-align:center; padding:20px; font-size:13px; color:#785a3e;">등록된 학생이 없습니다.</div>`;
+            return;
+        }
+
+        list.forEach(s => {
+            const clearCount = s.bossClearCount || (s.records && s.records.bossClearCount) || 0;
+            let bossBadge = clearCount > 0 
+                ? `<b style="color:#dc2626;">토벌 👑 (${clearCount}회)</b>` 
+                : `<span style="color:#94a3b8;">미토벌</span>`;
+
+            // 최근 접속 시간 포맷팅
+            let lastTimeStr = "기록없음";
+            if (s.lastLogin && s.lastLogin.toDate) {
+                const d = s.lastLogin.toDate();
+                lastTimeStr = `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+            } else if (s.lastUpdated && s.lastUpdated.toDate) {
+                const d = s.lastUpdated.toDate();
+                lastTimeStr = `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+            }
+
+            const card = document.createElement("div");
+            card.style.cssText = "display:flex; justify-content:space-between; align-items:center; background:#ffffff; border:1.5px solid #e9d5ff; border-radius:10px; padding:9px 12px; box-shadow:0 1px 4px rgba(0,0,0,0.06); cursor:pointer; transition:transform 0.15s ease;";
+            card.title = "터치하여 상세 진도 및 구역별 현황 보기";
+            card.onclick = () => openStudentDetailModal(s.id); // 🌟 클릭 시 개인 리포트 오픈!
+            card.innerHTML = `
+                <div style="text-align:left;">
+                    <div style="font-size:14.5px; font-weight:900; color:#2e1065;">
+                        ${s.name || '무명'} <span style="font-size:12px; font-weight:800; color:#7e22ce;">(${s.id})</span>
+                        <!-- 🔑 비밀번호 분실 구원 배지! -->
+                        <span style="font-size:11px; background:#fef3c7; border:1px solid #f59e0b; color:#92400e; padding:1px 6px; border-radius:6px; font-weight:900; margin-left:4px;">🔑 ${s.pw || '????'}</span>
+                    </div>
+                    <div style="font-size:11.5px; font-weight:700; color:#6b21a8; margin-top:2px;">
+                        ${s.tierName || '입문 술사'} · 최근: ${lastTimeStr}
+                    </div>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-size:14px; font-weight:900; color:#15803d;">
+                        ${s.masteryCount || 0}마리
+                    </div>
+                    <div style="font-size:11px; font-weight:800; margin-top:1px;">
+                        ${bossBadge}
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    // 4. 실시간 학번/이름 검색 필터링
+    function filterAdminStudents() {
+        const input = document.getElementById("adminStudentSearchInput");
+        if (!input) return;
+        const query = input.value.trim().toLowerCase();
+        if (!query) {
+            renderAdminStudentCards(adminCachedStudents);
+            return;
+        }
+        const filtered = adminCachedStudents.filter(s => 
+            (s.id && String(s.id).toLowerCase().includes(query)) || 
+            (s.name && String(s.name).toLowerCase().includes(query))
+        );
+        renderAdminStudentCards(filtered);
+    }
+
+    // 5. 📥 전교생 성적표 한글 엑셀(CSV) 원클릭 다운로드 엔진
+    function downloadAdminCSV() {
+        if (adminCachedStudents.length === 0) {
+            alert("다운로드할 학생 데이터가 없습니다!");
+            return;
+        }
+
+        // 엑셀 한글 깨짐 방지 UTF-8 BOM (\uFEFF) 탑재!
+        let csvContent = "\uFEFF학번,이름,비밀번호,계약단어수,계급,마왕토벌여부,토벌횟수,마왕최단시간(초),최근접속일\n";
+
+        adminCachedStudents.forEach(s => {
+            const sId = `"${s.id || ''}"`;
+            const sName = `"${s.name || ''}"`;
+            const sPw = `"${s.pw || ''}"`;
+            const sMastery = s.masteryCount || 0;
+            const sTier = `"${s.tierName || '입문 술사'}"`;
+            const sBossCount = s.bossClearCount || (s.records && s.records.bossClearCount) || 0;
+            const sBossCleared = sBossCount > 0 ? "토벌완료" : "미토벌";
+            const sFastest = (s.fastestBossTime && s.fastestBossTime < 9999) ? s.fastestBossTime : "";
+            
+            let sDate = "";
+            if (s.lastLogin && s.lastLogin.toDate) {
+                const d = s.lastLogin.toDate();
+                sDate = `"${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}"`;
+            } else if (s.lastUpdated && s.lastUpdated.toDate) {
+                const d = s.lastUpdated.toDate();
+                sDate = `"${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}"`;
+            }
+
+            csvContent += `${sId},${sName},${sPw},${sMastery},${sTier},${sBossCleared},${sBossCount},${sFastest},${sDate}\n`;
+        });
+
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        const schoolName = (typeof GAME_CONFIG !== 'undefined' && GAME_CONFIG.schoolTag) ? GAME_CONFIG.schoolTag : "학교";
+        const todayStr = new Date().toISOString().slice(0, 10);
+
+        link.setAttribute("href", url);
+        link.setAttribute("download", `${schoolName}_단어진도_성적표_${todayStr}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        Sound.fanfare();
+    }
+
+    // 📊 [NEW] 학생 상세 진도 모달 닫기
+    function closeStudentDetailModal() {
+        Sound.click();
+        const modal = document.getElementById("adminStudentDetailModal");
+        if (modal) modal.style.display = "none";
+        // 🌟 상세 창을 닫으면 다시 관제탑 학생 목록 창으로 복귀!
+        const towerModal = document.getElementById("adminTowerModal");
+        if (towerModal) towerModal.style.display = "flex";
+    }
+
+    // 📊 [NEW] 학생 상세 진도 & 영지·구역별 그래픽 리포트 팝업 엔진
+    function openStudentDetailModal(studentId) {
+        Sound.click();
+        const s = adminCachedStudents.find(item => item.id === studentId);
+        if (!s) return;
+
+        // 🌟 관제탑 창을 잠시 가려주어 상세 리포트가 확실하게 보이도록 전환!
+        const towerModal = document.getElementById("adminTowerModal");
+        if (towerModal) towerModal.style.display = "none";
+
+        // 1. 학생 기본 프로필 및 비밀번호 세팅
+        document.getElementById("adminDetailStudentName").innerText = `${s.name || '무명'} (${s.id})`;
+        document.getElementById("adminDetailPwBadge").innerText = `🔑 비번: ${s.pw || '????'}`;
+        
+        const titleStr = (s.records && s.records.equippedTitle) ? s.records.equippedTitle : "칭호 없음";
+        document.getElementById("adminDetailMetaText").innerText = `계급: ${s.tierName || '입문 술사'} · 장착칭호: ${titleStr}`;
+
+        // 최근 접속 시간 세팅
+        let lastTimeStr = "기록없음";
+        if (s.lastLogin && s.lastLogin.toDate) {
+            const d = s.lastLogin.toDate();
+            lastTimeStr = `${d.getFullYear()}.${d.getMonth()+1}.${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}:${String(d.getSeconds()).padStart(2,'0')}`;
+        } else if (s.lastUpdated && s.lastUpdated.toDate) {
+            const d = s.lastUpdated.toDate();
+            lastTimeStr = `${d.getFullYear()}.${d.getMonth()+1}.${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}:${String(d.getSeconds()).padStart(2,'0')}`;
+        }
+        document.getElementById("adminDetailLastLogin").innerText = `최근 접속: ${lastTimeStr}`;
+
+        // 2. 전 대륙 전체 계약 달성률 계산
+        let totalUniverseWords = 0;
+        worldMaps.forEach(m => totalUniverseWords += m.words.length);
+        const totalMastered = s.masteryCount || 0;
+        const totalPercent = totalUniverseWords > 0 ? Math.round((totalMastered / totalUniverseWords) * 100) : 0;
+
+        document.getElementById("adminDetailOverallPercent").innerText = `${totalPercent}%`;
+        document.getElementById("adminDetailOverallBar").style.width = `${totalPercent}%`;
+        document.getElementById("adminDetailWordSummary").innerText = `${totalMastered} / ${totalUniverseWords}마리 계약 완료`;
+
+        // 마왕 토벌 전적
+        const clearCount = s.bossClearCount || (s.records && s.records.bossClearCount) || 0;
+        const fastest = (s.fastestBossTime && s.fastestBossTime < 9999) ? `${s.fastestBossTime}초` : "";
+        document.getElementById("adminDetailBossRecord").innerHTML = clearCount > 0 
+            ? `<b style="color:#b91c1c;">마왕 토벌: ${fastest} (${clearCount}회 👑)</b>` 
+            : `<span style="color:#785a3e;">마왕 토벌: 미토벌</span>`;
+
+        // 3. 🗺️ 영지별 & 하위 구역별 그래픽 상세 렌더링
+        const mapsContainer = document.getElementById("adminDetailMapsContainer");
+        if (mapsContainer) {
+            mapsContainer.innerHTML = "";
+            const studentMastery = s.mastery || {};
+            const clearedBosses = Array.isArray(s.clearedBosses) ? s.clearedBosses : [];
+
+            worldMaps.forEach((map, mIdx) => {
+                // 해당 영지의 학생 단어 진도 계산
+                const mapMastery = studentMastery[map.id] || (map.oldHashId ? studentMastery[map.oldHashId] : {}) || {};
+                let mapContracted = 0;
+                map.words.forEach(w => {
+                    if ((mapMastery[w.eng] || 0) >= 3) mapContracted++;
+                });
+                const mapPercent = map.words.length > 0 ? Math.round((mapContracted / map.words.length) * 100) : 0;
+                const isGuardianPurified = clearedBosses.includes(map.id) || (map.oldHashId && clearedBosses.includes(map.oldHashId));
+
+                // 영지 카드 래퍼
+                const mapCard = document.createElement("div");
+                mapCard.style.cssText = "background:#ffffff; border:1px solid #d8c7a6; border-radius:10px; padding:9px 11px; box-shadow:0 1px 3px rgba(0,0,0,0.05);";
+
+                let guardianTag = isGuardianPurified 
+                    ? `<span style="font-size:10.5px; background:#dcfce7; border:1px solid #10b981; color:#065f46; padding:1px 6px; border-radius:6px; font-weight:900;">수호령 정화 ✓</span>`
+                    : `<span style="font-size:10.5px; color:#94a3b8; font-weight:700;">수호령 미정화</span>`;
+
+                mapCard.innerHTML = `
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
+                        <span style="font-size:13.5px; font-weight:900; color:#2c1a0e;">${mIdx + 1}. ${map.name}</span>
+                        <div>${guardianTag}</div>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; font-size:11.5px; font-weight:800; color:#785a3e; margin-bottom:2px;">
+                        <span>계약: ${mapContracted} / ${map.words.length}마리</span>
+                        <span style="color:#15803d; font-weight:900;">${mapPercent}%</span>
+                    </div>
+                    <div style="background:#e2d9c2; height:5px; border-radius:3px; overflow:hidden; margin-bottom:6px;">
+                        <div style="background:linear-gradient(90deg, #10b981, #059669); height:100%; width:${mapPercent}%;"></div>
+                    </div>
+                    <!-- 하위 구역별 알약 칩 영역 -->
+                    <div id="sectorChips_${mIdx}" style="display:flex; flex-wrap:wrap; gap:4px;"></div>
+                `;
+
+                mapsContainer.appendChild(mapCard);
+
+                // 구역별 알약 칩 동적 생성
+                const chipsWrap = mapCard.querySelector(`#sectorChips_${mIdx}`);
+                const sectors = getMapSectors(map);
+                sectors.forEach(sec => {
+                    let secContracted = 0;
+                    sec.words.forEach(sw => {
+                        if ((mapMastery[sw.eng] || 0) >= 3) secContracted++;
+                    });
+
+                    const isSecDone = (secContracted >= sec.words.length);
+                    const isSecPartial = (secContracted > 0 && !isSecDone);
+
+                    let chipBg = "#f1f5f9";
+                    let chipBorder = "#cbd5e1";
+                    let chipColor = "#64748b";
+                    let chipIcon = "🌿";
+
+                    if (isSecDone) {
+                        chipBg = "#ecfdf5";
+                        chipBorder = "#10b981";
+                        chipColor = "#065f46";
+                        chipIcon = "🌟";
+                    } else if (isSecPartial) {
+                        chipBg = "#fffbeb";
+                        chipBorder = "#f59e0b";
+                        chipColor = "#b45309";
+                        chipIcon = "🍃";
+                    }
+
+                    const chip = document.createElement("span");
+                    chip.style.cssText = `font-size:11px; font-weight:900; background:${chipBg}; border:1px solid ${chipBorder}; color:${chipColor}; padding:2px 7px; border-radius:8px; white-space:nowrap;`;
+                    chip.innerHTML = `${sec.name}: ${secContracted}/${sec.words.length} ${chipIcon}`;
+                    chipsWrap.appendChild(chip);
+                });
+            });
+        }
+
+        // 모달창 띄우기
+        const modal = document.getElementById("adminStudentDetailModal");
+        if (modal) modal.style.display = "flex";
+    }    
 
     async function loadLiveLeaderboard(forceRefresh = false) {
         const container = document.getElementById("leaderboardListContainer");
