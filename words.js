@@ -46,45 +46,47 @@ const GAME_CONFIG = {
 const WORLD_MAPS_TEXT = `
 
 [202621_dj1_c0: 학교 쌤 단어]
-socialize, mix, mingle	사교하다, 어울려 놀다
-cue, signal, hint, clue	신호, 단서
-extraordinary, unusual, special, exceptional	특별한, 비범한, 놀라운
-usual, ordinary, common	평범한, 흔한
-flaw, fault, mistake, weakness	결점, 흠, 오류
-manifest, display, show	보여주다, 명백히 하다.
-challenging, demanding	힘든, 어려운
-variation, difference	변이, 변화, 차이
-uniformity	획일성
-wipe out, destory,eradicate	없애다, 전멸시키다
-preserve, maintain, protect	보존하다,지키다
-catastrophic, disastrous	파멸적인, 재앙의
-access, use	이용하다
-toxic, poisonous	독성의
-miserable	비참한, 끔찍한
-inviting, attractive	매력적인 유혹적인
-succession, series	연속, 일련
-damage, harm	해; 해를 끼치다
-improve	개선하다, 향상시키다
-reaction, response	반응
-trigger, activate, spark, cause to function	활성화하다, 촉발하다
-perceive, feel, sense, notice	인식하다, 알아차리다
-note, notice	주목하다, 알아차리다
-surmise, guess, assume, imagine	추측하다, 가정하다
-administer, perform, process, do	처리하다
-criterion, standard, rule	기준, 표준, 규칙
-objective, goal, aim, purpose	목적
-frighten, scare off	겁을 주다, 쫓아내다
-analogy, comparison	비교, 비유
-distinct, different, separate	다른, 구별되는
-slogan, motto	구호, 표어, 좌우명
-degree, amount	정도, 양
-inadequacy, shortage	불충분함, 부족함
-evident, clear, obvious, apparent	명백한, 분명한
-harness, use, utilize	이용하다, 활용하다
-contain, include, have	가지고 있다, 포함하다
-cultivate, farm, grow	기르다, 경작하다, 재배하다
-vegetation, plant	식물
-perfect, complete	완성하다
+# 학교 쌤이 친히 알려주신 소중한 단어들
+socialize, mix, mingle	[동] 사교하다, 어울려 놀다
+cue, signal, hint, clue	[명] 신호, 단서
+extraordinary, unusual, special, exceptional	[형] 특별한, 비범한, 놀라운
+usual, ordinary, common	[형] 평범한, 흔한
+flaw, fault, mistake, weakness	[명] 결점, 흠, 오류
+manifest, display, show	[동] 보여주다, 명백히 하다.
+challenging, demanding	[형] 힘든, 어려운
+variation, difference	[명] 변이, 변화, 차이
+uniformity	[명] 획일성
+wipe out, destory,eradicate	[명] 없애다, 전멸시키다
+preserve, maintain, protect	[동] 보존하다,지키다
+catastrophic, disastrous	[형] 파멸적인, 재앙의
+access, use	[동] 이용하다
+toxic, poisonous	[형] 독성의
+miserable	[형] 비참한, 끔찍한
+inviting, attractive	[형] 매력적인 유혹적인
+succession, series	[명] 연속, 일련
+damage, harm	[명] 해; [동] 해를 끼치다
+improve, enhance	[동] 개선하다, 향상시키다
+reaction, response	[명] 반응
+trigger, activate, spark, cause to function	[동] 활성화하다, 촉발하다
+perceive, feel, sense, notice	[동] 인식하다, 알아차리다
+note, notice	[동] 주목하다, 알아차리다
+surmise, guess, assume, imagine	[동] 추측하다, 가정하다
+administer, perform, process, do	[동] 처리하다
+criterion, standard, rule	[명] 기준, 표준, 규칙
+objective, goal, aim, purpose	[명] 목적
+frighten, scare off	[동] 겁을 주다, 쫓아내다
+analogy, comparison	[명] 비교, 비유
+distinct, different, separate	[형] 다른, 구별되는
+slogan, motto	[명] 구호, 표어, 좌우명
+degree, amount	[명] 정도, 양
+inadequacy, shortage	[명] 불충분함, 부족함
+evident, clear, obvious, apparent	[형] 명백한, 분명한
+harness, utilize, use	[동] 이용하다, 활용하다
+contain, include, have	[동] 가지고 있다, 포함하다
+cultivate, farm, grow	[동] 기르다, 경작하다, 재배하다
+vegetation, plant	[명] 식물, 초목
+perfect, complete	[동] 완성하다; [형] 완료된, 완전한
+
 
 [202621_dj1_c1: 인식·정보·소통]
 # 
