@@ -3,7 +3,7 @@
 // ========================================================
 const GAME_CONFIG = {
     schoolTag: "덕정고1",      // 부제 옆에 붙을 학교/버전명 (예: The Trial of EXAM · 덕정고2 ver)
-    dbKey: "2026_2_mid",      // 학교별 독립 DB 분리 키 (다른 학교와 랭킹/계정이 안 섞임)
+    dbKey: "2026_2_2_dj1",      // 학교별 독립 DB 분리 키 (연도_학기_차_학교학년)
 
     // 🎛️ [교사용 마스터 계정] 선생님만 아는 관리자 로그인 아이디/비밀번호
     adminId: "qlagn",          // 관리자 로그인 아이디 (기본: admin)
@@ -18,20 +18,20 @@ const GAME_CONFIG = {
     guardianPlayerHpRepeat: 3, // 👈 2회차 수호령전 플레이어 하트 수 (기본: 3개)
 
     // 👑 [마왕전 체력 & 시간 & 플레이어 목숨]
-    bossHp1: 10,               // 1회차 마왕 체력 (기본: 10)
-    bossTime1: 5.0,            // 1회차 마왕 시간 (기본: 5.0초)
+    bossHp1: 12,               // 1회차 마왕 체력 (기본: 10)
+    bossTime1: 4.0,            // 1회차 마왕 시간 (기본: 5.0초)
 
-    bossHpRepeat: 12,          // 2회차 마왕 체력 (기본: 12)
-    bossTimeRepeat: 4.0,       // 2회차 마왕 시간 (기본: 4.0초)
-    bossPlayerHpRepeat: 3,     // 👈 2회차 마왕전 플레이어 하트 수 (기본: 3개)
+    bossHpRepeat: 15,          // 2회차 마왕 체력 (기본: 12)
+    bossTimeRepeat: 3.0,       // 2회차 마왕 시간 (기본: 4.0초)
+    bossPlayerHpRepeat: 1,     // 👈 2회차 마왕전 플레이어 하트 수 (기본: 3개)
 
     // 🔥 [시험 직전 파이널] 하드코어 마왕전 설정
     hardcoreMode: {
         enabled: true,                       // 켜기(true) / 끄기(false)
         title: "책 선생의 하드코어 점검",            // 시험 명칭
         targetMaps: "all",                   // "all" 또는 ["ch1", "ch2"]
-        hp: 15,                              // 출제 문제 수 (마왕 체력)
-        playerHp: 3,                         // 👈 하드코어 플레이어 하트 수 (기본: 3개, 1개로 하면 원코인 데스!)
+        hp: 10,                              // 출제 문제 수 (마왕 체력)
+        playerHp: 1,                         // 👈 하드코어 플레이어 하트 수 (기본: 3개, 1개로 하면 원코인 데스!)
         timeLimit: 3                       // 문제당 제한 시간 (초)
     }
 };
@@ -45,411 +45,273 @@ const GAME_CONFIG = {
 
 const WORLD_MAPS_TEXT = `
 
-[202621_dj1_c0: 학교 쌤 단어]
-socialize, mix, mingle	[동] 사교하다, 어울려 놀다
-cue, signal, hint, clue	[명] 신호, 단서
-extraordinary, unusual, special, exceptional	[형] 특별한, 비범한, 놀라운
-usual, ordinary, common	[형] 평범한, 흔한
-flaw, fault, mistake, weakness	[명] 결점, 흠, 오류
-manifest, display, show	[동] 보여주다, 명백히 하다.
-challenging, demanding	[형] 힘든, 어려운
-variation, difference	[명] 변이, 변화, 차이
-uniformity	[명] 획일성
-wipe out, destory,eradicate	[명] 없애다, 전멸시키다
-preserve, maintain, protect	[동] 보존하다,지키다
-catastrophic, disastrous	[형] 파멸적인, 재앙의
-access, use	[동] 이용하다
-toxic, poisonous	[형] 독성의
-miserable	[형] 비참한, 끔찍한
-inviting, attractive	[형] 매력적인 유혹적인
-succession, series	[명] 연속, 일련
-damage, harm	[명] 해; [동] 해를 끼치다
-improve, enhance	[동] 개선하다, 향상시키다
-reaction, response	[명] 반응
-trigger, activate, spark, cause to function	[동] 활성화하다, 촉발하다
-perceive, feel, sense, notice	[동] 인식하다, 알아차리다
-note, notice	[동] 주목하다, 알아차리다
-surmise, guess, assume, imagine	[동] 추측하다, 가정하다
-administer, perform, process, do	[동] 처리하다
-criterion, standard, rule	[명] 기준, 표준, 규칙
-objective, goal, aim, purpose	[명] 목적
-frighten, scare off	[동] 겁을 주다, 쫓아내다
-analogy, comparison	[명] 비교, 비유
-distinct, different, separate	[형] 다른, 구별되는
-slogan, motto	[명] 구호, 표어, 좌우명
-degree, amount	[명] 정도, 양
-inadequacy, shortage	[명] 불충분함, 부족함
-evident, clear, obvious, apparent	[형] 명백한, 분명한
-harness, utilize, use	[동] 이용하다, 활용하다
-contain, include, have	[동] 가지고 있다, 포함하다
-cultivate, farm, grow	[동] 기르다, 경작하다, 재배하다
-vegetation, plant	[명] 식물, 초목
-perfect, complete	[동] 완성하다; [형] 완료된, 완전한
+[sh_1: 수행평가의 숲 1]
+#2학기 2차 수행평가 단어
+implicit	:	[형] 암시적인
+indigenous	:	[형] 토착의
+indispensable	:	[형] 없어서는 안 되는
+inherent	:	[형] 내재된
+innate	:	[형] 선천적인
+intrinsic	:	[형] 본질적인
+jeopardize	:	[동] 위태롭게 하다
+journal	:	[명] 학술지
+juvenile	:	[형] 청소년의
+kinship	:	[명] 유대
+knowledgeable	:	[형] 지식이 많은
+lament	:	[동] 한탄하다
+landscape	:	[명] 경관
+latent	:	[형] 잠재된
+launch	:	[동] 시작하다
+legacy	:	[명] 유산
+legitimate	:	[형] 정당한
+liable	:	[형] 책임이 있는
+literacy	:	[명] 문해력
+magnitude	:	[명] 규모
+mandatory	:	[형] 의무적인
+manifest	:	[동] 나타나다
+manipulate	:	[동] 조작하다
+massive	:	[형] 대규모의
+mechanism	:	[명] 메커니즘
+metaphor	:	[명] 은유
+migrate	:	[동] 이동하다
+modest	:	[형] 겸손한
+motivate	:	[동] 동기를 부여하다
+narrative	:	[명] 서사
+neglect	:	[동] 소홀히 하다
+neutral	:	[형] 중립적인
+nevertheless	:	[부] 그럼에도 불구하고
+notion	:	[명] 관념
+notorious	:	[형] 악명 높은
+obligation	:	[명] 의무
+obscure	:	[형] 모호한 (o_)
+obstacle	:	[명] 장애물
+omit	:	[동] 생략하다
+opponent	:	[명] 상대
+optimistic	:	[형] 낙관적인
+outbreak	:	[명] 발생
+overlook	:	[동] 간과하다
+participate	:	[동] 참여하다
+perception	:	[명] 인식
+permanent	:	[형] 영구적인
+perspective	:	[명] 관점
+persuade	:	[동] 설득하다
+phenomenon	:	[명] 현상
+pioneer	:	[명] 선구자
+potential	:	[명] 잠재력
+precaution	:	[명] 예방 조치
+precise	:	[형] 정확한
 
 
-[202621_dj1_c1: 인식·정보·소통]
-# 
-absurd: [형] 터무니없는, 부조리한
-accuracy: [명] 정확성, 정확도
-admit: [동] 인정하다, 시인하다
-appreciate: [동] 진가를 인정하다; 고마워하다; 감상하다
-assert: [동] 주장하다, 단언하다
-authentic: [형] 진짜의, 진정한
-authenticate: [동] 진짜임을 증명하다, 인증하다
-broadcast: [명] 방송; [동] 방송하다
-calculate: [동] 계산하다, 산정하다
-cautionary: [형] 경고성의, 훈계의
-censorship: [명] 검열
-clarify: [동] 명확하게 하다, 분명히 말하다
-cognitive: [형] 인지의, 인식의
-coherent: [형] 일관성 있는, 논리 정연한
-consequence: [명] 결과; 중요성
-conspiracy: [명] 음모, 공모
-controversial: [형] 논란이 많은, 쟁점이 되는
-deceive: [동] 속이다, 기만하다
-deception: [명] 속임수, 기만
-deceptive: [형] 기만적인, 현혹하는
-deduce: [동] 추론하다, 연역하다
-deem: [동] 여기다, 간주하다
-deny: [동] 부인하다, 부정하다
-depict: [동] 묘사하다, 그리다
-disprove: [동] 틀렸음을 입증하다, 반박하다
-dispute: [명] 분쟁, 논쟁; [동] 반박하다
-dismiss: [동] 일축하다; 묵살하다
-elaborate: [형] 정교한, 공들인; [동] 정교하게 만들다
-enlighten: [동] 깨우치게 하다, 계몽하다
-exaggerate: [동] 과장하다
-fabricate: [동] 날조하다, 조작하다
-go viral: [숙] 입소문이 나다, 빠르게 퍼지다
-grounded: [형] 근거 있는, 현실에 기반을 둔
-journalism: [명] 저널리즘, 언론
-literate: [형] 문해력 있는, 읽고 쓸 줄 아는
-mainstream: [명] 주류; [형] 주류의
-misconception: [명] 오해, 잘못된 생각
-misinformation: [명] 오보, 잘못된 정보
-point out: [숙] 지적하다, 언급하다
-rational: [형] 이성적인, 합리적인
-skeptical: [형] 회의적인, 의심 많은
-subtle: [형] 미묘한, 감지하기 힘든
-superficial, shallow: [형] 피상적인
-ungrounded: [형] 근거 없는
-unverified: [형] 검증되지 않은, 확인되지 않은
-unwittingly: [부] 자신도 모르게, 부지불식간에
-unintentionally: [부] 무심코, 의도치 않게
-verify: [동] 확인하다, 입증하다
-
-
-
-[202621_dj1_c2: 감정·성격·관계]
-# 
-activism: [명] 행동주의, 실천주의
-altruistic, selfless: [형] 이타적인
-annoyance: [명] 짜증, 불쾌감
-anxious: [형] 불안한, 염려하는
-apathetic, indifferent: [형] 무관심한, 냉담한
-apologetic: [형] 사과하는, 미안해하는
-astonish: [동] 깜짝 놀라게 하다
-awkward: [형] 어색한, 난처한
-civility, courteous: [명] 정중함, 예의; [형] 공손한, 예의 바른
-condemn: [동] 비난하다, 규탄하다
-confront: [동] 맞서다, 직면하다
-desperate: [형] 절박한, 필사적인
-distress: [명] 고통, 곤란; [동] 괴롭히다
-embarrass: [동] 당황스럽게 하다
-empathetic: [형] 공감하는, 감정 이입의
-equitable: [형] 공평한, 공정한
-generosity: [명] 너그러움, 관대함
-grumble: [동] 불평하다, 투덜거리다
-meddlesome: [형] 간섭하기 좋아하는
-obsessed: [형] 사로잡힌, 집착하는
-panic: [명] 공황, 극심한 공포; [동] 공황에 빠지다
-perplexed: [형] 당혹스러운, 난처한
-sarcasm: [명] 비꼼, 빈정거림
-self-esteem: [명] 자존감, 자아존중감
-self-interest: [명] 사리사욕, 자기 이익
-seductive: [형] 유혹적인, 매력적인
-solidarity: [명] 연대, 결속
-Stoic: [명] 스토아학파, 금욕주의자; [형] 극기의
-stunned: [형] 어리둥절한, 큰 충격을 받은
-tense: [형] 긴장된, 팽팽한
-terrify: [동] 몹시 무섭게 하다, 겁나게 하다
-trustworthy: [형] 신뢰할 수 있는
-uplift: [동] 사기를 북돋우다, 희망을 주다
-vulnerability: [명] 취약성, 상처받기 쉬움
-
-
-[202621_dj1_c3: 변화·행동·결과]
-# 
-align: [동] 일치시키다, 정렬하다
-allocation: [명] 할당, 배분
-amplify: [동] 증폭시키다, 확대하다
-collapse: [동] 무너지다, 붕괴하다; [명] 붕괴
-crumble: [동] 바스러지다, 무너지다
-destabilize: [동] 불안정하게 만들다
-devastate: [동] 황폐화시키다, 엄청난 충격을 주다
-displace: [동] 쫓아내다, 피난시키다
-disrupt: [동] 혼란에 빠뜨리다, 방해하다
-dominate: [동] 지배하다, 우세를 차지하다
-duplicate, replicate: [동] 복제하다, 복사하다
-emerge: [동] 나타나다, 드러나다
-empower: [동] 권한을 주다, 힘을 북돋우다
-endanger: [동] 위험에 빠뜨리다
-ensnare: [동] 덫에 걸리게 하다, 빠뜨리다
-evolve: [동] 진화하다, 점진적으로 발전하다
-exacerbate: [동] 악화시키다
-exert: [동] 행사하다, 발휘하다
-exploit: [동] 이용하다, 착취하다; [명] 위업
-facilitate: [동] 촉진하다, 수월하게 하다
-flourish, thrive: [동] 번창하다, 번영하다
-foster: [동] 조성하다, 육성하다
-fruition: [명] 결실, 성취
-groom: [동] 손질하다, 다듬다
-hydrate: [동] 수분을 공급하다
-institutionalize: [동] 제도화하다
-mimic: [동] 흉내 내다, 모방하다
-mismanagement: [명] 잘못된 관리, 실정
-misplace: [동] 제자리에 두지 않다, 잘못 두다
-neutralize: [동] 무효화하다, 중립화하다
-nourish: [동] 영양분을 공급하다, 육성하다
-orchestrate: [동] 획책하다, 조직하다
-perish: [동] 소멸하다, 죽다
-propagate: [동] 전파하다, 번식시키다
-refrain from: [숙] ~을 삼가다, 억제하다
-retain: [동] 유지하다, 보유하다
-revitalization: [명] 새로운 활력, 재생
-snatch: [동] 와락 붙잡다, 낚아채다
-spout: [동] 뿜어져 나오다, 분출하다
-stimulate: [동] 자극하다, 격려하다
-tackle: [동] 다루다, 씨름하다
-undermine: [동] 약화시키다
-vanish: [동] 사라지다, 소멸하다
+[sh_2: 수행평가의 숲 2]
+#2학기 2차 수행평가 단어
+prejudice	:	[명] 편견
+privilege	:	[명] 특권
+procedure	:	[명] 절차
+prohibit	:	[동] 금지하다
+prominent	:	[형] 저명한
+provoke	:	[동] 유발하다
+qualitative	:	[형] 질적인
+quantify	:	[동] 수치화하다
+quota	:	[명] 할당량
+radical	:	[형] 급진적인
+rational	:	[형] 합리적인
+recipient	:	[명] 수령자
+refine	:	[동] 다듬다
+reform	:	[명] 개혁
+reinforce	:	[동] 강화하다
+relevant	:	[형] 관련된
+reliable	:	[형] 믿을 만한
+reluctant	:	[형] 꺼리는
+remarkable	:	[형] 놀라운
+represent	:	[동] 대표하다
+restrict	:	[동] 제한하다
+reveal	:	[동] 드러내다
+scarce	:	[형] 부족한
+scheme	:	[명] 계획
+scholar	:	[명] 학자
+secondary	:	[형] 부차적인
+significant	:	[형] 중요한
+simultaneous	:	[형] 동시의
+sophisticated	:	[형] 정교한
+specific	:	[형] 구체적인
+speculate	:	[동] 추측하다
+subsequent	:	[형] 그 후의
+substantial	:	[형] 상당한
+subtle	:	[형] 미묘한
+sufficient	:	[형] 충분한
+supervise	:	[동] 감독하다
+technical	:	[형] 기술적인
+temporary	:	[형] 일시적인
+tendency	:	[명] 경향
+tension	:	[명] 긴장
+theoretical	:	[형] 이론상의
+thorough	:	[형] 철저한
+thrive	:	[동] 번성하다
+tolerate	:	[동] 참다
+transition	:	[명] 전환
+typical	:	[형] 전형적인
+undermine	:	[동] 약화시키다
+unique	:	[형] 독특한
+universal	:	[형] 보편적인
+utilize	:	[동] 활용하다
+vague	:	[형] 모호한 (v_)
+venture	:	[명] 모험적인 시도
 
 
 
-[202621_dj1_c4: 상태·환경·사회]
-# 
-adverse: [형] 부정적인, 불리한
-adversity: [명] 역경, 불운
-aerobic: [형] 유산소의, 호기성의
-anaerobic: [형] 무산소의
-arithmetic: [명] 산수, 연산
-captive: [형] 사로잡힌, 포로가 된
-cardiovascular: [형] 심혈관의
-catastrophe, disaster: [명] 재앙; 대참사, 재난
-chaotic: [형] 혼돈의, 무질서한
-chronic: [형] 만성적인
-circulation: [명] 유통, 순환, 배포
-communal: [형] 공동의, 사회의
-connectivity: [명] 연결성
-consistent: [형] 일관된, 지속적인
-diversity: [명] 다양성
-dilemma: [명] 딜레마, 진퇴양난
-dwelling: [명] 주거지, 서식처
-edible: [형] 먹을 수 있는, 식용의
-exceptional: [형] 비범한, 예외적인
-exhaustion: [명] 탈진, 기진맥진
-extinction: [명] 멸종, 소멸
-famine: [명] 기근, 굶주림
-fatigue: [명] 피로, 피곤
-fragmented: [형] 분열된, 조각난
-futility: [명] 헛됨, 무익함
-hectic: [형] 정신없이 바쁜, 빡빡한
-holistic: [형] 전체론적인, 종합적인
-imminent: [형] 임박한, 눈앞에 닥친
-inadvertent: [형] 고의가 아닌, 부주의한
-incidental: [형] 부수적인, 우연의
-indiscriminately: [부] 무차별적으로, 가리지 않고
-infrequent: [형] 드문, 자주는 아닌
-inherent: [형] 내재된, 타고난
-intact: [형] 온전한, 손상되지 않은
-interwoven: [형] 밀접하게 얽힌
-intricate: [형] 복잡한, 난해한
-involuntary: [형] 비자발적인, 무의식적인
-metabolism: [명] 물질대사, 신진대사
-monotonous: [형] 단조로운, 지루한
-persistence: [명] 지속, 끈기
-precaution: [명] 예방 조치, 조심
-prevail: [동] 만연하다, 승리하다
-proficiency: [명] 숙달, 능숙함
-prone to: [숙] ~하기 쉬운, ~하는 경향이 있는
-reciprocity: [명] 호혜, 상호성
-resilience: [명] 회복력, 탄력성
-resistant: [형] 저항력 있는, 잘 견디는
-rigidity: [명] 경직성, 엄격함
-scarcity: [명] 부족, 결핍
-sedentary: [형] 주로 앉아서 하는
-self-sufficiency: [명] 자급자족
-sensational: [형] 선풍적인, 자극적인
-structural: [형] 구조적인
-surplus: [명] 잉여, 과잉; [형] 잉여의
-unresponsive: [형] 무반응의, 반응이 없는
-
-[202621_dj1_c5: 실모3,4 (1)]
-abstract	[형] 추상적인
-anticipate	[동] 예상하다, 기대하다
-bias	[명] 편향, 편견
-blind spot	[명] 맹점, 약점
-consider	[동] 고려하다, 여기다
-deduction	[명] 추론, 연역; 공제
-determine	[동] 결정하다, 밝히다
-distinguish	[동] 구별하다, 분간하다
-envision	[동] 마음속에 그리다, 상상하다
-formulate	[동] 형성하다, 명확히 말하다
-interpretation	[명] 해석, 설명
-projection	[명] 예상, 추정치; 투사
-theoretical	[형] 이론적인
-adherence	[명] 고수, 집착
-cling	[동] 매달리다, 집착하다
-conviction	[명] 신념, 확신; 유죄 판결
-deliberately	[부] 의도적으로, 일부러
-discomfort	[명] 불편, 불안; [동] 불편하게 하다
-dissatisfaction	[명] 불만족
-emotional	[형] 감정적인, 정서적인
-flatly	[부] 딱 잘라, 단호히
-insist	[동] 주장하다, 고집하다
-intend	[동] 의도하다, 작정하다
-optimistic	[형] 낙관적인
-pessimistic	[형] 비관적인
-unconditionally	[부] 무조건적으로
-unintended	[형] 의도치 않은
-adolescent	[명] 청소년; [형] 청소년기의
-bodily	[형] 신체의, 육체의
-endurance	[명] 지구력, 인내
-energetic	[형] 활기찬, 에너지의
-ergonomic	[형] 인체공학적인
-hardwired	[형] 타고나는, 굳어진
-instinct	[명] 본능, 직감
-mobility	[명] 이동성, 기동력
-neural	[형] 신경계의
-physiological	[형] 생리적인, 생리학의
-posture	[명] 자세, 태도
-trait	[명] 특성, 특색
-vitality	[명] 활력, 생명력
-agricultural	[형] 농업의, 농사의
-contagious	[형] 전염성의, 번지는
-ecological	[형] 생태학의, 생태계의
-fungal	[형] 균류의, 곰팡이의
-harvest	[명] 수확, 추수; [동] 수확하다
-invasive	[형] 침략적인, 급속히 번지는
-microbial	[형] 미생물의
-organism	[명] 유기체, 생물
-predator	[명] 포식자
-accelerate	[동] 가속화하다, 촉진하다
-adaptability	[명] 적응성, 순응성
-continuation	[명] 지속, 계속
-continuity	[명] 지속성, 연속성
-evolution	[명] 진화, 발전
-flexibility	[명] 유연성, 융통성
-immediate	[형] 즉각적인, 당면한
-materialize	[동] 구체화되다, 실현되다
-permanently	[부] 영구적으로
-prearranged	[형] 미리 정해진, 사전 계획된
-progression	[명] 진행, 전개
-transform	[동] 변형시키다, 전환하다
-attribute	[명] 자질, 속성; [동] ~의 탓으로 돌리다
-concrete	[형] 구체적인; 콘크리트로 된
-entity	[명] 실체, 독립체
-essential	[형] 필수적인, 본질적인
-fundamental	[형] 근본적인, 핵심적인
-intrinsic	[형] 고유한, 본질적인
-intrinsically	[부] 본질적으로
-necessity	[명] 필요성, 필수품
-purely	[부] 순전히, 완전히
-rigid	[형] 경직된, 완고한
-standardize	[형] 표준화하다
-systematically	[부] 체계적으로
-underlying	[형] 근본적인, 기저의
-uniformity	[명] 획일성, 균일성
 
 
-[202621_dj1_c6: 실모3,4 (2)]
-attendee	[명] 참석자
-auditing	[명] 회계 감사, 심사
-commercial	[형] 상업적인; [명] 상업 광고
-corporate	[형] 기업의, 회사의
-dependence	[명] 의존, 종속
-discipline	[명] 규율; 학문 분야; [동] 훈련하다
-dominance	[명] 우세, 지배
-execute	[동] 실행하다, 처형하다
-intervention	[명] 개입, 중재
-legislation	[명] 법률, 제정법
-military	[형] 군사의, 무력의; [명] 군대
-repay	[동] 갚다, 보답하다
-sovereign	[형] 자주적인, 독립된; [명] 군주
-urban	[형] 도시의
-appeal	[명] 매력; 호소; [동] 호소하다
-conform	[동] 순응하다, 따르다
-consensus	[명] 합의, 일치된 의견
-consult	[동] 참고하다, 상담하다
-credible	[형] 믿을 수 있는, 신뢰할 만한
-document	[동] 기록하다, 입증하다; [명] 문서
-illuminate	[동] 밝히다, 설명하다
-linguistic	[형] 언어의, 언어학의
-proposal	[명] 제안, 계획
-reputable	[형] 평판이 좋은, 신뢰할 만한
-reputation	[명] 평판, 명성
-socialization	[명] 사회화
-validation	[명] 인정, 확인
-barrier	[명] 장벽, 장애물
-complication	[명] 합병증, 문제, 곤란
-decline	[동] 감소하다; 거절하다
-demise	[명] 종말, 사망
-diminish	[동] 줄이다, 감소하다
-discard	[동] 버리다, 폐기하다
-discontinue	[동] 중단하다, 그만두다
-eradication	[명] 근절, 박멸
-excessive	[형] 지나친, 과도한
-friction	[명] 마찰, 알력
-hinder	[동] 방해하다, 저해하다
-hostile	[형] 적대적인
-illness	[명] 질병, 아픔
-inactive	[형] 활동하지 않는, 소극적인
-invalid	[형] 효력 없는, 타당하지 않은
-limitation	[명] 한계, 제약
-peril	[명] 위험
-redundant	[형] 불필요한, 중복되는
-resist	[동] 저항하다, 견디다
-restrain	[동] 억제하다, 제지하다
-sever	[동] 끊다, 단절하다
-unreliable	[형] 신뢰할 수 없는
-unresolved	[형] 해결되지 않은
-benefit	[명] 이익, 혜택; [동] 이득을 보다
-conclude	[동] 끝나다, 결론짓다
-defend	[동] 방어하다, 옹호하다
-guarantee	[동] 보장하다; [명] 보증
-overcome	[동] 극복하다
-reinforce	[동] 강화하다
-remedy	[명] 치료제, 해결책; [동] 치료하다
-repurpose	[동] 용도를 바꾸다, 재활용하다
-restore	[동] 복구하다, 회복시키다
-stabilize	[동] 안정화시키다
-technique	[명] 기법, 기술
-therapeutic	[형] 치료의, 치료법의
-utilize	[동] 활용하다, 이용하다
-aesthetic	[형] 미적인, 심미적인
-antique	[형] 골동품의, 고대의; [명] 골동품
-archaeological	[형] 고고학의
-archaic	[형] 고대의, 구식의
-contemporary	[형] 현대의, 동시대의
-fragment	[명] 파편, 조각; [동] 산산이 부수다
-narrative	[명] 서사, 이야기; [형] 이야기의
-ornament	[명] 장식품, 장식
-relic	[명] 유물, 유적
-stylistic	[형] 문체의, 양식의
-anonymous	[형] 익명의
-aspect	[명] 측면, 양상
-astronomical	[형] 천문학의; 어마어마한
-conceal	[동] 숨기다, 감추다
-external	[형] 외부의, 대외적인
-inevitable	[형] 불가피한, 필연적인
-isolated	[형] 고립된, 외딴
-localized	[형] 국지적인, 현지의
-meticulous	[형] 꼼꼼한, 세심한
-obscure	[동] 모호하게 하다, 가리다; [형] 모호한
-radical	[형] 급진적인; 근본적인
-realistic	[형] 현실적인, 실감 나는
-sophisticated	[형] 정교한, 세련된
 
+[irreg_verbs: 불규칙 동사의 늪]
+# 제멋대로 모습을 바꾸는 동사 정령들이 서식하는 늪
+drive (drove, driven): [동] 운전하다, 몰다
+ride (rode, ridden): [동] 타다
+write (wrote, written): [동] 쓰다
+break (broke, broken): [동] 부수다
+choose (chose, chosen): [동] 선택하다, 고르다
+freeze (froze, frozen): [동] 얼다, 얼리다
+speak (spoke, spoken): [동] 말하다
+steal (stole, stolen): [동] 훔치다
+get (got, got): [동] 얻다; ~해지다
+forget (forgot, forgotten): [동] 잊다
+begin (began, begun): [동] 시작하다
+drink (drank, drunk): [동] 마시다
+run (ran, run): [동] 달리다
+shrink (shrank, shrunk): [동] 줄어들다
+sing (sang, sung): [동] 노래하다
+spring (sprang, sprung): [동] 튀어 오르다
+swim (swam, swum): [동] 수영하다
+take (took, taken): [동] 잡다, 가지다
+shake (shook, shaken): [동] 흔들다, 흔들리다
+mistake (mistook, mistaken): [동] 실수하다
+blow (blew, blown): [동] 불다
+fly (flew, flown): [동] 날다, 날리다
+grow (grew, grown): [동] 자라다; 키우다
+know (knew, known): [동] 알고 있다
+throw (threw, thrown): [동] 던지다
+withdraw (withdrew, withdrawn): [동] 철회하다
+swear (swore, sworn): [동] 맹세하다
+tear (tore, torn): [동] 찢다
+wear (wore, worn): [동] 입다
+show (showed, shown): [동] 보여주다
+be (was/were, been): [동] 있다/이다
+beat (beat, beaten): [동] 때리다
+become (became, become): [동] 되다
+bite (bit, bitten): [동] 물다
+come (came, come): [동] 오다
+do (did, done): [동] 하다
+eat (ate, eaten): [동] 먹다
+fall (fell, fallen): [동] 떨어지다, 넘어지다
+forbid (forbade, forbidden): [동] 금지하다
+give (gave, given): [동] 주다
+forgive (forgave, forgiven): [동] 용서하다
+go (went, gone): [동] 가다
+hide (hid, hidden): [동] 숨다, 숨기다
+lie (lay, lain): [동] 눕다
+see (saw, seen): [동] 보다
+bleed (bled, bled): [동] 피를 흘리다
+feed (fed, fed): [동] 먹이다
+lead (led, led): [동] 이끌다
+meet (met, met): [동] 만나다
+read (read, read): [동] 읽다
+shoot (shot, shot): [동] 쏘다, 발사하다
+sleep (slept, slept): [동] 자다
+speed (sped, sped): [동] 속도를 내다
+hear (heard, heard): [동] 듣다
+dig (dug, dug): [동] 파다
+hang (hung, hung): [동] 매달다, 걸다
+stick (stuck, stuck): [동] 찌르다; 붙이다
+strike (struck, struck): [동] 치다, 때리다
+wake (woke, woken): [동] 깨우다
+shine (shone, shone): [동] 빛나다, 광을 내다
+win (won, won): [동] 이기다; 얻다
+build (built, built): [동] 세우다, 짓다
+lend (lent, lent): [동] 빌려주다
+lose (lost, lost): [동] 잃다; 지다
+send (sent, sent): [동] 보내다
+spend (spent, spent): [동] (돈, 시간 등을)사용하다, 쓰다
+deal (dealt, dealt): [동] 다루다; 거래하다
+mean (meant, meant): [동] 의미하다
+bend (bent, bent): [동] 구부리다
+feel (felt, felt): [동] 느끼다
+hold (held, held): [동] 잡다, 쥐다
+keep (kept, kept): [동] 유지하다; 기르다
+leave (left, left): [동] 떠나다; 남겨두다
+bring (brought, brought): [동] 가져오다
+buy (bought, bought): [동] 사다
+catch (caught, caught): [동] 잡다
+fight (fought, fought): [동] 싸우다
+seek (sought, sought): [동] 찾다, 추구하다
+teach (taught, taught): [동] 가르치다
+think (thought, thought): [동] 생각하다
+find (found, found): [동] 찾다, 발견하다
+pay (paid, paid): [동] 지불하다
+say (said, said): [동] 말하다
+stand (stood, stood): [동] 서다
+understand (understood, understood): [동] 이해하다
+sell (sold, sold): [동] 팔다
+tell (told, told): [동] 말하다
+have (had, had): [동] 가지고 있다, 소유하고 있다
+light (lit, lit): [동] (불을)켜다, 밝히다
+make (made, made): [동] 만들다
+sit (sat, sat): [동] 앉다
+slide (slid, slid): [동] 미끄러지다
+burst (burst, burst): [동] 터뜨리다
+cost (cost, cost): [동] 비용이~가 들다
+cut (cut, cut): [동] 자르다
+hit (hit, hit): [동] 치다
+hurt (hurt, hurt): [동] 다치게 하다; 아프다
+put (put, put): [동] 두다, 놓다
+set (set, set): [동] 놓다; 마련하다
+shut (shut, shut): [동] 닫다, 잠그다
+spread (spread, spread): [동] 펴다, 펼치다
 
+[irreg_nouns: 불규칙 명사의 언덕]
+# 제멋대로 모습을 바꾸는 명사 정령들이 서식하는 언덕
+man (men): [명] 남자, 사람
+woman (women): [명] 여자
+child (children): [명] 아이, 어린이
+person (people): [명] 사람
+foot (feet): [명] 발
+tooth (teeth): [명] 이, 치아
+goose (geese): [명] 거위
+mouse (mice): [명] 쥐
+ox (oxen): [명] 황소
+louse (lice): [명] 이(곤충)
+sheep (sheep): [명] 양
+deer (deer): [명] 사슴
+fish (fish): [명] 물고기, 생선
+species (species): [명] 종(생물 분류 단위)
+series (series): [명] 연속, 시리즈
+aircraft (aircraft): [명] 항공기
+medium (media): [명] 매체, 대중매체
+curriculum (curricula): [명] 교육과정, 커리큘럼
+criterion (criteria): [명] 기준, 표준
+phenomenon (phenomena): [명] 현상
+crisis (crises): [명] 위기
+basis (bases): [명] 근거, 기초
+analysis (analyses): [명] 분석
+hypothesis (hypotheses): [명] 가설
+oasis (oases): [명] 오아시스
+stimulus (stimuli): [명] 자극, 자극제
+fungus (fungi): [명] 균류, 곰팡이
+cactus (cacti): [명] 선인장
+
+[irreg_ads: 불규칙 형용사/부사의 굴]
+# 제멋대로 모습을 바꾸는 형용사/부사 정령들이 서식하는 굴
+good (better, best): [형] 좋은
+well (better, best): [부] 잘, 좋게
+bad (worse, worst): [형] 나쁜
+ill (worse, worst): [형] 아픈, 나쁜
+badly (worse, worst): [부] 심하게, 나쁘게
+many (more, most): [형] 많은 (셀 수 있는 명사 수식)
+much (more, most): [형/부] 많은, 많이 (셀 수 없는 명사 수식)
+little (less, least): [형/부] 적은, 적게 (양/정도)
+far (거리) (farther, farthest): [형/부] 먼, 더 먼, 가장 먼
+far (정도) (further, furthest): [형/부] 나아간, 더 나아간, 가장 깊은
+late (시간) (later, latest): [형/부] 늦은, 더 늦은, 가장 최근의
+late (순서) (latter, last): [형] (둘 중) 나중의, 후자의, 마지막의
+old (나이) (older, oldest): [형] 나이 든, 더 나이 든, 가장 나이 든
+old (서열) (elder, eldest): [형] 나이 든, 손위의, 가장 맏이의
 
 `;
