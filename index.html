@@ -4850,8 +4850,20 @@
         if (isAdmin) {
             safeStorageSet('spirit_is_admin', true);
             safeStorageSet('spirit_current_uid', id);
-            safeStorageSet('spirit_hero_name', '선생님');
+            // 🌟 입력하신 본인 이름 그대로 로컬에 저장
+            safeStorageSet('spirit_hero_name', name);
+            safeStorageSet('spirit_user_name', name);
             currentUserDocId = id;
+
+            // 🌟 파이어베이스 DB의 admin 문서에도 본인 이름을 실시간 동기화 (랭킹보드 연동)
+            try {
+                await db.collection(USER_COLLECTION).doc(id).set({
+                    id: id,
+                    name: name,
+                    heroName: name,
+                    lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+                }, { merge: true });
+            } catch(e) { console.warn("관리자 이름 동기화:", e); }
             
             msg.style.color = "#7e22ce";
             msg.innerText = "🎛️ [교사 관리자] 인증 성공! 관제탑 권한이 활성화됩니다.";
