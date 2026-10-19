@@ -1,7 +1,9 @@
 {
-  "name": "Words Spirits for DJ1",
+  "name": "Word Spirits for DJ1",
   "short_name": "WS forDJ1",
+  "id": "/forDJ1/",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#1c0e07",
   "theme_color": "#1c0e07",
