@@ -154,6 +154,257 @@ vague	:	[형] 모호한 (v_)
 venture	:	[명] 모험적인 시도
 
 
+[CE2_L3: 3과의 숲]
+# 교과서 3과에 나오는 단어 정령들이 노니는 곳
+resilience	:	[명] (힘든 상황으로부터의) 회복력
+overcome	:	[동] 극복하다
+wellness	:	[명] 건강(함)
+deal with ~	:	[동] ~을 처리하다[다루다]
+cultivate	:	[동] (지식∙자질 등을) 기르다, 함양하다
+inner	:	[형] 내면의
+strength	:	[명] 강인함, 정신력
+free from ~	:	[형] ~을 면한, ~의 염려가 없는
+adversity	:	[명] 역경, 고난
+take the form of ~	:	[동] ~의 모습을 취하다
+failure	:	[명] 실패
+issue	:	[명] 문제; [동] 발행하다
+cope with	:	[동] ~에 대처하다
+ability	:	[명] 능력
+known as ~	:	[형] ~라고 알려져 있는
+spring back	:	[동] 되튀다
+bouncy	:	[형] 잘 튀는, 탄력 있는
+resilient	:	[형] 회복력 있는, 탄력 있는
+bounce back	:	[동] (병∙곤경 등에서) 다시 회복되다
+benefit from	:	[동] ~에서 득을 보다
+countless	:	[형] 셀 수 없이 많은
+survive	:	[동] (위기 등을) 견뎌내다, 이겨내다; [동] 생존하다, 살아남다
+a stepping stone to ~	:	[명] ~을 위한 발판
+growth	:	[명] 성장
+fairy tale	:	[명] 동화
+poverty	:	[명] 가난, 빈곤
+loss	:	[명] 죽음, 상실
+disrespect	:	[동] ~에게 무례하게 대하다
+source	:	[명] 원천, 근원
+blessing	:	[명] 축복
+inspire	:	[동] ~에게 영감을 주다
+duckling	:	[명] 새끼 오리
+athlete	:	[명] (운동)선수
+challenge	:	[명] 도전, 과제; [동] 도전하다; [동] 이의를 제기하다
+opportunity	:	[명] 기회
+medical condition	:	[명] 질병
+result in ~	:	[동] ~을 야기하다
+beneath	:	[전] 아래[밑]에
+surgery	:	[명] 수술
+compete against ~	:	[동] ~와 경쟁하다
+disability	:	[명] 장애, 불능
+national	:	[형] 국가의, 전국적인
+participate in ~	:	[동] ~에 참가하다
+public speaking	:	[명] 공개연설
+physical	:	[형] 육체[신체]의; [형] 물리적인
+condition	:	[명] 상태; [명] 조건; [명] 질환
+potential	:	[명] 잠재력; [형] 잠재적인
+exceptional	:	[형] 예외적인, 아주 드문, 특출난
+crisis	:	[명] 위기
+otherwise	:	[부] (만약) 그렇지 않으면
+lasting	:	[형] 지속적인
+muscle	:	[명] 근육
+build ~ up	:	[동] ~을 더 높이다[강력하게 만들다]
+thought	:	[명] 생각
+behavior	:	[명] 행동
+allow	:	[동] 허락하다, 허용하다
+painful	:	[형] (마음이) 아픈, 고통스러운
+basic	:	[형] 기본[근본]적인
+strategy	:	[명] 전략
+accept	:	[동] 받아들이다, 수용하다
+respect	:	[동] 존중하다; [명] 존중
+passive	:	[형] 수동적인, 소극적인
+suffering	:	[명] 고통
+single ~ out	:	[동] ~을 골라내다
+face	:	[동] 직면하다[닥쳐오다]; [명] 얼굴, 면
+focus on ~	:	[동] ~에 집중하다, 초점을 맞추다
+embrace	:	[동] 수용하다, 포용하다
+unexpected	:	[형] 예기치 않은, 뜻밖의
+obstacle	:	[명] 장애물
+think of ~	:	[동] ~을 생각하다
+that is (to say)	:	[부] 즉, 말하자면
+personal	:	[형] 개인의, 개인적인
+look after ~	:	[동] ~을 돌보다, ~을 살피다
+present	:	[형] 현재의; [명] 선물; [동] 제시하다, 제공하다
+moment	:	[명] 순간
+regret	:	[동] 후회하다; [명] 후회
+meditate	:	[동] 명상하다
+work	:	[동] 작동되다; [동] 효과가 있다
+take a deep breath	:	[동] 깊이 숨 쉬다
+observe	:	[동] 관찰하다; [동] 준수하다
+judge	:	[동] 판단하다, 평가하다; [명] 판사, 심판
+proceed with ~	:	[동] ~을 계속 진행하다
+based on ~	:	[전] ~에 근거하여, ~를 기반으로
+go forward with ~	:	[동] ~을 진행시키다
+connect	:	[동] 연결하다
+trust	:	[동] (사람을) 신뢰하다, 믿다; [명] 믿음, 신뢰
+counselor	:	[명] 상담사
+clarity	:	[명] 명료함, 명확함
+respond to ~	:	[동] ~에 대응하다, 응답하다
+tend toR	:	[동] ~하는 경향이 있다
+support	:	[명] 격려, 도움; [동] 도와주다, 지지하다
+remove	:	[동] 없애다, 제거하다
+urge	:	[동] 권고하다, 촉구하다; [명] 충동
+particularly	:	[부] 특히
+in the middle of ~	:	[전] ~의 한가운데에
+uncertainty	:	[명] 불확실성
+tough	:	[형] 힘든, 거친
+endure	:	[동] 참다, 견디다
+apply A to B	:	[동] A를 B에 적용하다
+minor	:	[형] 작은, 사소한
+gradually	:	[부] 서서히, 점진적으로
+fulfilled	:	[형] 만족감[성취감]을 느끼는
+a key to ~	:	[명] ~의 열쇠[단서]
+
+
+[CE2_L4: 4과의 바다]
+# 교과서 4과에 나오는 단어 정령들이 노니는 곳
+microscope	:	[명] 현미경
+essential	:	[형] 핵심적인, 필수적인
+invent	:	[동] ~을 발명하다
+discover	:	[동] ~을 발견하다
+bacterium / bacteria	:	[명] 박테리아
+structure	:	[명] 구조; [명] 구조물, 건물
+organism	:	[명] 유기체, 생물체
+certain	:	[형] 어떤, 특정한; [형] 확신하는
+accessible	:	[형] 접근 가능한, 이용 가능한
+due to ~	:	[전] ~ 때문에
+cost	:	[명] 가격, 비용; [동] ~의 비용이 들다
+solution to ~	:	[명] ~에 대한 해결책
+achieve	:	[동] ~을 성취하다, 달성하다 (-ve)
+magnification	:	[명] 확대
+less than ~	:	[형] ~보다 적은, ~ 미만의
+in parts	:	[전명] 부품들로
+research	:	[동] ~을 연구하다
+method	:	[명] 방법
+identify	:	[동] ~을 확인[식별]하다
+infectious	:	[형] 전염성의
+come across ~	:	[동] ~을 우연히 발견하다
+expensive	:	[형] 값비싼
+annually	:	[부] 매년, 해마다
+diagnosis	:	[명] 진단
+crucial	:	[형] 결정적인, 핵심적인
+prevent	:	[동] ~을 막다
+spread	:	[명] 확산; [동] 퍼지다, 확산하다
+sit	:	[동] ~한 상태로 있다
+unused	:	[형] 사용되지 않는
+multiple	:	[형] 다수의, 다양한
+bulky	:	[형] 부피가 큰, 덩치가 있는
+awkward	:	[형] 조작이 까다로운, 다루기 어려운
+transport	:	[동] ~을 운반하다
+require	:	[동] ~을 요구하다
+operate	:	[동] 작동하다; [동] 수술하다; [동] 운영하다, 수행하다
+maintain	:	[동] 유지하다
+delicate	:	[형] 섬세한
+instrument	:	[명] 기구
+nervous	:	[형] 초조한, 불안한
+wonder	:	[동] (~을) 궁금해 하다;[명] 불가사의
+cheap	:	[형] 값싼
+save	:	[동] ~을 구하다; [동] 아끼다, 절약하다
+reflect	:	[동] (on) 숙고하다; [동] 반사하다; [동] 반영하다
+not until ~	:	[접] ~한 후에야 비로소
+affordable	:	[형] (가격이) 알맞은, 저렴한
+take shape	:	[동] 구체화되다
+graduate	:	[형] 대학원의, 석사 과정의; [동] 졸업하다
+make a difference	:	[동] 변화를 일으키다
+recognize	:	[동] ~을 인식하다, 알아보다; [동] 인정하다
+eager toR	:	[형] ~하기를 열망하는
+function	:	[동] 작동하다; [명] 기능, 작동; [명] 함수
+properly	:	[부] 적절하게
+meet the requirements	:	[동] 요구를 충족시키다
+minimum	:	[형] 최소한의
+eyepiece	:	[명] 접안렌즈
+component	:	[명] 부품, 요소
+specimen	:	[명] 표본, 시료
+from side to side	:	[전명] 좌우로
+explore	:	[동] 탐색하다
+furthermore	:	[부] 더구나, 게다가
+mechanism	:	[명] 작동 구조, 메커니즘
+bring ~ into focus	:	[동] ~에 초점을 맞추다
+accomplish	:	[동] ~을 성취하다, 달성하다 (-sh)
+close to ~	:	[형/부] ~에 가까이
+far from ~	:	[전명] ~로부터 멀리
+light source	:	[명] 광원
+illuminate	:	[동] (빛으로) ~을 비추다
+ideal	:	[형] 이상적인, 완벽한
+material	:	[명] 재료; [명] 물질, [형] 물질적인
+likely	:	[부] 아마도
+enormously	:	[부] 엄청나게
+on the other hand	:	[부] 반면에
+deliver ~ performance	:	[동] ~한 성능을 보여주다
+experiment	:	[명] 실험; [동] 실험하다
+suitable	:	[형] 적절한, 적합한
+compromise	:	[명] 타협(안), 절충(안); [동] 타협하다; [동] 악화시키다
+manufacturer	:	[명] 제조업체, 제조업자
+settle for ~	:	[동] ~로 만족하다
+middle ground	:	[명] 중도, 절충안
+extreme	:	[명] 극단
+inexpensive	:	[형] 저렴한, 비싸지 않은
+determined toR	:	[형] ~할 것을 결심한
+remain	:	[동] ~한 채로 남아 있다
+draw	:	[동] ~을 그리다; [동] 비기다; [동] 끌다
+realize	:	[동] ~을 깨닫다; [동] 실현하다, 현실화하다
+medium	:	[명] 제작 재료; [명] 매체, 매개
+fold	:	[동] 접다
+with precision	:	[전명] 정밀하게
+available	:	[형] 이용 가능한
+attempt	:	[명] 시도[도전]; [동] 시도하다
+ultimately	:	[부] 결국, 끝내
+settle on[upon] ~	:	[동] ~로 결정하다
+waterproof	:	[형] 방수의
+cardboard	:	[명] 판지, 마분지
+name	:	[명] 이름을 지어주다, 명명하다; [명] 이름
+invention	:	[명] 발명(품)
+capable of V-ing	:	[형] ~할 수 있는
+examine	:	[동] ~을 검사하다
+single-celled	:	[형] 단세포의
+incredibly	:	[부] 믿을 수 없을 만큼, 놀랍도록
+portable	:	[형] 휴대 가능한
+weigh	:	[동] 무게가 ~이다; [동] 무게를 재다
+fit in[into] ~	:	[동] ~에 알맞다, ~에 쏙 들어가다
+external	:	[형] 외부의
+power source	:	[명] 동력의 원천, 전원
+last	:	[동] 오래가다; [형] 마지막, 지난
+fall	:	[명] 낙하, 추락; [동] 떨어지다
+usefulness	:	[명] 유용함
+enhance	:	[동] 향상시키다
+compatibility	:	[명] 호환성
+take pictures	:	[동] 사진을 찍다
+record	:	[동] (~을) 기록하다; [명] 기록
+project	:	[동] ~을 영사[투사]하다; [명] 계획, 프로젝트
+high-resolution	:	[형] 고해상도의
+distribute	:	[동] ~을 배포하다, 유통하다
+invaluable	:	[형] 대단히 귀중한
+worldwide	:	[형] 전 세계의
+utilize	:	[동] ~을 활용하다
+purpose	:	[명] 목적
+instrumental in V-ing	:	[형] ~ 하는 데 매우 중요한 역할을 하는
+detect	:	[동] 발견하다, 탐지하다
+fake	:	[형] 가짜의
+antimalarial	:	[형] 말라리아 치료[예방]의
+responsible for ~	:	[형] ~의 원인이 되는; [형] ~에 책임이 있는, ~을 관장하는
+sub-Saharan	:	[형] 사하라 사막 이남의
+crush ~ into …	:	[동] ~을 …로 분쇄하다
+uniform	:	[형] 균일한; [명] 유니폼, 제복
+particle	:	[명] 입자
+mere	:	[형] 단순한
+publish	:	[동] ~을 발표하다, 출판하다
+currently	:	[부] 지금, 현재
+in progress	:	[전명] 진행 중인
+introduce ~ to …	:	[동] ~에게 …을 소개하다, 처음 접하게 하다
+give up on ~	:	[동] ~에 대한 희망을 버리다
+achievement	:	[명] 성취, 업적
+occur	:	[동] 일어나다, 발생하다
+lack	:	[동] ~가 부족하다; [명] 부족, 없음
+access to ~	:	[명] ~로의 접근 (기회)
+health care	:	[명] 의료[보건] 서비스
+preventable	:	[형] 예방할 수 있는
+increasingly	:	[부] 점점 더
+
 
 
 
