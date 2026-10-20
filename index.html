@@ -2646,7 +2646,8 @@
         .camp-mrbook-container {
             position: absolute;
             right: 20px;
-            top: 5%; /* 현판 바로 아래, 스마트 버튼 위 */
+            top: 15%;                       /* 🌟 현판(0%)과 스마트 버튼(30%)의 정확한 정중앙 선 */
+            transform: translateY(-50%);    /* 🌟 책 선생의 배꼽 중심점을 15% 선에 완벽히 일치 */
             z-index: 15;
             display: flex;
             flex-direction: column;
@@ -3696,24 +3697,19 @@
     <!-- 🌟 중간보스(수호령) 진입 전 확인 화면 모달 -->
     <div id="midBossNoticeModal" class="modal">
         <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%;">
-            <div class="art-box" id="midBossNoticeArtBox" style="margin-bottom:8px; border-color:#059669; height:300px;"></div>
+            <div class="art-box" id="midBossNoticeArtBox" style="margin-bottom:8px; border-color:#059669; height:180px;"></div>
             <div class="ending-card-box" style="border-color:#059669; background:#ecfdf5;">
                 <span class="ending-badge-top" id="midBossNoticeSubBadge" style="color:#047857;">GUARDIAN'S TRIAL READY</span>
                 <h2 class="ending-title" id="midBossNoticeTitle" style="color:#065f46; font-size:18px;">수호령의 시련 대면</h2>
                 <div class="ending-divider" style="color:#059669;">✦ ✦ ✦</div>
                 <div class="ending-desc" style="color:#064e3b;" id="midBossNoticeDesc">
-                    이 영지의 모든 구역을 완벽히 정복했다!<br>
-                    이곳을 완전히 정화하고 그 힘을 얻기 위해선<br>
-                    수호령과의 시련을 통과해야해.<br>
-                    (체력 5 / 7초 타임어택)<br><br>
-                    정신 바짝 차리고... 가자!
-
+                    이곳에 초회차 진입 안내 문구가 나옴. 실제 문구 작성은 다른 곳에서!
                 </div>
             </div>
         </div>
         <div>
             <button id="midBossNoticeStartBtn" class="btn-wood theme-emerald" style="margin-bottom:6px;" onclick="confirmStartMidBoss()">
-                ⚔️ 수호령과의 시련 시작! (도전) ➔
+                ⚔️ 수호령과의 시련 시작! ➔
             </button>
             
             <!-- 🌟 하얀 스티커 같던 style 싹 지우고 순수 서브 버튼으로 통일 -->
@@ -3803,13 +3799,13 @@
             </div>
         </div>
 
-        <!-- 하단 출격 버튼군 -->
+        <!-- 툭훈 하단 출격 버튼군 -->
         <div style="width:100%; display:flex; flex-direction:column; gap:6px;">
             <button class="btn-wood theme-ruby" onclick="startHardcoreBossRaidActual()">
                 📖 각오하고 특훈 시작! ➔
             </button>
             <button class="btn-sub-wood" onclick="closeHardcoreNotice()">
-                🗺️ 대륙 지도로 돌아가기
+                🔥 차원의 틈새로 복귀
             </button>
         </div>
     </div>
@@ -5526,6 +5522,7 @@
                     // 🌟 영지 ID에 'irreg'가 들어간 전용 맵에서만 형상변환 정령으로 정식 파싱!
                     const isIrregMap = currentMap.id && currentMap.id.toLowerCase().includes('irreg');
                     const isNetMap = currentMap.id && currentMap.id.toLowerCase().includes('net_');
+                    const isSpellMap = currentMap.id && currentMap.id.toLowerCase().includes('spell_');
                     const parenMatch = eng.match(/(.*?)\s*\(([^)]+)\)\s*$/);
 
                     // 🌟 [다의어 감지] 뜻에 세미콜론(;)이 있으면 다의어로 분리 보관!
@@ -5550,6 +5547,13 @@
                             eng: eng,
                             kor: kor,
                             isSynonymNet: true
+                        });
+                    } else if (isSpellMap) {
+                        // 🌟 [철자 특화 영지] 플래그 부여
+                        currentMap.words.push({
+                            eng: eng,
+                            kor: kor,
+                            isSpell: true
                         });
                     } else {
                         currentMap.words.push({ 
@@ -6600,8 +6604,7 @@ const recTime = document.getElementById("recFastestTime");
         const filteredMaps = worldMaps.filter(m => {
             const idLower = (m.id || "").toLowerCase();
             const nameLower = (m.name || "").toLowerCase();
-            const isSpecial = idLower.includes("irreg") || idLower.includes("net") || nameLower.includes("불규칙") || nameLower.includes("동의어") || nameLower.includes("반의어");
-            
+            const isSpecial = idLower.includes("irreg") || idLower.includes("net") || idLower.includes("spell") || nameLower.includes("불규칙") || nameLower.includes("동의어") || nameLower.includes("반의어") || nameLower.includes("철자");
             return currentWorldMapTab === 'normal' ? !isSpecial : isSpecial;
         });
 
@@ -7703,6 +7706,21 @@ const recTime = document.getElementById("recFastestTime");
                     promptText = w.eng.split(',')[0].trim();
                     correctText = w.kor;
                 }
+            } else if (w.isSpell) {
+                // 🌟 [철자 영지 3단계 진화] 0점:영한 / 1점:한영 / 2점:첫글자 룬조립
+                if (currentMastery === 0) {
+                    type = "E2K";
+                    promptText = w.eng;
+                    correctText = w.kor;
+                } else if (currentMastery === 1) {
+                    type = "K2E";
+                    promptText = w.kor;
+                    correctText = w.eng;
+                } else {
+                    type = "SPELL_ASSEMBLE"; // 🌟 3단계: 첫 글자 힌트 룬 조립
+                    promptText = w.kor;      // 한글 뜻 제시!
+                    correctText = w.eng;     // 영단어 철자 완성!
+                }
 
             } else {
                 promptText = (type === "E2K") ? w.eng : w.kor;
@@ -7727,7 +7745,8 @@ const recTime = document.getElementById("recFastestTime");
                 morphPhase: 0,
                 // 🌟 다의어 속성 전달
                 isPoly: !!w.isPoly,
-                meanings: w.meanings || []
+                meanings: w.meanings || [],
+                isSpell: !!w.isSpell
             });
         }
 
@@ -7807,6 +7826,100 @@ const recTime = document.getElementById("recFastestTime");
             };
             container.appendChild(btn);
         });
+    }
+
+    // 🔤 [NEW] 철자 영지 3단계: 첫 글자 힌트 제공 + 룬 타일 조립 렌더러
+    let spellCurrentAssembled = [];
+
+    function renderSpellAssembleQuestion(q) {
+        questionStartTime = Date.now();
+        const targetWord = q.correct.toLowerCase().trim();
+        const firstChar = targetWord[0]; // 첫 글자 힌트!
+        const remainingChars = targetWord.slice(1).split('');
+
+        // 문제 및 힌트 세팅
+        document.getElementById("wordDisplay").innerText = q.prompt; // 한글 뜻 제시
+        const mTag = document.getElementById("masteryTag");
+        if (mTag) {
+            mTag.innerText = `🔤 영단어 룬을 완성하라!`;
+            mTag.style.background = "#1e1b4b";
+            mTag.style.color = "#c7d2fe";
+        }
+
+        const streakBadge = document.getElementById("comboStreakBadge");
+        if (streakBadge) {
+            streakBadge.style.display = streakCount >= 2 ? "block" : "none";
+            streakBadge.innerText = `🔥${streakCount} COMBO!🔥`;
+        }
+
+        // 함정 알파벳 2개 보충 후 셔플
+        const trapPool = ['a', 'e', 'i', 'o', 'u', 'r', 's', 't', 'l', 'n', 'c', 'p', 'd', 'm'];
+        for (let i = 0; i < 2; i++) {
+            remainingChars.push(trapPool[Math.floor(Math.random() * trapPool.length)]);
+        }
+        remainingChars.sort(() => Math.random() - 0.5);
+
+        spellCurrentAssembled = [];
+
+        const choicesGrid = document.getElementById("choicesGrid");
+        choicesGrid.innerHTML = `
+            <div class="morph-box-wrapper">
+                <!-- 1. 첫 글자가 꽂혀있는 마력 슬롯 바 -->
+                <div id="spellSlot" class="morph-slot-display" onclick="handleSpellBackspace()">
+                    ${firstChar.toUpperCase()} _
+                </div>
+                <!-- 2. 알파벳 룬 타일 랙 -->
+                <div id="spellRack" class="morph-tile-rack"></div>
+                <!-- 3. 하단 컨트롤 바 -->
+                <div class="morph-control-bar">
+                    <button class="morph-btn-clear" onclick="handleSpellBackspace()">⌫ 지우기</button>
+                    <button class="morph-btn-submit" onclick="handleSpellSubmit()">⚡ 진명 완성! (제출) ➔</button>
+                </div>
+            </div>
+        `;
+
+        const rack = document.getElementById("spellRack");
+        remainingChars.forEach(char => {
+            const btn = document.createElement("button");
+            btn.className = "morph-tile-btn";
+            btn.innerText = char;
+            btn.onclick = () => {
+                Sound.click();
+                spellCurrentAssembled.push({ char, btn });
+                btn.classList.add("used");
+                updateSpellSlotUI();
+            };
+            rack.appendChild(btn);
+        });
+
+        function updateSpellSlotUI() {
+            const slot = document.getElementById("spellSlot");
+            if (!slot) return;
+            const assembledPart = spellCurrentAssembled.map(x => x.char).join('');
+            const fullStr = firstChar + assembledPart;
+            // 빈자리 언더바 표시
+            const blanks = Math.max(0, targetWord.length - fullStr.length);
+            slot.innerText = fullStr.toUpperCase() + (blanks > 0 ? " " + "_ ".repeat(blanks).trim() : "");
+        }
+
+        window.handleSpellBackspace = () => {
+            if (spellCurrentAssembled.length === 0) return;
+            Sound.click();
+            const last = spellCurrentAssembled.pop();
+            if (last && last.btn) last.btn.classList.remove("used");
+            updateSpellSlotUI();
+        };
+
+        window.handleSpellSubmit = () => {
+            const assembledWord = firstChar + spellCurrentAssembled.map(x => x.char).join('').toLowerCase();
+            if (assembledWord === targetWord) {
+                Sound.resonance();
+                selectAnswer(q.correct, q); // 🌟 정답! ➔ 영원의 계약 체결!
+            } else {
+                Sound.wrong();
+                selectAnswer("WRONG_SPELL_ASSEMBLE", q); // ❌ 오답 처리
+            }
+        };
     }
 
     // 🎭 [NEW] 다의어 모든 뜻 쓸어담기(3단계 계약 관문) 렌더러 & 채점기
@@ -7999,6 +8112,11 @@ const recTime = document.getElementById("recFastestTime");
         }
         if (q && q.type === "SYNONYM_SWEEP") {
             renderSynonymSweepQuestion(q);
+            return;
+        }
+        // 🌟 철자 3단계: 첫 글자 제공 룬 조립창으로 직행!
+        if (q && q.type === "SPELL_ASSEMBLE") {
+            renderSpellAssembleQuestion(q);
             return;
         }
         
@@ -8909,8 +9027,8 @@ const recTime = document.getElementById("recFastestTime");
                 이 영지의 모든 구역을 완벽히 정복했다!<br>
                 이곳을 완전히 정화하고 그 힘을 얻기 위해선<br>
                 <b>${theme.guardianName}</b>의 시련을 통과해야해<br>
-                (체력 5 / 7초 타임어택)<br><br>
-                정신 바짝 차리고... 가자!
+                정신 바짝 차리고... 가자!<br>
+                (체력 5 / 7초 타임어택)
             `;
             document.getElementById("midBossNoticeStartBtn").innerText = `⚔️ 수호령과의 시련 시작! ➔`;
         }
@@ -9134,16 +9252,19 @@ const recTime = document.getElementById("recFastestTime");
         if (modal) modal.style.display = "flex";
     }
 
-    // 브리핑창 닫기
+    // 특훈 브리핑창 닫기
     function closeHardcoreNotice() {
         Sound.click();
         const modal = document.getElementById("hardcoreNoticeModal");
         if (modal) modal.style.display = "none";
+        // 🌟 들어왔던 원래 공간인 '차원의 틈새'로 복귀!
+        openRiftHub();
     }
 
     // 📖 2. [각오하고 특훈 시작!] 클릭 시 진짜 출격 개시
     function startHardcoreBossRaidActual() {
         closeHardcoreNotice();
+        closeRiftHub(); // 🌟 진짜 전투로 출격할 때는 뒤에 있던 틈새 허브도 완전히 닫기
         const hc = (typeof GAME_CONFIG !== 'undefined' && GAME_CONFIG.hardcoreMode) ? GAME_CONFIG.hardcoreMode : {};
 
         // 출제 풀 필터링 ("all" 이거나 비어있으면 전 대륙, 지정되어 있으면 해당 영지만 쏙 추출)
@@ -9305,10 +9426,11 @@ const recTime = document.getElementById("recFastestTime");
         const pool = [];
         worldMaps.forEach(map => {
             const mapIdLower = (map.id || "").toLowerCase();
-            // 🛑 [마왕전 제외] 동의어(net_) 및 불규칙(irreg) 비경 영지 차단
-            if (mapIdLower.includes('net_') || mapIdLower.includes('irreg')) return;
+            // 🛑 [마왕전 제외] 동의어(net_), 불규칙(irreg), 철자(spell_) 비경 영지 완전 차단!
+            if (mapIdLower.includes('net_') || mapIdLower.includes('irreg') || mapIdLower.includes('spell_')) return;
             map.words.forEach(w => {
                 if (w.isMorph) return; // 2중 방어
+                if (w.isSpell) return;
                 if (!pool.some(item => item.eng === w.eng)) pool.push(w);
             });
         });

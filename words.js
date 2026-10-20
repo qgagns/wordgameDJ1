@@ -45,8 +45,8 @@ const GAME_CONFIG = {
 
 const WORLD_MAPS_TEXT = `
 
-[sh_1: 수행평가의 숲 1]
-#2학기 2차 수행평가 단어
+[spell_1: 수행의 숲]
+#2학기 2차 수행 단어. 철자까지 확인하는 까탈스러운 정령들이다!
 implicit	:	[형] 암시적인
 indigenous	:	[형] 토착의
 indispensable	:	[형] 없어서는 안 되는
@@ -100,10 +100,6 @@ pioneer	:	[명] 선구자
 potential	:	[명] 잠재력
 precaution	:	[명] 예방 조치
 precise	:	[형] 정확한
-
-
-[sh_2: 수행평가의 숲 2]
-#2학기 2차 수행평가 단어
 prejudice	:	[명] 편견
 privilege	:	[명] 특권
 procedure	:	[명] 절차
