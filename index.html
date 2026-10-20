@@ -128,35 +128,35 @@
         /* 1. 파이어폭스 표준 대응 */
         * {
             scrollbar-width: thin;
-            scrollbar-color: #9a5b2d rgba(143, 96, 58, 0.18);
+            scrollbar-color: #b45309 rgba(143, 96, 58, 0.2)
         }
 
-        /* 2. 크롬, 사파리, 모바일 웹킷 상시 노출 스크롤 규격 */
-        ::-webkit-scrollbar {
-            width: 6px;  /* 세로 스크롤바 폭 */
-            height: 6px; /* 가로 스크롤바 높이 */
-            display: block !important; /* 모바일 숨김 방어 */
+        /* 2. 모든 개별 내부 컨테이너(*)에 100% 강제 적용하는 스크롤 규격 */
+         *::-webkit-scrollbar {
+            width: 7px;                /* 🌟 양피지 테두리에 묻히지 않도록 6px ➔ 7px로 미세 보강 */
+            height: 7px;
+            display: block !important;
         }
-
-        /* 스크롤바 바닥: 양피지에 깊게 파인 음각 레일 홈 */
-        ::-webkit-scrollbar-track {
-            background: rgba(143, 96, 58, 0.15);
+ 
+        /* 스크롤바 바닥: 음각 레일 홈을 모든 박스에 상시 렌더링 */
+        *::-webkit-scrollbar-track {
+            background: rgba(143, 96, 58, 0.18);
             border-radius: 6px;
-            box-shadow: inset 0 0 3px rgba(44, 26, 14, 0.3);
-            margin: 4px 0;
+            box-shadow: inset 0 0 3px rgba(44, 26, 14, 0.35);
+            margin: 2px 0;
         }
-
-        /* 스크롤바 손잡이: 고대 황동 버클 & 가죽 질감의 묵직한 바 */
-        ::-webkit-scrollbar-thumb {
+ 
+        /* 스크롤바 손잡이: 고대 황동 버클 바 */
+        *::-webkit-scrollbar-thumb {
             background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
             border-radius: 6px;
-            border: 1px solid rgba(254, 243, 199, 0.4);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(254, 243, 199, 0.5);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
         }
-
-        /* 손잡이에 손을 대거나 터치할 때: 밝은 황금빛 점등 */
-        ::-webkit-scrollbar-thumb:hover,
-        ::-webkit-scrollbar-thumb:active {
+ 
+        /* 손잡이 터치/호버 점등 */
+        *::-webkit-scrollbar-thumb:hover,
+        *::-webkit-scrollbar-thumb:active {
             background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
             border-color: #fde047;
         }
