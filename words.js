@@ -25,6 +25,14 @@ const GAME_CONFIG = {
     bossTimeRepeat: 3.0,       // 2회차 마왕 시간 (기본: 4.0초)
     bossPlayerHpRepeat: 1,     // 👈 2회차 마왕전 플레이어 하트 수 (기본: 3개)
 
+    // 🚨 [안개 구출전 일일 쿼터 설정] (일반 단어 계약량에 따라 하루 의무 구출량 배정)
+    rescueQuota: [
+        { reqWords: 400, quota: 20 }, // 일반 단어 400마리 이상: 하루 20마리
+        { reqWords: 240, quota: 15 }, // 일반 단어 240마리 이상: 하루 15마리
+        { reqWords: 120, quota: 10 }, // 일반 단어 120마리 이상: 하루 10마리
+        { reqWords: 0,   quota: 5  }  // 기본(0마리 이상): 하루 5마리
+    ],
+
     // 🔥 [시험 직전 파이널] 하드코어 마왕전 설정
     hardcoreMode: {
         enabled: true,                       // 켜기(true) / 끄기(false)
