@@ -8,7 +8,8 @@ const GAME_CONFIG = {
     // 🎛️ [교사용 마스터 계정] 선생님만 아는 관리자 로그인 아이디/비밀번호
     adminId: "qlagn",          // 관리자 로그인 아이디 (기본: admin)
     adminPw: "0112",           // 관리자 비밀번호 (기본: 0000)
-    
+    adminName: "책선생",        // 👈 선생님 성함 지정!
+
     // ⚔️ [수호령전 체력 & 시간 & 플레이어 목숨]
     guardianHp1: 5,            // 1회차 수호령 체력 (기본: 5)
     guardianTime1: 7.0,        // 1회차 수호령 시간 (기본: 7.0초)
@@ -216,7 +217,7 @@ crisis	:	[명] 위기
 otherwise	:	[부] (만약) 그렇지 않으면
 lasting	:	[형] 지속적인
 muscle	:	[명] 근육
-build ~ up	:	[동] ~을 더 높이다[강력하게 만들다]
+build ~ up	:	[동] 더 높이다, 다지다
 thought	:	[명] 생각
 behavior	:	[명] 행동
 allow	:	[동] 허락하다, 허용하다
@@ -227,16 +228,16 @@ accept	:	[동] 받아들이다, 수용하다
 respect	:	[동] 존중하다; [명] 존중
 passive	:	[형] 수동적인, 소극적인
 suffering	:	[명] 고통
-single ~ out	:	[동] ~을 골라내다
+single ~ out	:	[동] 골라내다
 face	:	[동] 직면하다[닥쳐오다]; [명] 얼굴, 면
 focus on ~	:	[동] ~에 집중하다, 초점을 맞추다
 embrace	:	[동] 수용하다, 포용하다
 unexpected	:	[형] 예기치 않은, 뜻밖의
 obstacle	:	[명] 장애물
-think of ~	:	[동] ~을 생각하다
+think of ~	:	[동] 생각하다
 that is (to say)	:	[부] 즉, 말하자면
 personal	:	[형] 개인의, 개인적인
-look after ~	:	[동] ~을 돌보다, ~을 살피다
+look after ~	:	[동] 돌보다, 보살피다
 present	:	[형] 현재의; [명] 선물; [동] 제시하다, 제공하다
 moment	:	[명] 순간
 regret	:	[동] 후회하다; [명] 후회
@@ -319,7 +320,7 @@ affordable	:	[형] (가격이) 알맞은, 저렴한
 take shape	:	[동] 구체화되다
 graduate	:	[형] 대학원의, 석사 과정의; [동] 졸업하다
 make a difference	:	[동] 변화를 일으키다
-recognize	:	[동] ~을 인식하다, 알아보다; [동] 인정하다
+recognize	:	[동] 인식하다, 알아보다; [동] 인정하다
 eager toR	:	[형] ~하기를 열망하는
 function	:	[동] 작동하다; [명] 기능, 작동; [명] 함수
 properly	:	[부] 적절하게
@@ -354,8 +355,8 @@ extreme	:	[명] 극단
 inexpensive	:	[형] 저렴한, 비싸지 않은
 determined toR	:	[형] ~할 것을 결심한
 remain	:	[동] ~한 채로 남아 있다
-draw	:	[동] ~을 그리다; [동] 비기다; [동] 끌다
-realize	:	[동] ~을 깨닫다; [동] 실현하다, 현실화하다
+draw	:	[동] 그리다; [동] 비기다; [동] 끌다
+realize	:	[동] 깨닫다; [동] 실현하다, 현실화하다
 medium	:	[명] 제작 재료; [명] 매체, 매개
 fold	:	[동] 접다
 with precision	:	[전명] 정밀하게
@@ -382,15 +383,15 @@ usefulness	:	[명] 유용함
 enhance	:	[동] 향상시키다
 compatibility	:	[명] 호환성
 take pictures	:	[동] 사진을 찍다
-record	:	[동] (~을) 기록하다; [명] 기록
-project	:	[동] ~을 영사[투사]하다; [명] 계획, 프로젝트
+record	:	[동] 기록하다; [명] 기록
+project	:	[동] 영사[투사]하다; [명] 계획, 프로젝트
 high-resolution	:	[형] 고해상도의
 distribute	:	[동] ~을 배포하다, 유통하다
 invaluable	:	[형] 대단히 귀중한
 worldwide	:	[형] 전 세계의
-utilize	:	[동] ~을 활용하다
+utilize	:	[동] 활용하다
 purpose	:	[명] 목적
-instrumental in V-ing	:	[형] ~ 하는 데 매우 중요한 역할을 하는
+instrumental in V-ing	:	[형] ~하는 데 매우 중요한 역할을 하는
 detect	:	[동] 발견하다, 탐지하다
 fake	:	[형] 가짜의
 antimalarial	:	[형] 말라리아 치료[예방]의
@@ -400,7 +401,7 @@ crush ~ into …	:	[동] ~을 …로 분쇄하다
 uniform	:	[형] 균일한; [명] 유니폼, 제복
 particle	:	[명] 입자
 mere	:	[형] 단순한
-publish	:	[동] ~을 발표하다, 출판하다
+publish	:	[동] 발표하다, 출판하다
 currently	:	[부] 지금, 현재
 in progress	:	[전명] 진행 중인
 introduce ~ to …	:	[동] ~에게 …을 소개하다, 처음 접하게 하다
@@ -414,159 +415,5 @@ preventable	:	[형] 예방할 수 있는
 increasingly	:	[부] 점점 더
 
 
-
-
-
-[irreg_verbs: 불규칙 동사의 늪]
-# 제멋대로 모습을 바꾸는 동사 정령들이 서식하는 늪
-drive (drove, driven): [동] 운전하다, 몰다
-ride (rode, ridden): [동] 타다
-write (wrote, written): [동] 쓰다
-break (broke, broken): [동] 부수다
-choose (chose, chosen): [동] 선택하다, 고르다
-freeze (froze, frozen): [동] 얼다, 얼리다
-speak (spoke, spoken): [동] 말하다
-steal (stole, stolen): [동] 훔치다
-get (got, got): [동] 얻다; ~해지다
-forget (forgot, forgotten): [동] 잊다
-begin (began, begun): [동] 시작하다
-drink (drank, drunk): [동] 마시다
-run (ran, run): [동] 달리다
-shrink (shrank, shrunk): [동] 줄어들다
-sing (sang, sung): [동] 노래하다
-spring (sprang, sprung): [동] 튀어 오르다
-swim (swam, swum): [동] 수영하다
-take (took, taken): [동] 잡다, 가지다
-shake (shook, shaken): [동] 흔들다, 흔들리다
-mistake (mistook, mistaken): [동] 실수하다
-blow (blew, blown): [동] 불다
-fly (flew, flown): [동] 날다, 날리다
-grow (grew, grown): [동] 자라다; 키우다
-know (knew, known): [동] 알고 있다
-throw (threw, thrown): [동] 던지다
-withdraw (withdrew, withdrawn): [동] 철회하다
-swear (swore, sworn): [동] 맹세하다
-tear (tore, torn): [동] 찢다
-wear (wore, worn): [동] 입다
-show (showed, shown): [동] 보여주다
-be (was/were, been): [동] 있다/이다
-beat (beat, beaten): [동] 때리다
-become (became, become): [동] 되다
-bite (bit, bitten): [동] 물다
-come (came, come): [동] 오다
-do (did, done): [동] 하다
-eat (ate, eaten): [동] 먹다
-fall (fell, fallen): [동] 떨어지다, 넘어지다
-forbid (forbade, forbidden): [동] 금지하다
-give (gave, given): [동] 주다
-forgive (forgave, forgiven): [동] 용서하다
-go (went, gone): [동] 가다
-hide (hid, hidden): [동] 숨다, 숨기다
-lie (lay, lain): [동] 눕다
-see (saw, seen): [동] 보다
-bleed (bled, bled): [동] 피를 흘리다
-feed (fed, fed): [동] 먹이다
-lead (led, led): [동] 이끌다
-meet (met, met): [동] 만나다
-read (read, read): [동] 읽다
-shoot (shot, shot): [동] 쏘다, 발사하다
-sleep (slept, slept): [동] 자다
-speed (sped, sped): [동] 속도를 내다
-hear (heard, heard): [동] 듣다
-dig (dug, dug): [동] 파다
-hang (hung, hung): [동] 매달다, 걸다
-stick (stuck, stuck): [동] 찌르다; 붙이다
-strike (struck, struck): [동] 치다, 때리다
-wake (woke, woken): [동] 깨우다
-shine (shone, shone): [동] 빛나다, 광을 내다
-win (won, won): [동] 이기다; 얻다
-build (built, built): [동] 세우다, 짓다
-lend (lent, lent): [동] 빌려주다
-lose (lost, lost): [동] 잃다; 지다
-send (sent, sent): [동] 보내다
-spend (spent, spent): [동] (돈, 시간 등을)사용하다, 쓰다
-deal (dealt, dealt): [동] 다루다; 거래하다
-mean (meant, meant): [동] 의미하다
-bend (bent, bent): [동] 구부리다
-feel (felt, felt): [동] 느끼다
-hold (held, held): [동] 잡다, 쥐다
-keep (kept, kept): [동] 유지하다; 기르다
-leave (left, left): [동] 떠나다; 남겨두다
-bring (brought, brought): [동] 가져오다
-buy (bought, bought): [동] 사다
-catch (caught, caught): [동] 잡다
-fight (fought, fought): [동] 싸우다
-seek (sought, sought): [동] 찾다, 추구하다
-teach (taught, taught): [동] 가르치다
-think (thought, thought): [동] 생각하다
-find (found, found): [동] 찾다, 발견하다
-pay (paid, paid): [동] 지불하다
-say (said, said): [동] 말하다
-stand (stood, stood): [동] 서다
-understand (understood, understood): [동] 이해하다
-sell (sold, sold): [동] 팔다
-tell (told, told): [동] 말하다
-have (had, had): [동] 가지고 있다, 소유하고 있다
-light (lit, lit): [동] (불을)켜다, 밝히다
-make (made, made): [동] 만들다
-sit (sat, sat): [동] 앉다
-slide (slid, slid): [동] 미끄러지다
-burst (burst, burst): [동] 터뜨리다
-cost (cost, cost): [동] 비용이~가 들다
-cut (cut, cut): [동] 자르다
-hit (hit, hit): [동] 치다
-hurt (hurt, hurt): [동] 다치게 하다; 아프다
-put (put, put): [동] 두다, 놓다
-set (set, set): [동] 놓다; 마련하다
-shut (shut, shut): [동] 닫다, 잠그다
-spread (spread, spread): [동] 펴다, 펼치다
-
-[irreg_nouns: 불규칙 명사의 언덕]
-# 제멋대로 모습을 바꾸는 명사 정령들이 서식하는 언덕
-man (men): [명] 남자, 사람
-woman (women): [명] 여자
-child (children): [명] 아이, 어린이
-person (people): [명] 사람
-foot (feet): [명] 발
-tooth (teeth): [명] 이, 치아
-goose (geese): [명] 거위
-mouse (mice): [명] 쥐
-ox (oxen): [명] 황소
-louse (lice): [명] 이(곤충)
-sheep (sheep): [명] 양
-deer (deer): [명] 사슴
-fish (fish): [명] 물고기, 생선
-species (species): [명] 종(생물 분류 단위)
-series (series): [명] 연속, 시리즈
-aircraft (aircraft): [명] 항공기
-medium (media): [명] 매체, 대중매체
-curriculum (curricula): [명] 교육과정, 커리큘럼
-criterion (criteria): [명] 기준, 표준
-phenomenon (phenomena): [명] 현상
-crisis (crises): [명] 위기
-basis (bases): [명] 근거, 기초
-analysis (analyses): [명] 분석
-hypothesis (hypotheses): [명] 가설
-oasis (oases): [명] 오아시스
-stimulus (stimuli): [명] 자극, 자극제
-fungus (fungi): [명] 균류, 곰팡이
-cactus (cacti): [명] 선인장
-
-[irreg_ads: 불규칙 형용사/부사의 굴]
-# 제멋대로 모습을 바꾸는 형용사/부사 정령들이 서식하는 굴
-good (better, best): [형] 좋은
-well (better, best): [부] 잘, 좋게
-bad (worse, worst): [형] 나쁜
-ill (worse, worst): [형] 아픈, 나쁜
-badly (worse, worst): [부] 심하게, 나쁘게
-many (more, most): [형] 많은 (셀 수 있는 명사 수식)
-much (more, most): [형/부] 많은, 많이 (셀 수 없는 명사 수식)
-little (less, least): [형/부] 적은, 적게 (양/정도)
-far (거리) (farther, farthest): [형/부] 먼, 더 먼, 가장 먼
-far (정도) (further, furthest): [형/부] 나아간, 더 나아간, 가장 깊은
-late (시간) (later, latest): [형/부] 늦은, 더 늦은, 가장 최근의
-late (순서) (latter, last): [형] (둘 중) 나중의, 후자의, 마지막의
-old (나이) (older, oldest): [형] 나이 든, 더 나이 든, 가장 나이 든
-old (서열) (elder, eldest): [형] 나이 든, 손위의, 가장 맏이의
 
 `;
