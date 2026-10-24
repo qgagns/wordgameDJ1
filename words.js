@@ -426,7 +426,7 @@ Whatever life path we choose, we all experience [[adversity | adversity]].
 This can [[take the form of | take the form of ~]] illness, accidents, [[failure | failure]] in exams, family and relationship [[issues | issue]], or other stresses. 
 To cope, we all need the [[ability | ability]] to [[overcome | overcome]] difficulties, which is [[known as | known as ~]] [[resilience | resilience]]. 
 [[Resilience | resilience]] means [[springing back | spring back]], just like a [[bouncy | bouncy]] ball after hitting the ground. 
-If you are [[resilient | resilient]], you can [[bounce back | bounce back]] and [[recover]] quickly from the hard times you [[experience]]. 
+If you are [[resilient | resilient]], you can [[bounce back | bounce back]] and [[recover:[동] 회복하다]] quickly from the hard times you [[experience:[명] 경험; [동] 경험하다, 겪다]]. 
 [[Furthermore | furthermore]], you learn and grow from [[adversity | adversity]]. 
 So, [[resilience | resilience]] is the [[ability | ability]] to handle, recover from, and [[benefit from | benefit from]] difficult life events.
 ===
