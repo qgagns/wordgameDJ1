@@ -422,16 +422,16 @@ increasingly	:	[부] 점점 더
 This week’s topic in the City [[Wellness | wellness]] Center Newsletter is [[resilience | resilience]], or “the power to [[overcome | overcome]]”. 
 Julia Hone, a famous doctor, tells us how we can [[deal with | deal with ~]] difficult times by [[cultivating | cultivate]] our [[inner | inner]] [[strength | strength]].
 No life is [[free from | free from ~]] problems. 
-Whatever life path we choose, we all experience [[adversity | adversity]]. 
+Whatever life path we choose, we all [[experience: [명] 경험; [동] 경험하다]] [[adversity | adversity]]. 
 This can [[take the form of | take the form of ~]] illness, accidents, [[failure | failure]] in exams, family and relationship [[issues | issue]], or other stresses. 
 To cope, we all need the [[ability | ability]] to [[overcome | overcome]] difficulties, which is [[known as | known as ~]] [[resilience | resilience]]. 
 [[Resilience | resilience]] means [[springing back | spring back]], just like a [[bouncy | bouncy]] ball after hitting the ground. 
-If you are [[resilient | resilient]], you can [[bounce back | bounce back]] and [[recover:[동] 회복하다]] quickly from the hard times you [[experience:[명] 경험; [동] 경험하다, 겪다]]. 
+If you are [[resilient | resilient]], you can [[bounce back | bounce back]] and [[recover: [동] 회복하다]] quickly from the hard times you [[experience: [명] 경험; [동] 경험하다]]. 
 [[Furthermore | furthermore]], you learn and grow from [[adversity | adversity]]. 
 So, [[resilience | resilience]] is the [[ability | ability]] to handle, recover from, and [[benefit from | benefit from]] difficult life events.
 ===
 There are [[countless | countless]] stories of successful people who not only [[survived | survive]] [[adversity | adversity]] but used it as [[a stepping stone to | a stepping stone to ~]] [[growth | growth]]. 
-[[Fairy tale | fairy tale]] writer Hans Andersen said that his childhood [[poverty | poverty]], the early [[loss | loss]] of his father, and his experience of being [[disrespected | disrespect]] were the [[sources | source]] for his most popular stories. 
+[[Fairy tale | fairy tale]] writer Hans Andersen said that his childhood [[poverty | poverty]], the early [[loss | loss]] of his father, and his [[experience: [명] 경험; [동] 경험하다]] of being [[disrespected | disrespect]] were the [[sources | source]] for his most popular stories. 
 “The hardship was a real [[blessing | blessing]] that [[inspired | inspire]] me to write stories like The Little Match Girl, The Snow Queen, and The Ugly [[Duckling | duckling]].” 
 [[Athlete | athlete]] Aimee Mullins also saw her [[challenges | challenge]] as an [[opportunity | opportunity]]. 
 She was born with a [[medical condition | medical condition]] that [[resulted in | result in ~]] losing both legs [[beneath | beneath]] the knee to [[surgery | surgery]]. 
@@ -448,7 +448,7 @@ The good news is that [[resilience | resilience]] is like a [[muscle | muscle]].
 You can [[build it up | build ~ up]] through practice, by developing [[thoughts | thought]], [[behaviors | behavior]], and habits that [[allow | allow]] you to recover from [[painful | painful]] or stressful events. 
 Here are three [[basic | basic]] [[strategies | strategy]] to [[build up | build ~ up]] this “[[resilience | resilience]] [[muscle | muscle]].”
 ===
-<Three [[Basic | basic]] [[Strategies | strategy]] to [[Build Up | build ~ up]] Your “[[Resilience | resilience]] [[Muscle | muscle]]”>
+*Three [[Basic | basic]] [[Strategies | strategy]] to [[Build Up | build ~ up]] Your “[[Resilience | resilience]] [[Muscle | muscle]]”*
 First, [[accept | accept]] and [[respect | respect]] [[adversity | adversity]] as a natural part of life. 
 This doesn’t mean being [[passive | passive]], but understanding that some changes in life can cause [[suffering | suffering]] or stress. 
 Then, instead of feeling [[singled out | single ~ out]] and thinking, “Why me?”, you can [[face | face]] whatever happens and [[focus on | focus on ~]] what you can change, not what you can’t. 
@@ -486,15 +486,15 @@ Psychologists say there are two main mindsets: “fixed” and “[[growth | gro
 For people with a fixed mindset, [[failure | failure]] just shows that their intelligence, [[abilities | ability]], and talents are limited. 
 They may think, for example, “I’ve never been good at writing. I’ll never be a good writer.” 
 Therefore, they stay in their comfort zone, where they won’t be [[challenged | challenge]]. 
-They [[tend to | tend toR]] reject even constructive criticism. 
+They [[tend to | tend toR]] reject even constructive [[criticism:[명] 비판]]. 
 Also, other people’s success makes them feel defeated and lose confidence.
 Meanwhile, people with a [[growth | growth]] mindset [[accept | accept]] life’s [[challenges | challenge]]. 
 For them, [[failure | failure]] is an [[opportunity | opportunity]]. 
 They may think,[[for example: [부] 예를 들어]], “I can still learn and practice writing skills until I can write a great story”. 
-They can learn from [[criticism]], ask for advice, and be [[inspired | inspire]] by other people’s success. 
-A [[growth | growth]] mindset [[empowers | empower]] people to feel more [[comfortable]] about their [[imperfections | imperfection]] and [[overcome | overcome]] [[crises | crisis]] or mistakes more easily.
+They can learn from [[criticism:[명] 비판]], ask for advice, and be [[inspired | inspire]] by other people’s success. 
+A [[growth | growth]] mindset [[empowers | empower: [동] 힘을 주다, 권한을 주다]] people to feel more [[comfortable: [형] 편안한]] about their [[imperfections | imperfection:[명] 불완전성, 결점]] and [[overcome | overcome]] [[crises | crisis]] or mistakes more easily.
 Experts say that we can develop a [[growth | growth]] mindset through practice. 
-Whenever you feel “It’s impossible, I’[[d rather | would rather]] give up,” why don’t you train yourself to say, “I still want to try, I can learn how to make it possible”?
+Whenever you feel “It’s impossible, I’[[d rather | would rather: 차라리 ~하겠다]] give up,” why don’t you train yourself to say, “I still want to try, I can learn how to make it possible”?
 
 
 `;
