@@ -424,6 +424,7 @@ Julia Hone, a famous doctor, tells us how we can [[deal with | deal with ~]] dif
 No life is [[free from | free from ~]] problems. 
 Whatever life path we choose, we all [[experience: [명] 경험; [동] 경험하다]] [[adversity | adversity]]. 
 This can [[take the form of | take the form of ~]] illness, accidents, [[failure | failure]] in exams, family and relationship [[issues | issue]], or other stresses. 
+===
 To cope, we all need the [[ability | ability]] to [[overcome | overcome]] difficulties, which is [[known as | known as ~]] [[resilience | resilience]]. 
 [[Resilience | resilience]] means [[springing back | spring back]], just like a [[bouncy | bouncy]] ball after hitting the ground. 
 If you are [[resilient | resilient]], you can [[bounce back | bounce back]] and [[recover: [동] 회복하다]] quickly from the hard times you [[experience: [명] 경험; [동] 경험하다]]. 
@@ -433,6 +434,7 @@ So, [[resilience | resilience]] is the [[ability | ability]] to handle, recover 
 There are [[countless | countless]] stories of successful people who not only [[survived | survive]] [[adversity | adversity]] but used it as [[a stepping stone to | a stepping stone to ~]] [[growth | growth]]. 
 [[Fairy tale | fairy tale]] writer Hans Andersen said that his childhood [[poverty | poverty]], the early [[loss | loss]] of his father, and his [[experience: [명] 경험; [동] 경험하다]] of being [[disrespected | disrespect]] were the [[sources | source]] for his most popular stories. 
 “The hardship was a real [[blessing | blessing]] that [[inspired | inspire]] me to write stories like The Little Match Girl, The Snow Queen, and The Ugly [[Duckling | duckling]].” 
+===
 [[Athlete | athlete]] Aimee Mullins also saw her [[challenges | challenge]] as an [[opportunity | opportunity]]. 
 She was born with a [[medical condition | medical condition]] that [[resulted in | result in ~]] losing both legs [[beneath | beneath]] the knee to [[surgery | surgery]]. 
 She [[competed against | compete against ~]] [[athletes | athlete]] without [[disabilities | disability]] in a [[national | national]] competition and [[participated in | participate in ~]] the Paralympics in 1996. 
@@ -445,7 +447,7 @@ You might think “Hey, these are [[exceptional | exceptional]] people.”
 However, we are all born with the [[potential | potential]] for [[resilience | resilience]]. 
 Just like these people, we all can develop the [[strength | strength]] to quickly recover from a [[crisis | crisis]] that could [[otherwise | otherwise]] cause [[lasting | lasting]] damage to our mental health. 
 The good news is that [[resilience | resilience]] is like a [[muscle | muscle]]. 
-You can [[build it up | build ~ up]] through practice, by developing [[thoughts | thought]], [[behaviors | behavior]], and habits that [[allow | allow]] you to recover from [[painful | painful]] or stressful events. 
+You can [[build | build ~ up]] it [[up | build ~ up]] through practice, by developing [[thoughts | thought]], [[behaviors | behavior]], and habits that [[allow | allow]] you to recover from [[painful | painful]] or stressful events. 
 Here are three [[basic | basic]] [[strategies | strategy]] to [[build up | build ~ up]] this “[[resilience | resilience]] [[muscle | muscle]].”
 ===
 *Three [[Basic | basic]] [[Strategies | strategy]] to [[Build Up | build ~ up]] Your “[[Resilience | resilience]] [[Muscle | muscle]]”*
@@ -475,10 +477,10 @@ This is the reason why [[resilient | resilient]] people [[tend to | tend toR]] c
 I am not saying that these [[strategies | strategy]] are easy or [[remove | remove]] all stress and [[suffering | suffering]]. Still, I [[urge | urge]] you to practice them whenever you can, [[particularly | particularly]] when you are under stress. 
 Remember that there is no better time to build your “[[resilience | resilience]] [[muscle | muscle]]” than the [[moment | moment]] when you are [[in the middle of | in the middle of ~]] [[adversity | adversity]] and [[uncertainty | uncertainty]]. 
 racticing [[resilience | resilience]] during [[tough | tough]] times helps you [[endure | endure]] and grow stronger. 
-However, you can also [[apply these strategies to | apply A to B]] everyday small stresses or [[minor | minor]] [[challenges | challenge]]. 
+However, you can also [[apply | apply A to B]] these strategies [[to | apply A to B]] everyday small stresses or [[minor | minor]] [[challenges | challenge]]. 
 Then you will [[gradually | gradually]] become more able to [[deal with | deal with ~]] big ones.
 [[Resilient | resilient]] people [[tend to | tend toR]] be happier and more [[fulfilled | fulfilled]] because they are less afraid of failing or [[challenges | challenge]]. 
-So, building [[resilience | resilience]] is [[the key not only to | a key to ~]] [[overcoming | overcome]] [[adversity | adversity]] but also to living a happy life.
+So, building [[resilience | resilience]] is [[the key | a key to ~]] not only [[to | a key to ~]] [[overcoming | overcome]] [[adversity | adversity]] but also [[to | a key to ~]] living a happy life.
 -----
 === FR ===
 Our mindset, or way of thinking, affects our [[ability | ability]] to [[deal with | deal with ~]] life’s [[challenges | challenge]]. 
