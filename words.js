@@ -165,7 +165,7 @@ venture	:	[명] 모험적인 시도
 
 [CE2_L3: 3과의 숲]
 # 교과서 3과에 나오는 단어 정령들이 노니는 곳
-resilience	:	[명] (힘든 상황으로부터의) 회복력
+resilience	:	[명] 회복력, 탄력
 overcome	:	[동] 극복하다
 wellness	:	[명] 건강(함)
 deal with ~	:	[동] ~을 처리하다[다루다]
@@ -177,14 +177,12 @@ adversity	:	[명] 역경, 고난
 take the form of ~	:	[동] ~의 모습을 취하다
 failure	:	[명] 실패
 issue	:	[명] 문제; [동] 발행하다
-cope with	:	[동] ~에 대처하다
 ability	:	[명] 능력
 known as ~	:	[형] ~라고 알려져 있는
 spring back	:	[동] 되튀다
 bouncy	:	[형] 잘 튀는, 탄력 있는
 resilient	:	[형] 회복력 있는, 탄력 있는
 bounce back	:	[동] (병∙곤경 등에서) 다시 회복되다
-benefit from	:	[동] ~에서 득을 보다
 countless	:	[형] 셀 수 없이 많은
 survive	:	[동] (위기 등을) 견뎌내다, 이겨내다; [동] 생존하다, 살아남다
 a stepping stone to ~	:	[명] ~을 위한 발판
@@ -198,18 +196,15 @@ blessing	:	[명] 축복
 inspire	:	[동] ~에게 영감을 주다
 duckling	:	[명] 새끼 오리
 athlete	:	[명] (운동)선수
-challenge	:	[명] 도전, 과제; [동] 도전하다; [동] 이의를 제기하다
 opportunity	:	[명] 기회
 medical condition	:	[명] 질병
-result in ~	:	[동] ~을 야기하다
-beneath	:	[전] 아래[밑]에
+result in ~	:	[동] 야기하다, 초래하다
 surgery	:	[명] 수술
 compete against ~	:	[동] ~와 경쟁하다
 disability	:	[명] 장애, 불능
 national	:	[형] 국가의, 전국적인
-participate in ~	:	[동] ~에 참가하다
+participate in ~	:	[동] ~에 참가하다, 참여하다
 public speaking	:	[명] 공개연설
-physical	:	[형] 육체[신체]의; [형] 물리적인
 condition	:	[명] 상태; [명] 조건; [명] 질환
 potential	:	[명] 잠재력; [형] 잠재적인
 exceptional	:	[형] 예외적인, 아주 드문, 특출난
@@ -219,7 +214,6 @@ lasting	:	[형] 지속적인
 muscle	:	[명] 근육
 build ~ up	:	[동] 더 높이다, 다지다
 thought	:	[명] 생각
-behavior	:	[명] 행동
 allow	:	[동] 허락하다, 허용하다
 painful	:	[형] (마음이) 아픈, 고통스러운
 basic	:	[형] 기본[근본]적인
@@ -238,7 +232,6 @@ think of ~	:	[동] 생각하다
 that is (to say)	:	[부] 즉, 말하자면
 personal	:	[형] 개인의, 개인적인
 look after ~	:	[동] 돌보다, 보살피다
-present	:	[형] 현재의; [명] 선물; [동] 제시하다, 제공하다
 moment	:	[명] 순간
 regret	:	[동] 후회하다; [명] 후회
 meditate	:	[동] 명상하다
@@ -263,7 +256,6 @@ in the middle of ~	:	[전] ~의 한가운데에
 uncertainty	:	[명] 불확실성
 tough	:	[형] 힘든, 거친
 endure	:	[동] 참다, 견디다
-apply A to B	:	[동] A를 B에 적용하다
 minor	:	[형] 작은, 사소한
 gradually	:	[부] 서서히, 점진적으로
 fulfilled	:	[형] 만족감[성취감]을 느끼는
@@ -287,7 +279,6 @@ religion	:	[명] 종교
 given ~	:	[전] ~을 고려하면
 connection	:	[명] 연결, 관계
 challenge	:	[명] 도전, 난제, 어려움; [동] 도전하다; [동] 이의를 제기하다
-face	:	[명] 얼굴, 면; [동] 직면하다, 마주하다
 layer	:	[동] 겹겹이 쌓다, 더하다
 replace	:	[동] 대신하다, 대체하다
 precisely	:	[부] 정확히
@@ -318,7 +309,7 @@ hit the refresh button	:	[동] 새로고침 버튼을 누르다, 새로 시작�
 set oneself up	:	[동] 스스로를 (~한 상황에) 처하게 하다
 disenchanted	:	[형] 환멸을 느낀
 rearrange	:	[동] 재배열하다
-switch up	:	[동] 바꾸다
+switch	:	[동] 바꾸다, 전환하다; [명] 스위치, 전환
 approach	:	[명] 접근법
 unsatisfactory	:	[형] 만족스럽지 못한
 competent	:	[형] 유능한, 경쟁력 있는
@@ -462,18 +453,16 @@ universal	:	[형] 보편적인
 relate to ~	:	[동] ~와 관련되다; [동] ~에 공감하다
 mechanism	:	[명] 메커니즘, 기제
 mammal	:	[명] 포유동물
-translate into ~	:	[동] (~에) 적용되다, ~로 이어지다
 excite	:	[동] 흥분시키다, 자극하다
 process	:	[명] 과정; [동] 처리하다, 가공하다
 entire	:	[형] 전체의
-translate	:	[동] 옮기다, 번역하다
+translate	:	[동] 옮기다, 번역하다; [동] (into)(~에) 적용되다, 이어지다
 gain	:	[동] 얻다; [명] 이득, 얻는 것
 not at all	:	[부] 전혀 ~ 아닌
 subsidy	:	[명] 보조금
 regulation	:	[명] 규제, 규정
 power plant	:	[명] 발전소
 pollute	:	[동] 오염시키다
-switch away from	 ~ :	[동] ~에서 (다른 것으로) 전환하다
 coal	:	[명] 석탄
 profit	:	[명] 이익, 수익; [동] 이익을 얻다
 transition	:	[명] 전환, 이행
@@ -493,7 +482,6 @@ emission	:	[명] 배출(량)
 end up V-ing	:	[동] 결국 ~하게 되다
 consumption	:	[명] 소비, 소모
 worsen	:	[동] 악화시키다
-switch	:	[동] 바꾸다, 전환하다; [명] 스위치, 전환
 receive	:	[동] 받다, 수령하다
 electricity	:	[명] 전기, 전류
 freedom	:	[명] 자유
@@ -599,7 +587,6 @@ backdrop	:	[명] 배경
 experience	:	[명] 경험; [동] 경험하다, 겪다
 physical	:	[형] 육체의; [형] 물리적인
 heart	:	[명] 핵심; [명] 심장, 마음
-accept	:	[동] 받아들이다, 수용하다, 인정하다
 possibility	:	[명] 가능성
 framework	:	[명] 틀, 체계
 commonly	:	[부] 흔히, 보통
@@ -647,7 +634,6 @@ biological	:	[형] 생물학적인
 
 [mg_h1_26.10_7: 고1 26.10모 7]
 # 고2 26.10모 단어를 적당히 쪼갰다. 쫄지말고 들어와.
-take as a given	:	[동] 당연한 것으로 여기다
 trace	:	[동] 추적하다; [명] 흔적
 recognition	:	[명] 인정, 인식
 burnout	:	[명] 번아웃, 극도의 피로
@@ -722,7 +708,7 @@ seam	:	[명] (옷의) 이음매, 경계
 impact	:	[명] 영향, 충격; [동] 충돌하다, 영향을 미치다
 remote	:	[형] 원격의, 멀리 떨어진
 predict	:	[동] 예측하다
-describe ~ as ...	:	[동] ~을 ...이라고 묘사하다
+describe (~ as ...)	:	[동] 묘사하다, 설명하다
 seamless	:	[형] 끊김 없는, 매끄러운
 functional	:	[형] 기능적인
 separation	:	[명] 분리
@@ -733,7 +719,6 @@ share	:	[동] 공유하다; [명] 지분, 몫, 점유율
 task	:	[명] 과업, 임무; [동] 과제/임무를 주다
 technology	:	[명] 기술
 professor	:	[명] 교수
-describe	:	[동] 묘사하다, 설명하다
 conferencing	:	[명] 회의, 컨퍼런스 하기
 screen	:	[명] 화면; [동] 막다, 거르다
 document	:	[명] 문서; [동] 기록하다
@@ -798,7 +783,6 @@ require	:	[동] 요구하다, 필요로 하다
 goldenrod	:	[명] 미역취(국화과 식물)
 threat	:	[명] 위협
 predator	:	[명] 포식자
-issue	:	[명] 문제; [동] 발행하다, 내다
 chemical	:	[형] 화학적인; [명] 화학물질
 alarm call	:	[명] 경고 신호, 경계음
 specific	:	[형] 특정한, 구체적인
@@ -818,7 +802,7 @@ thereby	:	[부] 그렇게 함으로써
 broadly	:	[부] 폭넓게, 널리
 endanger	:	[동] 위태롭게 하다
 confirm	:	[동] 확인해 주다, 입증하다
-alarm	:	[명] 경보. [동] 경보를 울리다; [명] 불안0
+alarm	:	[명] 경보. [동] 경보를 울리다; [명] 불안
 incredibly	:	[부] 믿을 수 없을 정도로, 엄청나게
 occasion	:	[명] 경우, 때
 attack	:	[명] 공격; [동] 공격하다
@@ -841,7 +825,7 @@ sustainability	:	[명] 지속 가능성
 overconsumption	:	[명] 과소비, 과잉 소비
 load	:	[명] 부담, 짐; [동] 불러오다, 로딩하다; [동] (짐을) 싣다
 processing	:	[명] (데이터) 처리
-force	:	[동] 강요하다; [명] 힘; [명] 군대
+force (~ toR)	:	[동] 강요하다; [명] 힘; [명] 군대
 consume	:	[동] 소비하다; [동] 먹다, 섭취하다
 static	:	[형] 정적인, 움직이지 않는
 by default	:	[부] 기본값으로, 기본 설정으로
