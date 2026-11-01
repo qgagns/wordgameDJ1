@@ -660,7 +660,7 @@ rooted (in ~)	:	[형] (~에) 뿌리를 둔
 socio-economic	:	[형] 사회 경제적인
 open the door to ~	:	[동] ~의 길을 열다
 burden	:	[명] 부담, 짐
-cope	with ~ :	[동] (~에) 대처하다, 대응하다
+cope with ~ :	[동] (~에) 대처하다, 대응하다
 organizational	:	[형] 조직의, 조직적인
 adapt	:	[동] 적응하다, 적용하다; [동] 각색하다, 개작하다
 leadership	:	[명] 지도부, 리더십
@@ -944,5 +944,207 @@ A [[growth | growth]] mindset [[empowers | empower: [동] 힘을 주다, 권한�
 Experts say that we can develop a [[growth | growth]] mindset through practice. 
 Whenever you feel “It’s impossible, I’[[d rather | would rather: 차라리 ~하겠다]] give up,” why don’t you train yourself to say, “I still want to try, I can learn how to make it possible”?
 
+
+
+[passage_mogo_h1_26.10_1: 모고 지문 1 (20~29)]
+# 지문을 보며 단어의 뜻을 맞혀보자.
+=== 20번 ===
+We might not [[think of | think of ~ as ...]] ourselves [[as | think of ~ as ...]] [[global citizens | global citizen]] yet, but it's both [[necessary | necessary]] and possible to do so.
+Some [[people | people]] are [[skeptical | skeptical]] about the idea of [[global | global]] [[citizenship | citizenship]], but for most of human history, [[people | people]] didn't [[think of | think of ~ as ...]] themselves [[as | think of ~ as ...]] [[citizens | citizen]] of [[nation-states | nation-state]].
+[[After all | after all]], for most of human history, [[nation-states | nation-state]] didn't [[exist | exist]].
+The [[rise | rise]] of [[nation-states | nation-state]] over the last few [[centuries | century]] has led [[people | people]] to add state [[citizenship | citizenship]] to other identities, [[such as | such as]] family, [[people | people]] group, or [[religion | religion]].
+[[Given | given ~]] the [[connections | connection]] between [[people | people]] around the world and the common [[challenges | challenge]] we [[face | face]], we need to [[layer | layer]] [[global | global]] [[citizenship | citizenship]] on to these other identities.
+This doesn't mean that [[global | global]] [[citizenship | citizenship]] [[replaces | replace]] these other identities.
+There's not a single story about our identities.
+[[Instead | instead]], it's [[precisely | precisely]] because we have [[obligations | obligation]] to our families, those in our [[community | community]], and those around the world.
+
+=== 21번 ===
+Among [[unsatisfied | unsatisfied]] [[professionals | professional]], there's a repeating [[theme | theme]] ─ the [[belief | belief]] that someday (a [[mysterious | mysterious]] day in the future) things will [[miraculously | miraculously]] change and they'll [[stumble into | stumble into ~]] the perfect job or [[career | career]].
+[[At the same time | at the same time]], they ([[typically | typically]]) do little to [[meaningfully | meaningfully]] [[alter | alter]] their [[current | current]] [[situation | situation]].
+They don't like their job, so what do they do?
+They [[head to | head to ~]] [[job boards | job board]] and search for [[roles | role]] with a [[similar | similar (to ~)]] job title, hoping that the [[universe | universe]] will [[sprinkle | sprinkle]] a bit of magic on their [[career | career]] if they just [[hit the refresh button | hit the refresh button]] in a different [[department | department]] or company.
+[[Efforts | effort]] like this make [[professionals | professional]] feel like they are doing something, when really they're just [[setting themselves up | set oneself up]] to take a new [[role | role]] and quickly become just as [[disenchanted | disenchanted]] as they were before.
+It's like [[rearranging | rearrange]] deck chairs on the Titanic.
+You've got to completely switch up your [[approach | approach]].
+If you keep playing the same game, you'll win the same [[prizes | prize]].
+
+=== 22번 ===
+[[Sociologists | sociologist]] [[argue | argue]] that our [[perception | perception]] and [[usage | usage]] of time are not just basic [[properties | property]] of [[nature | nature]], like a clock [[ticking away | tick away]] in the background, nor are they simply [[psychological | psychological]] [[phenomena | phenomenon / phenomena]] of [[individual | individual]] [[experience | experience]].
+[[Instead | instead]], how we [[perceive | perceive]] and understand time is [[to a large degree | to a large degree]] [[shaped | shape]] by [[tradition | tradition]] and cultural [[norms | norm]].
+Eviatar Zerubavel's work, The Seven Day Circle: The History and Meaning of the Week, [[demonstrates | demonstrate]] how the week, a [[fundamental | fundamental]] [[unit | unit]] of time, is a social [[invention | invention]] that [[varies | vary]] across cultures, [[influencing | influence]] how [[people | people]] [[structure | structure]] their activities and [[rhythms | rhythm]] of life.
+Why do we consider a [[nine-to-five | nine-to-five]] job [[routine | routine]]?
+Why don't many of us work on the weekends?
+Why do we usually pay our bills at the end of the month?
+Why is the [[retirement | retirement]] age sixty-five?
+These numbers and [[patterns | pattern]] aren't really [[dictated | dictate]] by [[nature | nature]] or any [[essential | essential]] human [[characteristic | characteristic]], but are rather social [[creations | creation]] that we [[internalize | internalize]] and [[come to | come toR]] [[accept | accept]] as "normal."
+
+=== 23번 ===
+In recent years, the number of [[illegal | illegal]] actions in particular at the [[corporate | corporate]] level has grown, or at least the number of cases that [[came to light | come to light]], increased.
+Such [[misconduct | misconduct]] has often only been [[exposed | expose]] because brave [[informants | informant]] have [[risked | risk]] a great deal in order to [[put an end to | put an end to]] it.
+[[Hence | hence]], it is no surprise that [[whistleblower | whistleblower]] [[protection | protection]] has [[come into focus | come into focus]].
+If [[violations | violation]] of [[law and order | law and order]] go [[undetected | undetected]] and [[unpunished | unpunished]] for years because employees of a company fear to report [[illegal | illegal]] activities [[for fear of | for fear of ~]] [[reprisals | reprisal]] or [[consequences | consequence]], it can have several negative effects.
+It can [[harm | harm]] the company itself, but also [[third-parties | third-party]], the economy in [[general | general]], the [[general | general]] public, and even [[the rule of law | the rule of law]] could be [[affected | affect]].
+Protecting those who would [[assist | assist]] in [[reducing | reduce]] [[unlawful | unlawful]] or even [[criminal | criminal]] [[behaviour | behavior / behaviour]] has two main functions:
+Protecting the [[individual's | individual]] actions as well as protecting the [[public good | public good]].
+A [[well-balanced | well-balanced]] [[whistleblower | whistleblower]] [[protection | protection]] may have [[positive | positive]] effects on both of these.
+
+=== 24번 ===
+Unfortunately, sometimes the idea of a goal is [[disconnected | disconnected]] from the daily [[reality | reality]] of what it will take to [[achieve | achieve]] it.
+We [[fall in love with | fall in love with ~]] the idea of a goal, [[pushing out of mind | push out of mind]] how different our [[day-to-day | day-to-day]] will need to be for us to make it [[happen | happen]].
+In fact, [[research | research]] even [[suggests | suggest]] that [[positive | positive]] [[fantasies | fantasy]] about our future can [[lead | lead to ~]] us to [[put | put effort into ~]] less [[effort into | put effort into ~]] our goals because our [[fantasies | fantasy]] [[provide | provide]] us with a [[false | false]] and [[premature | premature]] [[sense of accomplishment | sense of accomplishment]].
+We [[romanticize | romanticize]] a goal ─ [[falling in love with | fall in love with ~]] the idea of a change.
+In the [[process | process]], we [[gloss over | gloss over]] the [[intricacies | intricacy]] and [[challenges | challenge]] of [[integrating | integrate]] a [[complex | complex]] new [[behavior | behavior / behaviour]] into our life.
+As one study nicely [[summed it up | sum up]], [[fantasizing | fantasize]] about a [[positive | positive]] future "[[seduces | seduce]] a person to [[mentally | mentally]] enjoy the desired future in the here and now" ─ and because we don't [[reflect | reflect]] on why our [[fantasy | fantasy]] is not yet our future, "a [[necessity | necessity]] to act is not [[induced | induce]]."
+
+=== 26번 ===
+Douglas Carl Engelbart was an American [[engineer | engineer]] and inventor who transformed the field of human-computer interaction.
+He was born in Portland, Oregon, in 1925 to a European immigrant family.
+During World War II, he served as a radar technician in the U.S. Navy in the Philippines.
+It was during this time that he read an article that influenced his vision of using computers to enhance human [[abilities | ability]] and solve [[complex | complex]] problems.
+After serving, he earned master's and doctoral degrees in electrical engineering from the University of California, Berkeley, where he focused on computer-related [[research | research]].
+In the 1968 Fall Joint Computer Conference held in San Francisco, he [[demonstrated | demonstrate]] his technologies including the computer mouse, which became a monumental event in computer history.
+For his contributions to computer science, he received the Turing Award in 1997 and the [[National | national]] Medal of [[Technology | technology]] three years later.
+
+=== 29번 ===
+Since hydra and the [[immortal | immortal]] [[jellyfish | jellyfish]] don't [[exhibit | exhibit]] [[obvious | obvious]] signs of [[aging | aging]], they are often called [[biologically | biologically]] [[immortal | immortal]].
+This doesn't mean they don't die.
+Nor does it even mean that they cannot [[die of | die of ~]] [[biological | biological]] causes.
+But, unlike most every animal, their [[likelihood | likelihood]] of dying does not [[increase | increase]] with age.
+[[Species | species / species]] [[such as | such as]] hydra and the [[immortal | immortal]] [[jellyfish | jellyfish]] [[excite | excite]] [[gerontologists | gerontologist]] because they may [[provide | provide]] [[clues | clue]] about how to [[defeat | defeat]] the [[aging | aging]] [[process | process]].
+But their [[property | property]] of being able to [[regenerate | regenerate]] [[entire | entire]] body parts, or even a whole [[organism | organism]], makes them more [[similar | similar (to ~)]] to trees than to us.
+Although we may learn some [[fascinating | fascinating]] things about their [[lack | lack]] of [[apparent | apparent]] [[aging | aging]], it is [[not at all | not at all]] clear how [[relevant | relevant]] those [[findings | finding]] will be to human [[aging | aging]].
+Sometimes biology is [[universal | universal]], especially if it [[relates to | relate to ~]] [[fundamental | fundamental]] [[mechanisms | mechanism]].
+But in other cases, even discoveries in rats or mice, which are [[mammals | mammal]] and [[biologically | biologically]] much closer to us, are difficult to [[translate | translate]] into humans.
+It may be a very long time before any [[findings | finding]] [[gained | gain]] from hydra or [[jellyfish | jellyfish]] are useful to us.
+
+
+[passage_mogo_h1_26.10_2: 모고 지문 2 (30~35)]
+# 지문을 보며 단어의 뜻을 맞혀보자.
+=== 30번 ===
+[[Subsidies | subsidy]], taxes, and [[regulations | regulation]] can all [[lead to | lead to ~]] [[power plants | power plant]] that [[pollute | pollute]] less by switching away from [[coal | coal]].
+In all cases, [[profits | profit]] can be higher from making the [[transition | transition]], even [[taking | take ~ into account]] the related costs [[into account | take ~ into account]].
+The [[power plants | power plant]] [[prefer | prefer ~ over ...]] [[subsidies | subsidy]] [[over | prefer ~ over ...]] [[regulations | regulation]] or taxes.
+The reason is [[obvious | obvious]].
+They prefer to [[receive | receive]] money from the government rather than pay the costs themselves.
+But the "[[expansion | expansion]]" of their [[opportunity set | opportunity set]] through [[subsidies | subsidy]] has to be [[matched | match]] by the [[contraction | contraction]] of the [[opportunity set | opportunity set]] of others.
+The [[electricity | electricity]] companies' "[[freedom | freedom]]" is [[increased | increase]] [[at the expense of | at the expense of ~]] the [[ordinary | ordinary]] [[individual | individual]], who must [[suffer from | suffer from ~]] increased [[taxation | taxation]] to [[pay for | pay for ~]] the [[subsidy | subsidy]].
+[[Moreover | moreover]], from the [[perspective | perspective]] of pure [[efficiency | efficiency]], the [[subsidy | subsidy]] [[distorts | distort]] the economy because the [[electricity | electricity]] company is not [[facing | face]] the full costs of what it does, even if it is successful in [[limiting | limit]] [[emissions | emission]].
+[[Indeed | indeed]], [[electricity | electricity]] prices may [[end up | end up V-ing]] [[lower | lower]] than they should be and [[electricity | electricity]] [[consumption | consumption]] higher, which will [[worsen | worsen]] [[global warming | global warming]], even though the [[emissions | emission]] per [[unit | unit]] of [[electricity | electricity]] have been reduced.
+
+=== 31번 ===
+Few [[people | people]] may [[view | view]] the Star Trek [[universe | universe]] through an [[economic | economic]] [[lens | lens]], but doing so [[provides | provide]] a window into a world that might soon be [[upon | upon ~]] us.
+All of [[classical economics | classical economics]] is [[based on | based on ~]] the [[notion | notion]] that there isn't usually enough of anything to give everyone everything they want or need.
+Because of that, we use markets and [[pricing | pricing]] to [[allocate | allocate]] those [[goods | good]], services, and [[resources | resource]] to where they might [[result in | result in ~]] the highest [[benefit | benefit]].
+In Star Trek, however, there isn't much [[scarcity | scarcity]].
+[[Technology | technology]] has allowed that society to [[reproduce | reproduce]] any food they want, [[transport | transport]] themselves thousands of miles [[in the blink of an eye | in the blink of an eye]], [[communicate | communicate]] over [[light-years | light-year]], and travel among the stars.
+All of [[humanity | humanity]] in that world has been [[fully | fully]] educated so that they can [[participate in | participate in ~]] this [[prosperity | prosperity]].
+Everyone is an [[explorer | explorer]], [[researcher | researcher]], [[engineer | engineer]], artist, doctor, or [[counselor | counselor]].
+[[Generative | generative]] AI has the [[potential | potential]] to [[allow | allow]] many [[dimensions | dimension]] of our own society to be similarly highly [[abundant | abundant]].
+
+=== 32번 ===
+[[People | people]], [[whether | whether ~ or otherwise]] customers [[or otherwise | whether ~ or otherwise]], want to [[feel heard | feel heard]].
+When someone calls [[customer service | customer service]], asks to speak to a manager, or comes into your office [[with something on their mind | with something on one's mind]], they want to feel like someone is listening to their [[concerns | concern]] and going to [[address | address]] them.
+But for someone to [[feel heard | feel heard]], three things have to [[happen | happen]].
+First, they have to feel like the other person [[paid attention to | pay attention to ~]] what they said.
+Second, they have to feel like the other person understood what they said.
+And third, the other person has to [[demonstrate | demonstrate]] that they listened.
+This last part is [[key | key]].
+[[Imagine | imagine]] talking to someone who [[provided | provide]] no [[response | response]].
+They might have [[attended to | attend to ~]] everything we said.
+They might even have understood it [[completely | completely]].
+But without [[some sort of | some sort of]] [[outward | outward]] [[signal | signal]] that [[indicates | indicate]] they listened, it's [[impossible | impossible]] to know [[whether or not | whether or not ~]] they actually did.
+
+=== 33번 ===
+[[The very | the very ~]] fact that all of our experiences "[[take place | take place]]" in a [[physical | physical]] space makes the space [[inseparable | inseparable]] from what [[defines | define]] it, from the event that [[took place | take place]] in it.
+The tree and the ground [[beneath | beneath]] are [[inseparable | inseparable]] from what [[took place | take place]] there.
+This [[intertwining | intertwine]] of space, place, and [[experience | experience]] [[challenges | challenge]] the idea of place as [[passive | passive]] [[backdrop | backdrop]].
+If place and space are [[central | central]] to the very [[heart | heart]] of [[experience | experience]], we must [[accept | accept]] the [[possibility | possibility]] that the [[spatial framework | spatial framework]] is the [[medium | medium / media]] of all experiences ─ actions, [[thoughts | thought]], memories, and feelings of every place ─ not [[merely | merely]] a background or [[context | context]] [[exterior | exterior]] to [[experience | experience]] (as [[commonly | commonly]] [[supposed | suppose]]).
+Belgian [[literary | literary]] [[critic | critic]] Georges Poulet [[made the point | make the point]] [[elegantly | elegantly]], writing of the space created in Marcel Proust's great novel In Search of Lost Time:
+"Beings [[surround | surround]] themselves with the places where they find themselves, the way one [[wraps | wrap (up)]] oneself [[up | wrap (up)]] in a [[garment | garment]] that is [[at one and the same time | at one and the same time]] a [[disguise | disguise]] and a [[characterization | characterization]].
+Without places, beings would be only [[abstractions | abstraction]]."
+
+=== 34번 ===
+[[No matter how | no matter how ~]] you choose to [[delineate | delineate]] your [[evolutionary | evolutionary]] system [[of interest | of interest]] ─ let's say it's cell phones ─ there will be some things that your model just needs to [[take as a given | take ~ as a given]], [[such as | such as]] the fact that new ideas [[emerge | emerge]] at [[particular | particular]] times.
+[[Indeed | indeed]], all models must make [[simplifying | simplify]] [[assumptions | assumption]] of this [[nature | nature]].
+When Wallace and Darwin [[presented | present]] their [[verbal | verbal]] model of [[biological | biological]] [[evolution | evolution]], there was little knowledge of how [[variation | variation]] [[generation | generation]] and [[inheritance | inheritance]] [[worked | work]].
+They just [[took as a given | take ~ as a given]] that these things happened [[somehow | somehow]].
+Even at the finest level of [[detail | detail]], we need [[simplifying | simplify]] [[assumptions | assumption]].
+[[Physicists | physicist]], for example, must [[take as a given | take ~ as a given]] the [[mass | mass]] and [[charge | charge]] of [[fundamental | fundamental]] [[particles | particle]].
+In a model of [[atomic | atomic]] [[bonds | bond]], [[physicists | physicist]] don't [[attempt | attempt]] to [[explain | explain]] why [[electrons | electron]] have their [[particular | particular]] [[mass | mass]] and [[charge | charge]], they just [[accept | accept]] the measured values and [[move on | move on]].
+The [[key | key]] point is that we can build useful models at one level of [[analysis | analysis]] without a [[complete | complete]] [[accounting | accounting]] of what's happening at all other levels.
+
+=== 35번 ===
+The [[recognition | recognition]] of [[burnout | burnout]] as an [[occupational | occupational]] [[phenomenon | phenomenon / phenomena]] by the WHO in 2019 [[marked | mark]] an important [[moment | moment]] in the [[discourse | discourse]] on [[workplace | workplace]] mental health.
+This [[designation | designation]] [[reframes | reframe]] [[clinical | clinical]] [[assessment | assessment]] and [[organizational | organizational]] [[responsibility | responsibility]], shifting [[attention | attention]] to [[systemic | systemic]] [[prevention | prevention]].
+It [[invites | invite]] [[employers | employer]] to [[adopt | adopt]] [[structural | structural]] [[interventions | intervention]] rather than [[relying | rely on ~]] [[solely | solely]] [[on | rely on ~]] individual-level [[remedies | remedy]].
+[[In practice | in practice]], this means [[clinicians | clinician]] should [[collaborate | collaborate]] with [[occupational | occupational]] health and [[leadership | leadership]] to [[address | address]] [[root causes | root cause]].
+It signaled a [[shift | shift]] [[away from | away from ~]] viewing [[burnout | burnout]] as a [[personal failing | personal failing]] or a matter of [[individual | individual]] [[resilience | resilience]], toward understanding it as a [[structural | structural]] [[issue | issue]] [[rooted | rooted (in ~)]] in [[organizational | organizational]] culture, [[leadership | leadership]] practices, and the [[broader | broader]] [[socio-economic | socio-economic]] [[context | context]] of work.
+This reframing is [[essential | essential]], as it opens the door to [[systemic | systemic]] [[interventions | intervention]] and [[policy-level | policy-level]] changes rather than placing the [[burden | burden]] [[solely | solely]] on individuals to [[cope | cope with ~]] or [[adapt | adapt]].
+
+
+[passage_mogo_h1_26.10_3: 모고 지문 3 (36~41)]
+# 지문을 보며 단어의 뜻을 맞혀보자.
+=== 36번 ===
+All sound begins with some kind of [[motion | motion]], something that [[disturbs | disturb]] [[molecules | molecule]] in air, water, steel, wood, or other [[medium | medium / media]].
+Isaac Newton noted that light waves are [[colorless | colorless]]; the [[perception | perception]] of color only [[occurs | occur]] in the brain of a living [[organism | organism]].
+[[The same is true of | the same is true of ~]] sound.
+Thus [[perception | perception]] of sound begins at our [[eardrums | eardrum]] ─ before it [[hits | hit]] our [[eardrums | eardrum]], it is [[nothing more than | nothing more than ~]] the [[disturbance | disturbance]] of [[molecules | molecule]].
+We can [[measure | measure]] that [[disturbance | disturbance]] with [[gauges | gauge]] and [[instruments | instrument]], but until it [[hits | hit]] a brain, it is not sound.
+You may have heard the old [[philosophical | philosophical]] [[riddle | riddle]], "If a tree falls in the forest and no one is there to hear it, does it make it sound?"
+No, because sound is a [[psychological | psychological]] [[concept | concept]], a [[product | product]] of brains.
+That tree will [[disturb | disturb]] [[molecules | molecule]] and [[make a mess | make a mess]], but if no [[creature | creature]] hears it, no bird, fox, or human, it has not made sound.
+
+=== 37번 ===
+When [[people | people]] are collaborating [[face to face | face to face]] they can easily see each other and the [[range | range]] of different [[communication | communication]] [[cues | cue]] being used, so the [[task | task]] space is a [[subset | subset]] of the [[communication | communication]] space.
+Ishii, a [[professor | professor]] at the MIT Media Lab, [[describes | describe (~ as ...)]] this [[as | describe (~ as ...)]] [[seamless | seamless]] [[communication | communication]] because there is no [[functional | functional]] [[separation | separation]] between the [[task | task]] and [[communication | communication]] space.
+However, when [[people | people]] are working [[remotely | remotely]], the [[task | task]] space is often [[separated | separate]] from the [[communication | communication]] space.
+For example, when video [[conferencing | conferencing]], [[people | people]] may have the [[face | face]] of their [[collaborator | collaborator]] on one [[screen | screen]], while looking at a shared [[document | document]] on another.
+In this case, it is [[impossible | impossible]] to see many of the [[remote | remote]] [[collaborator's | collaborator]] [[communication | communication]] [[cues | cue]] [[at the same time | at the same time]] as looking at the [[task | task]] space.
+So, there is an [[artificial | artificial]] [[seam | seam]] between the [[communication | communication]] space and [[task | task]] space.
+This is the type of [[impact | impact]] of [[remote | remote]] [[communication | communication]] [[technology | technology]] that needs to be [[predicted | predict]] through [[communication | communication]] models.
+
+=== 38번 ===
+In 1977, [[psychologists | psychologist]] Lynn Hasher and David Goldstein asked a group of college students how [[certain | certain]] they were that sixty [[general | general]]-knowledge [[trivia | trivia]]-like [[statements | statement]] were either [[true | truth]] or [[false | false]].
+The students were asked to [[evaluate | evaluate]] the sixty [[statements | statement]] three times, at two-week [[intervals | interval]].
+[[Crucially | crucially]], only twenty of the [[statements | statement]] were [[repeated | repeat]] each time; the other forty were new.
+The researchers then [[compared | compare]] the '[[truth | truth]]-[[ratings | rating]]' of the [[repeated | repeat]] [[versus | versus]] non-[[repeated | repeat]] [[statements | statement]].
+What they found was [[astonishing | astonishing]].
+[[Regardless of | regardless of ~]] whether the [[statement | statement]] was [[true | truth]] or [[false | false]], [[belief | belief]] in the [[truth | truth]] of the [[claim | claim]] went up [[as a function of | as a function of ~]] [[repetition | repetition]].
+[[In other words | in other words]], the more often you hear a [[statement | statement]], the more '[[true | truth]]' it sounds.
+This became [[known as | known as ~]] the [[illusory | illusory]] [[truth | truth]] [[effect | effect]].
+
+=== 39번 ===
+The human body on the Earth's [[surface | surface]] experiences [[constant | constant]] air [[pressure | pressure]] [[equal | equal]] to 16-18 tons per [[square meter | square meter]] of its body [[surface | surface]].
+However, this [[pressure | pressure]] is not felt because [[external | external]] [[pressure | pressure]] is [[balanced | balance]] by [[internal | internal]] [[pressure | pressure]] in the [[lungs | lung]] and [[air cavities | air cavity]] of the body.
+During [[dives | dive]], [[in addition to | in addition to ~]] [[atmospheric pressure | atmospheric pressure]], the [[pressure | pressure]] of the water also [[acts on | act on ~]] the human body.
+When [[submerged | submerge]] underwater, to [[avoid | avoid]] feeling the [[pressure | pressure]] of the [[surrounding | surrounding]] [[environment | environment]], it is [[necessary | necessary]] to [[maintain | maintain]] the [[condition | condition]] of [[equal | equal]] [[external | external]] and [[internal | internal]] [[pressure | pressure]].
+To [[achieve | achieve]] this, air or a [[breathing mixture | breathing mixture]] is supplied to the [[diver | diver]] under [[pressure | pressure]] [[equal | equal]] to the [[pressure | pressure]] [[applied | apply]] by the [[surrounding | surrounding]] water.
+Water [[pressure | pressure]] increases [[proportionally | proportionally]] with [[depth | depth]].
+It increases by 1 bar for every 10 meters.
+[[It follows that | it follows that ~]] a [[diver | diver]] at a [[depth | depth]] of 10 meters experiences a [[pressure | pressure]] of 2 bar, and to [[stabilize | stabilize]] [[pressure | pressure]], the supply of a [[breathing mixture | breathing mixture]] under a [[pressure | pressure]] of 2 [[atmospheres | atmosphere]] is [[required | require]].
+
+=== 40번 ===
+Researchers recently found that [[goldenrods | goldenrod]] that live in peaceful areas without much [[threat | threat]] from [[predators | predator]] will [[issue | issue]] [[chemical | chemical]] [[alarm calls | alarm call]] that are [[incredibly | incredibly]] [[specific | specific]] ─ [[comprehensible | comprehensible]] only to their close [[kin | kin]] ─ [[on the rare occasion | on the rare occasion]] they are attacked.
+But [[goldenrods | goldenrod]] in more [[hostile | hostile]] [[territory | territory]] [[signal | signal]] to their [[neighbors | neighbor]] using [[chemical | chemical]] phrases easily understood by all the [[goldenrod | goldenrod]] in the area, not just their [[biological | biological]] [[kin | kin]].
+Instead of using coded [[whisper | whisper]] networks, these [[goldenrod | goldenrod]] [[broadcast | broadcast]] the [[threat | threat]] over [[loudspeaker | loudspeaker]], [[so to speak | so to speak]].
+It is the first time [[research | research]] has confirmed that these [[chemical | chemical]] communications are [[beneficial | beneficial]] not only to the plant receiving them but also to the sender.
+When times are truly [[tough | tough]], you do not want to be left standing in a field alone.
+There will be no one to [[mate | mate]] with, no one to help bring in [[pollinators | pollinator]].
+─> Compared to those in peaceful areas, [[goldenrods | goldenrod]] in more [[hostile | hostile]] environments send more [[broadly | broadly]] understandable [[chemical | chemical]] messages, [[thereby | thereby]] [[benefiting | benefit]] both the senders and the receivers.
+
+=== 41~42번 ===
+[[Patterns | pattern]] [[such as | such as]] [[infinite | infinite]] scroll, [[autoplaying | autoplay]] videos, or requiring an account just to make a [[purchase | purchase]] all [[interfere with | interfere with ~]] the user's control over their own [[experience | experience]].
+From a [[sustainability | sustainability]] [[perspective | perspective]], many of these [[patterns | pattern]] [[encourage | encourage]] [[overconsumption | overconsumption]] of data and [[attention | attention]].
+[[Infinite | infinite]] scroll [[keeps | keep V-ing]] [[loading | load]] new [[content | content]] whether the user wants it or not, increasing data [[usage | usage]] and device [[processing | processing]].
+[[Autoplay | autoplay]] [[forces | force (~ toR)]] media to [[load | load]] and play even for [[people | people]] who may never watch it.
+These choices [[consume | consume]] more energy on both the user's device and the servers [[delivering | deliver]] the [[content | content]].
+Take the [[decision | decision]] by a popular music streaming platform to [[replace | replace]] [[static | static]] album [[artwork | artwork]] with short video loops [[by default | by default]].
+This change [[significantly | significantly]] increases data [[usage | usage]] and battery [[consumption | consumption]], while the option to [[disable | disable]] it is [[buried | bury]] deep in the settings.
+[[As a result | as a result]], most users [[consume | consume]] more [[resources | resource]] unless they actively [[search | search ~ for ...]] for a way to [[opt out | opt out]].
+It is important to [[acknowledge | acknowledge]] that web design always [[nudges | nudge]] [[behavior | behavior / behaviour]] in some way.
+Showing [[consequences | consequence]] and [[highlighting | highlight]] options are all forms of [[influence | influence]].
+The [[ethical | ethical]] line is not whether nudging exists, but whether it is [[transparent | transparent]], [[reversible | reversible]], and [[aligned with | aligned with ~]] the user's interests.
+In many cases, the most [[responsible | responsible]] [[approach | approach]] is to make the lower‐impact option the [[default | default]], while keeping alternatives clearly available.
+Defaults are [[powerful | powerful]], and when chosen [[carefully | carefully]], they can [[reduce | reduce]] [[environmental | environmental]] [[impact | impact]] without [[removing | remove]] user [[agency | agency]].
 
 `;
