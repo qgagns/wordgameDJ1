@@ -861,6 +861,313 @@ remove	:	[동] 없애다, 제거하다
 powerful	:	[형] 영향력이 큰, 강력한
 
 
+[aio_dj1_1: AIO 선지 단어 1]
+# AIO 선지 속 단어를 적당히 나눴다.
+proper	/	[형] 적절한, 올바른
+go through ~	/	[동] 겪다, 경험하다
+lecture	/	[명] 강의, 강연; [동] 강의하다, 훈계하다
+decision-making	/	[명] 의사결정
+point out	/	[동] 짚어내다, 지적하다
+mental	/	[형] 정신의, 마음의
+illness	/	[명] 질병, 병
+compete	/	[동] 경쟁하다, 겨루다
+competition	/	[명] 대회, 경쟁
+despite	/	[전] ~에도 불구하고
+misfortune	/	[명] 불운, 불행
+talent	/	[명] 재능
+pass away	/	[숙] 세상을 떠나다, 사망하다
+limitation	/	[명] 한계, 제한
+single out	/	[숙] ~만 따로 뽑아내다, 표적으로 삼다
+damage	/	[명] 피해, 손상; [동] 피해를 끼치다, 손상시키다
+stress-free	/	[형] 스트레스가 없는
+flexible	/	[형] 유연한, 융통성 있는
+minimize	/	[동] 최소화하다, 축소하다
+tendency	/	[명] 경향, 성향
+ups and downs	/	[숙] 기복, 부침
+series	/	[명] 연속, 일련
+persisting	/	[형] 지속되는, 끊임없는
+reinforce	/	[동] 강화하다, 보강하다
+meditative	/	[형] 명상의, 명상적인
+clarify	/	[동] 명확하게 하다, 분명히 하다
+absent	/	[형] 결석한, 없는, 부재의
+disregard	/	[동] 무시하다, 경시하다
+in addition	/	[부] 게다가, 덧붙여
+likewise	/	[부] 마찬가지로
+therefore	/	[부] 그러므로, 따라서
+furthermore	/	[부] 게다가, 더욱이
+abandon	/	[동] 버리다, 포기하다
+practical	/	[형] 실용적인, 현실적인, 실질적인
+break down	/	[숙] 무너지다, 고장 나다
+discourage	/	[동] 막다, 단념시키다, 낙담시키다
+concentrate on ~	/	[동] ~에 집중하다
+frustrated	/	[형] 좌절한, 실망한
+anniversary	/	[명] 기념일
+peel	/	[동] 벗겨지다, 껍질을 벗기다
+diminish	/	[동] 줄이다, 감소시키다, 약화시키다
+inherent	/	[형] 내재된, 타고난
+degrade	/	[동] ~의 질을 떨어뜨리다, 저해하다
+exclusive	/	[형] 배타적인, 독점적인, 한정된
+neglect	/	[동] 방치하다, 소홀히 하다; [명] 태만
+rare	/	[형] 드문, 희귀한
+valuable	/	[형] 가치 있는, 소중한
+useless	/	[형] 쓸모없는, 무익한
+convenient	/	[형] 편리한
+meaningful	/	[형] 의미 있는
+escape	/	[동] 피하다, 벗어나다, 탈출하다
+depart	/	[동] 떠나다, 출발하다
+hardship	/	[명] 고난, 어려움
+complexity	/	[명] 복잡성
+vaccine	/	[명] 백신
+explore	/	[동] 탐구하다, 탐사하다, 탐색하다
+cognitive	/	[형] 인지의, 인식의
+enhance	/	[동] 향상시키다, 높이다
+overwork	/	[명] 과로
+journey	/	[명] 여정, 여행
+
+[aio_dj1_2: AIO 선지 단어 2]
+# AIO 선지 속 단어를 적당히 나눴다.
+setback	/	[명] 좌절, 차질
+lively	/	[형] 활기찬, 생생한
+springy	/	[형] 탄력 있는
+permanently	/	[부] 영구적으로
+advantage	/	[명] 이점, 유리함
+collapse	/	[명] 붕괴; [동] 무너지다
+leap	/	[명] 도약; [동] 뛰다
+concrete	/	[형] 구체적인; 콘크리트의
+elastic	/	[형] 탄력 있는
+rebound	/	[동] 되튀다, 반등하다
+trauma	/	[명] 트라우마, 정신적 외상
+investigate	/	[동] 조사하다, 수사하다
+release	/	[동] 방출하다, 풀어주다, 내보내다
+significance	/	[명] 중요성, 의의
+inspiration	/	[명] 영감
+determine	/	[동] 결정하다
+capability	/	[명] 능력, 역량
+frustration	/	[명] 좌절감
+motivation	/	[명] 동기부여, 의욕
+confidence	/	[명] 자신감, 확신
+credit	/	[동] 공로로 돌리다; [명] 신용, 공로
+unlock	/	[동] (잠긴 걸) 풀다, 끌르다, 해방하다
+achievement	/	[명] 성과, 성취, 업적
+make the most of ~	/	[동] ~을 최대한 이용하다
+catalyst	/	[명] 촉매제, 기폭제
+origin	/	[명] 기원, 유래
+imagination	/	[명] 상상력
+able-bodied	/	[형] 신체가 건강한(비장애의)
+showcase	/	[동] 보여주다, 선보이다
+self-esteem	/	[명] 자존감
+optimism	/	[명] 낙관주의, 낙관론
+redefine	/	[동] 재정의하다
+professionalism	/	[명] 전문성
+ignorance	/	[명] 무지
+bliss	/	[명] 더없는 행복, 축복
+cure	/	[명] 치료; [동] 치료하다
+fuel	/	[명] 연료, 동력; [동] ~에 연료를 주입하다, 기름을 붓다
+motivate	/	[동] ~에게 (…하도록) 동기를 부여하다
+refuse	/	[동] 거부하다, 거절하다
+emotional	/	[형] 감정적인, 정서적인
+springboard	/	[명] 도약대, 발판
+insult	/	[동] 모욕하다; [명] 모욕
+obstruct	/	[동] 방해하다, 막다
+owing to ~	/	[전] ~때문에, ~덕분에
+definite	/	[형] 명확한, 확실한
+distinctiveness	/	[명] 독특함, 구별됨
+hold back	/	[동] 저지하다, 방해하다
+attain	/	[동] 달성하다, 이루다
+cease	/	[동] 중단하다, 그치다
+reinterpret	/	[동] 재해석하다
+trait	/	[명] 특성, 특징
+identify	/	[동] 확인하다, 식별하다; [동] 동일시하다
+pathway	/	[명] 경로, 길
+distant	/	[형] 거리를 두는, 먼
+externalize	/	[동] 외면화하다, 외부 탓으로 돌리다
+circumstance	/	[명] 상황, 환경
+indifferent	/	[형] 무관심한
+discomfort	/	[명] 불편함, 불쾌
+reject	/	[동] 거부하다, 거절하다
+inevitable	/	[형] 피할 수 없는, 불가피한
+
+[aio_dj1_3: AIO 선지 단어 3]
+# AIO 선지 속 단어를 적당히 나눴다.
+avoidable	/	[형] 피할 수 있는
+portray	/	[동] 묘사하다, 그리다
+preventable	/	[형] 예방할 수 있는
+sufficient	/	[형] 충분한
+unavoidable	/	[형] 피할 수 없는
+inevitability	/	[명] 불가피성
+foundational	/	[형] 기초적인, 토대가 되는
+confront	/	[동] 직면하다, 맞서다
+exclude	/	[동] 제외하다, 배제하다
+outlook	/	[명] 전망, 관점, 태도
+myth	/	[명] 신화; [명] 잘못된 통념, 미신
+outstanding	/	[형] 뛰어난, 두드러진
+resistance	/	[명] 저항
+undermine	/	[동] 약화시키다, 훼손하다
+lengthen	/	[동] 늘리다, 길게 하다
+strengthen	/	[동] 강화하다
+heighten	/	[동] 높이다, 고조시키다
+reflective	/	[형] 성찰하는, 사색적인
+lucidity	/	[명] 명쾌함, 명료함
+independent (of ~)	/	[형] (~와) 무관한, 독립적인
+allocation	/	[명] 배분, 할당
+prioritization	/	[명] 우선순위화
+productivity	/	[명] 생산성
+contemporary	/	[형] 현대의; [형] 동시대의
+therapy	/	[명] 치료, 요법
+mindful	/	[형] 마음챙김의, 유념하는
+self-reflection	/	[명] 자기 성찰
+reliable	/	[형] 신뢰할 수 있는
+chaos	/	[명] 혼돈, 무질서
+stillness	/	[명] 고요함, 정적
+discipline	/	[동] 단련하다, 훈련하다; [명] 규율
+distraction	/	[명] 주의산만, 주의를 흐트러뜨리는 것, 기분 전환
+isolate	/	[동] 분리하다, 고립시키다
+self-awareness	/	[명] 자기 인식
+suppress	/	[동] 억누르다, 억제하다
+overreliance	/	[명] 과도한 의존
+persuade	/	[동] 설득하다
+dwell on ~	/	[동] 곰곰이 생각하다, 집착하다
+adjustment	/	[명] 조정, 수정
+judgment	/	[명] 판단
+engaged	/	[형] 참여하는, 관계하는
+confusion	/	[명] 혼란, 혼동
+nurture	/	[동] 양육하다, 육성하다
+foster	/	[동] 조장하다, 촉진하다, 육성하다; [형] 입양의
+prioritize	/	[동] 우선시하다, 우선순위를 매기다
+acquire	/	[동] 얻다, 습득하다
+informative	/	[형] 유익한, 정보를 주는
+proceed (with ~)	/	[동] (~을) 계속하다, 진행하다
+weave	/	[동] 엮다, 짜다
+effortless	/	[형] 수월한, 힘이 들지 않는
+tackle	/	[동] 다루다, 해결하다
+contentment	/	[명] 만족, 자족
+unattainable	/	[형] 달성할 수 없는
+navigate	/	[동] 탐색하다, 이동하다, 길을 찾다; [동] 헤쳐 나가다, 다루다
+unrealistic	/	[형] 비현실적인
+strain	/	[명] 부담, 긴장, 압박
+ease	/	[동] 완화하다, 덜어주다; [명] 쉬움, 용이함
+regulate	/	[동] 조절하다, 규제하다
+intensify	/	[동] 심화시키다, 강화하다
+provoke	/	[동] 유발하다, 도발하다
+
+[aio_dj1_4: AIO 선지 단어 4]
+# AIO 선지 속 단어를 적당히 나눴다.
+pessimistic	/	[형] 비관적인
+conquer	/	[동] 정복하다, 극복하다
+anxious	/	[형] 불안해하는, 염려하는
+eliminate	/	[동] 제거하다, 없애다
+consistently	/	[부] 일관되게, 지속적으로
+tolerate	/	[동] 견디다, 용인하다
+capacity	/	[명] 능력, 수용력
+adverse	/	[형] 부정적인, 불리한, 역경의
+irreplaceable	/	[형] 대체 불가능한
+invaluable	/	[형] 매우 귀중한
+immediate	/	[형] 즉각적인, 당면한, 바로 주변의
+restrict	/	[동] 제한하다, 한정하다
+non-judgmental	/	[형] 판단하지 않는, 비판단적인
+consistent	/	[형] 일관된, 꾸준한
+alternate	/	[동] 번갈아 하다, 바꾸다
+empower	/	[동] 권한을 주다, 힘을 실어주다
+unveil	/	[동] 드러내다, 밝히다
+extraordinary	/	[형] 비범한, 놀라운
+predominantly	/	[부] 주로, 대개
+outweigh	/	[동] ~보다 더 크다, 능가하다
+realization	/	[명] 실현, 깨달음
+interdependence	/	[명] 상호의존
+tension	/	[명] 긴장, 갈등
+commitment	/	[명] 헌신, 책무, 약속
+loyalty	/	[명] 충성심, 충실함
+civic	/	[형] 시민의, 도시의
+decline	/	[명] 쇠퇴, 감소; [동] 감소하다; [동] 거절하다
+belonging	/	[명] 소속감
+give way to ~	/	[동] ~에게 자리를 내주다, 양보하다
+coexist	/	[동] 공존하다
+negotiate	/	[동] 협상하다
+dissatisfaction	/	[명] 불만, 불만족
+fulfillment	/	[명] 성취감, 이행
+replicate	/	[동] 복제하다, 되풀이하다
+disillusionment	/	[명] 환멸, 실망
+superficial	/	[형] 피상적인, 표면적인
+conservative	/	[형] 보수적인
+substantial	/	[형] 상당한, 실질적인
+radical	/	[형] 급진적인, 근본적인
+deliberate	/	[형] 의도적인, 고의적인; [형] 신중한
+convention	/	[명] 관습, 관례
+legitimacy	/	[명] 정당성, 합법성
+flexibility	/	[명] 유연성
+resist	/	[동] 저항하다
+collectively	/	[부] 집단적으로, 공동으로
+self-evident	/	[형] 자명한
+inherit	/	[동] 물려받다, 상속받다
+ethic	/	[명] 윤리, 도덕
+exposure	/	[명] 노출, 접함, 폭로
+safeguard	/	[동] 보호하다, 지키다
+implement	/	[동] 시행하다, 실행하다
+oversight	/	[명] 감독, 감시; 간과
+blindly	/	[부] 맹목적으로
+penalty	/	[명] 처벌, 벌금
+underestimate	/	[동] 과소평가하다
+idealize	/	[동] 이상화하다
+consistency	/	[명] 일관성
+immortality	/	[명] 불멸, 영생
+trade-off	/	[명] 상충 관계, 균형
+distortion	/	[명] 왜곡
+
+[aio_dj1_5: AIO 선지 단어 5]
+# AIO 선지 속 단어를 적당히 나눴다.
+equilibrium	/	[명] 평형, 균형
+transfer	/	[동] 이전하다, 전가하다
+impose	/	[동] 부과하다, 강요하다
+replication	/	[명] 복제
+profession	/	[명] 직업, 전문직
+appreciation	/	[명] 인식, 이해; [명] 감사; [명] 감상
+concreteness	/	[명] 구체성
+substance	/	[명] 실체, 물질
+conceal	/	[동] 숨기다, 감추다
+substitute	/	[명] 대체물; [동] 대체하다
+pioneer	/	[명] 선구자, 개척자
+postpone	/	[동] 연기하다, 미루다
+overlook	/	[동] 간과하다, 못 보고 넘어가다
+perceptible	/	[형] 지각할 수 있는, 감지할 수 있는
+vibration	/	[명] 진동
+stimulus / stimuli	/	[명] 자극
+perceptual	/	[형] 지각의, 지각적인
+subjective	/	[형] 주관적인
+simultaneous	/	[형] 동시의
+anticipate	/	[동] 예상하다, 기대하다
+foresee	/	[동] 예견하다, 예측하다
+divide	/	[동] 나누다; [명] 격차, 분열
+familiarity	/	[명] 친숙함, 익숙함
+novelty	/	[명] 새로움, 참신함
+accuracy	/	[명] 정확성
+respiration	/	[명] 호흡
+density	/	[명] 밀도, 농도
+physiological	/	[형] 생리학적인, 생리적인
+adaptation	/	[명] 적응
+correspond (to ~)	/	[숙] (~에) 상응하다, 일치하다
+optimum	/	[형] 최적의; [명] 최적 조건
+imbalance	/	[명] 불균형
+kinship	/	[명] 친족 관계, 혈연
+habitat	/	[명] 서식지
+audible	/	[형] 들리는, 가청의
+decode	/	[동] 해독하다
+summon	/	[동] 부르다, 소환하다
+doubtful	/	[형] 의심하는, 회의적인
+dominant	/	[형] 지배적인, 우세한
+discontented	/	[형] 불만스러워하는
+overhaul	/	[명] 전면적인 개편, 점검
+prospect	/	[명] 전망, 가능성
+indication	/	[명] 징후, 표시
+deem	/	[동] 여기다, 간주하다
+vulnerable	/	[형] 취약한, 연약한, 상처받기 쉬운
+elevate	/	[동] 높이다, 상승시키다
+mortality	/	[명] 사망(률), 죽음, 필멸
+noticeable	/	[형] 눈에 띄는, 현저한
+symptom	/	[명] 증상, 징후
+immune (to ~)	/	[형] (~에) 면역이 된, 영향을 받지 않는
+taxpayer	/	[명] 납세자
+
+
 [passage_CE2_L3: 3과 본문+FR]
 # 지문을 보며 단어의 뜻을 맞혀보자.
 ===
